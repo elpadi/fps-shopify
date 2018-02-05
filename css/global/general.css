@@ -4,3 +4,7 @@
 .image-link img {
 	display: block;
 }
+
+body > main {
+	min-height: 100vh;
+}

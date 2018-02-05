@@ -5,6 +5,6 @@ function _t($name, $dir="snippets") {
 
 _t('head', 'global');
 _t('header', 'global');
-_t('head', 'main');
+_t('home', 'main');
 _t('footer', 'global');
 _t('foot', 'global');
