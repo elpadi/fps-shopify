@@ -1,0 +1,11 @@
+#top-bar {
+	text-transform: uppercase;
+	height: 32px;
+	line-height: 32px;
+}
+#top-bar form {
+	float: left;
+}
+#top-bar nav {
+	float: right;
+}

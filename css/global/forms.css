@@ -1,0 +1,19 @@
+input {
+	border-style: none;
+}
+
+#top-bar label {
+	visibility: hidden;
+}
+#top-bar input[type="search"] {
+	background-color: transparent;
+	visibility: visible;
+	position: absolute;
+	left: 30px;
+}
+#top-bar input[type="search"]:focus {
+	border-bottom: 1px solid green;
+}
+#top-bar input[type="image"] {
+	float: left;
+}

@@ -1,0 +1,31 @@
+/*
+ * COLORS:
+ * 	light-gray: #5a5a5a
+ * 	dark-gray: #59585c
+ * 	tan: #ffe7a5
+ * 	yellow: #fecc0b
+ * 	light-aqua: #b4e1e4
+ * 	strong-aqua: #15aeb6;
+ */
+body {
+	background-color: white;
+	color: #59585c;
+}
+a {
+	color: #15aeb6;
+}
+.btn {
+	background-color: #fecc0b;
+	color: #15aeb6;
+	font-weight: bold;
+}
+#top-bar {
+	background-color: #ffe7a5;
+}
+#top-bar a {
+	color: inherit;
+}
+#top-bar a:hover {
+	color: #15aeb6;
+}
+
