@@ -1,12 +1,32 @@
+nav {
+	width: 100%;
+	text-transform: uppercase;
+}
 nav ul {
-	display: inline-flex;
+	display: flex;
+	width: 100%;
 	margin: 0;
 	padding: 0;
+	justify-content: space-between;
 }
 nav li {
 	display: inline-block;
-	margin: 0 1em;
 }
 nav a {
 	text-decoration: none;
+}
+
+nav ul ul {
+	display: none;
+}
+
+#top-bar nav {
+	max-width: 300px;
+}
+
+#main-nav {
+	border: 1px solid #59585c;
+	border-left-style: none;
+	border-right-style: none;
+	padding: 0.5em 0 0.75em;
 }

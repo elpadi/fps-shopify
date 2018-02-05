@@ -1,4 +1,4 @@
-<nav>
+<nav id="main-nav">
 	<ul>
 		<li><a href="/collection.html">Collections</a>
 			<ul>
