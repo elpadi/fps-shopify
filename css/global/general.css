@@ -1,5 +1,6 @@
 .image-link {
 	text-decoration: none;
+	display: inline-block;
 }
 .image-link img {
 	display: block;
