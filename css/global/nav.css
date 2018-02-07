@@ -13,6 +13,7 @@ nav li {
 	display: inline-block;
 }
 nav a {
+	display: block;
 	text-decoration: none;
 }
 
@@ -21,7 +22,19 @@ nav ul ul {
 }
 
 #top-bar nav {
-	max-width: 300px;
+	max-width: 250px;
+}
+#top-bar nav li {
+	position: relative;
+}
+#top-bar nav li::after {
+	content: '|';
+	position: absolute;
+	right: -1.1em;
+	top: 0;
+}
+#top-bar nav li:last-child::after {
+	content: none;
 }
 
 #main-nav {

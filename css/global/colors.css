@@ -1,31 +1,47 @@
-/*
- * COLORS:
- * 	light-gray: #5a5a5a
- * 	dark-gray: #59585c
- * 	tan: #ffe7a5
- * 	yellow: #fecc0b
- * 	light-aqua: #b4e1e4
- * 	strong-aqua: #15aeb6;
- */
 body {
 	background-color: white;
-	color: #59585c;
 }
+#fine-print {
+	color: white;
+}
+
+.gray,
+body {
+	color: #58595b;
+}
+.gray--bg,
+#fine-print {
+	background-color: #58595b;
+}
+
+.strong-aqua,
+.btn,
 a {
-	color: #15aeb6;
+	color: #0cadb6;
 }
+.strong-aqua--bg,
+footer > hr {
+	background-color: #08adb6;
+}
+.light-aqua--bg,
+body > footer {
+	background-color: #b4e1e3;
+}
+
+.yellow--bg,
 .btn {
 	background-color: #fecc0b;
-	color: #15aeb6;
-	font-weight: bold;
 }
+
+.light-tan--bg,
 #top-bar {
-	background-color: #ffe7a5;
+	background-color: #ffe7a4;
 }
+
 #top-bar a {
 	color: inherit;
 }
+
 #top-bar a:hover {
 	color: #15aeb6;
 }
-

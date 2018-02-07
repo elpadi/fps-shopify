@@ -10,10 +10,13 @@ input {
 	visibility: visible;
 	position: absolute;
 	left: 30px;
+	height: 32px;
 }
+/*
 #top-bar input[type="search"]:focus {
-	border-bottom: 1px solid green;
+	outline: 1px solid green;
 }
+*/
 #top-bar input[type="image"] {
 	float: left;
 }
