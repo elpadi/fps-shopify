@@ -1,16 +1,22 @@
 input {
 	border-style: none;
+	outline-style: none;
 }
 
 #top-bar label {
+	display: inline-block;
+	position: relative;
+	white-space: nowrap;
+	width: 0;
 	visibility: hidden;
 }
 #top-bar input[type="search"] {
 	background-color: transparent;
 	visibility: visible;
-	position: absolute;
-	left: 30px;
 	height: 32px;
+	position: absolute;
+	left: 0;
+	top: 0;
 }
 /*
 #top-bar input[type="search"]:focus {
@@ -19,4 +25,7 @@ input {
 */
 #top-bar input[type="image"] {
 	float: left;
+	background-color: transparent;
+	height: 32px;
+	padding: 6px 3px;
 }
