@@ -6,6 +6,31 @@
 	display: block;
 }
 
+.btn {
+	display: inline-block;
+	padding: 0.5em 0.75em;
+	text-transform: uppercase;
+}
+
 body > main {
 	min-height: 100vh;
+}
+body > footer {
+	text-align: center;
+	padding-top: 20px;
+	background: transparent url(/img/decorators/repeater-wave.png) repeat-x left top;
+}
+body > footer h2,
+body > footer article p {
+	margin: 0;
+}
+body > footer article {
+	line-height: 1.4;
+}
+body > footer h2 {
+	text-transform: uppercase;
+	margin-top: 1.7em;
+}
+body > footer form {
+	margin: 1.2em auto 2em;
 }

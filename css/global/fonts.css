@@ -1,8 +1,7 @@
 .btn {
 	font-weight: bold;
-}
-input {
-	text-transform: uppercase;
+	cursor: pointer;
+	outline-style: none !important;
 }
 .sans--bold,
 input,
@@ -17,4 +16,7 @@ input,
 }
 input {
 	letter-spacing: inherit;
+}
+body > footer h2 {
+	letter-spacing: 0.1em;
 }

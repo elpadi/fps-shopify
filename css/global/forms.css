@@ -1,5 +1,6 @@
 input {
 	border-style: none;
+	height: 32px;
 }
 
 #top-bar label {
@@ -10,7 +11,7 @@ input {
 	visibility: visible;
 	position: absolute;
 	left: 30px;
-	height: 32px;
+	text-transform: uppercase;
 }
 /*
 #top-bar input[type="search"]:focus {
@@ -19,4 +20,16 @@ input {
 */
 #top-bar input[type="image"] {
 	float: left;
+}
+
+form[name="newsletter"] {
+	display: inline-block;
+	border: 1px solid green;
+}
+form[name="newsletter"] input[type="email"] {
+	padding: 0 1em 0 0.5em;
+}
+form[name="newsletter"] input[type="submit"] {
+	float: right;
+	border-left: 1px solid green;
 }
