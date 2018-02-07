@@ -1,9 +1,13 @@
 input {
 	border-style: none;
-	height: 32px;
+	outline-style: none;
 }
 
 #top-bar label {
+	display: inline-block;
+	position: relative;
+	white-space: nowrap;
+	width: 0;
 	visibility: hidden;
 }
 #top-bar input[type="search"] {
@@ -12,6 +16,7 @@ input {
 	position: absolute;
 	left: 30px;
 	text-transform: uppercase;
+	height: 32px;
 }
 /*
 #top-bar input[type="search"]:focus {
@@ -20,6 +25,9 @@ input {
 */
 #top-bar input[type="image"] {
 	float: left;
+	background-color: transparent;
+	height: 32px;
+	padding: 6px 3px;
 }
 
 form[name="newsletter"] {
