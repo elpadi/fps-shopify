@@ -20,5 +20,6 @@
 		<link rel="stylesheet" href="css/global/forms.css">
 		<link rel="stylesheet" href="css/global/logo.css">
 		<link rel="stylesheet" href="css/global/top-bar.css">
+		<link rel="stylesheet" href="css/global/footer.css">
 	</head>
 	<body>
