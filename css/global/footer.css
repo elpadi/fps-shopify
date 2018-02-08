@@ -22,6 +22,26 @@ body > footer form {
 	margin: 1.2em auto 2em;
 }
 
+#footer-cols {
+	display: flex;
+	justify-content: space-between;
+	font-size: 0.9em;
+}
+#footer-cols > article,
+#footer-cols > nav,
+#footer-cols > section {
+	flex-basis: 33.33%;
+	flex-shrink: 1;
+}
+#footer-cols > article,
+#footer-cols > section {
+	max-width: 250px;
+	flex-shrink: 0;
+}
+#footer-cols > section {
+	text-align: left;
+	flex-shrink: 0;
+}
 #footer-cols h2 {
 	font-size: 1.1em;
 	margin-top: 1em;
@@ -37,4 +57,23 @@ body > footer form {
 }
 #footer-cols p:first-child {
 	margin-top: 0.6em;
+}
+#footer-cols h2 > a {
+	text-transform: none;
+	font-size: 0.9em;
+}
+#footer-cols ul {
+	margin: 0;
+	padding: 0;
+}
+#footer-cols li {
+}
+#footer-cols > section ul {
+	margin-top: 1em;
+	word-spacing: 7px;
+}
+#footer-cols > section li {
+	display: inline-block;
+	border: 1px solid aqua;
+	margin-bottom: 10px;
 }

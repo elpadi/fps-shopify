@@ -25,6 +25,7 @@ footer > hr,
 	background-color: #08adb6;
 }
 footer > hr,
+body #footer-cols > section li,
 .strong-aqua--border {
 	border-color: #08adb6;
 }
