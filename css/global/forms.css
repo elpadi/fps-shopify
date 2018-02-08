@@ -18,6 +18,7 @@ input {
 	left: 0;
 	text-transform: uppercase;
 	height: 32px;
+	font-weight: bold;
 }
 /*
 #top-bar input[type="search"]:focus {

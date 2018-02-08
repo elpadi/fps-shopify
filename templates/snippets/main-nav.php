@@ -3,6 +3,8 @@
 		<li><a href="/collection.html">Collections</a>
 			<ul>
 				<li><a href="/collection.html">Sankaty</a>
+				<li><a href="/collection.html">Sankaty A</a>
+				<li><a href="/collection.html">Sankaty B</a>
 			</ul>
 		</li>
 		<li><a href="/collection.html">Home Goods</a></li>

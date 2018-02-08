@@ -21,24 +21,10 @@ input,
 	font-family: 'FuturaBT-Book',sans-serif;
 }
 #footer-cols h2,
+#main-nav,
 .btn,
 #top-bar,
 .sans--bold {
 	font-family: "FuturaBT-Bold", sans-serif;
 }
 
-.btn {
-	cursor: pointer;
-	outline-style: none !important;
-}
-
-#top-bar {
-	font-size: 0.8em;
-	letter-spacing: 1px;
-}
-input {
-	letter-spacing: inherit;
-}
-body > footer h2 {
-	letter-spacing: 0.1em;
-}

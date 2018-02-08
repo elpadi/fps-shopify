@@ -15,8 +15,26 @@ a {
 	display: inline-block;
 	padding: 0.5em 1em;
 	text-transform: uppercase;
+	cursor: pointer;
+	outline-style: none !important;
+}
+input {
+	letter-spacing: inherit;
+}
+body > footer h2 {
+	letter-spacing: 0.1em;
 }
 
 body > main {
 	min-height: 100vh;
+}
+body > main,
+footer hr,
+#top-bar > main,
+#footer-cols,
+#main-nav,
+.main-width {
+	max-width: 900px;
+	margin-left: auto;
+	margin-right: auto;
 }

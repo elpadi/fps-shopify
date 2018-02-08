@@ -13,6 +13,10 @@ body,
 .gray--bg {
 	background-color: #58595b;
 }
+body #main-nav,
+.gray--border {
+	border-color: #58595b;
+}
 
 #footer-cols main,
 .btn,
@@ -34,6 +38,7 @@ body > footer,
 	background-color: #b4e1e3;
 }
 
+#main-nav ul ul,
 .btn,
 .yellow--bg {
 	background-color: #fecc0b;
