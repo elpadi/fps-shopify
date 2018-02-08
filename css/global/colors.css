@@ -5,36 +5,40 @@ body {
 	color: white;
 }
 
-.gray,
-body {
+body,
+.gray {
 	color: #58595b;
 }
-.gray--bg,
-#fine-print {
+#fine-print,
+.gray--bg {
 	background-color: #58595b;
 }
 
-.strong-aqua,
 .btn,
-a {
+a,
+.strong-aqua {
 	color: #0cadb6;
 }
-.strong-aqua--bg,
-footer > hr {
+footer > hr,
+.strong-aqua--bg {
 	background-color: #08adb6;
 }
-.light-aqua--bg,
-body > footer {
+footer > hr,
+.strong-aqua--border {
+	border-color: #08adb6;
+}
+body > footer,
+.light-aqua--bg {
 	background-color: #b4e1e3;
 }
 
-.yellow--bg,
-.btn {
+.btn,
+.yellow--bg {
 	background-color: #fecc0b;
 }
 
-.light-tan--bg,
-#top-bar {
+#top-bar,
+.light-tan--bg {
 	background-color: #ffe7a4;
 }
 

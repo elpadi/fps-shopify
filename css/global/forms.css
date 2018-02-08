@@ -34,6 +34,9 @@ form[name="newsletter"] {
 	display: inline-block;
 	border: 1px solid green;
 }
+form[name="newsletter"] input {
+	height: 37px;
+}
 form[name="newsletter"] input[type="email"] {
 	padding: 0 1em 0 0.5em;
 }

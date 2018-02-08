@@ -11,7 +11,7 @@
 
 .btn {
 	display: inline-block;
-	padding: 0.5em 0.75em;
+	padding: 0.5em 1em;
 	text-transform: uppercase;
 }
 
@@ -29,6 +29,9 @@ body > footer article p {
 }
 body > footer article {
 	line-height: 1.4;
+}
+body > footer article > header {
+	line-height: 1.6;
 }
 body > footer h2 {
 	text-transform: uppercase;
