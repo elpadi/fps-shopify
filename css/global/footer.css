@@ -24,9 +24,12 @@ body > footer form {
 
 #footer-cols h2 {
 	font-size: 1.1em;
+	margin-top: 1em;
 }
+#footer-cols ul,
 #footer-cols main {
 	font-size: 1.1em;
+	font-weight: bold;
 	line-height: 1.6;
 }
 #footer-cols p {

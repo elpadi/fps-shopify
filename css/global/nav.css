@@ -44,3 +44,13 @@ nav ul ul {
 	border-right-style: none;
 	padding: 0.5em 0 0.75em;
 }
+
+#footer-cols nav {
+	text-transform: none;
+}
+#footer-cols nav ul {
+	display: block;
+}
+#footer-cols nav li {
+	display: block;
+}
