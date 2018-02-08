@@ -26,6 +26,7 @@ body > footer form {
 	display: flex;
 	justify-content: space-between;
 	font-size: 0.9em;
+	padding-bottom: 4%;
 }
 #footer-cols > article,
 #footer-cols > nav,
@@ -76,4 +77,14 @@ body > footer form {
 	display: inline-block;
 	border: 1px solid aqua;
 	margin-bottom: 10px;
+}
+
+#fine-print {
+	text-transform: uppercase;
+	font-size: 0.6em;
+	line-height: 4;
+	margin-bottom: 0;
+}
+#fine-print a {
+	color: inherit;
 }
