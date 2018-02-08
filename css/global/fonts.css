@@ -5,7 +5,7 @@
 @font-face {font-family: 'FuturaBT-Bold';src: url('/css/fonts/33649D_1_0.eot');src: url('/css/fonts/33649D_1_0.eot?#iefix') format('embedded-opentype'),url('/css/fonts/33649D_1_0.woff2') format('woff2'),url('/css/fonts/33649D_1_0.woff') format('woff'),url('/css/fonts/33649D_1_0.ttf') format('truetype');}
 @font-face {font-family: 'FuturaBT-Book';src: url('/css/fonts/33649D_2_0.eot');src: url('/css/fonts/33649D_2_0.eot?#iefix') format('embedded-opentype'),url('/css/fonts/33649D_2_0.woff2') format('woff2'),url('/css/fonts/33649D_2_0.woff') format('woff'),url('/css/fonts/33649D_2_0.ttf') format('truetype');}
 
-p,
+body > main,
 .serif {
 	font-family: 'AmericanTypewriterITCPro-Med',serif;
 }
@@ -14,11 +14,12 @@ h1, h2, h3, h4,
 	font-family: 'AmericanTypewriterITCPro-Bold',serif;
 }
 
-body > footer p,
+body > footer,
 input,
 .sans {
 	font-family: 'FuturaBT-Book',sans-serif;
 }
+#footer-cols h2,
 .btn,
 #top-bar,
 .sans--bold {

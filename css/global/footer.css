@@ -22,3 +22,16 @@ body > footer form {
 	margin: 1.2em auto 2em;
 }
 
+#footer-cols h2 {
+	font-size: 1.1em;
+}
+#footer-cols main {
+	font-size: 1.1em;
+	line-height: 1.6;
+}
+#footer-cols p {
+	margin-top: 1em;
+}
+#footer-cols p:first-child {
+	margin-top: 0.6em;
+}
