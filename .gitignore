@@ -1,3 +1,4 @@
 img/*
 !img/decorators
 !img/icons
+css/fonts/*
