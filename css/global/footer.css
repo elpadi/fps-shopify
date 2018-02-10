@@ -68,6 +68,9 @@ body > footer form {
 	margin-top: 1.1em;
 	font-size: 1.5em;
 }
+#footer-cols > article li {
+	display: inline-block;
+}
 #footer-cols > article ul a {
 	padding: 0.2em;
 }
@@ -81,22 +84,13 @@ body > footer form {
 	text-transform: none;
 	font-size: 0.9em;
 }
-#footer-cols ul {
-	margin: 0;
-	padding: 0;
-	list-style-type: none;
-}
-#footer-cols li {
-	display: inline-block;
-}
 #footer-cols > section ul {
 	margin-top: 1em;
-	word-spacing: 7px;
 }
-#footer-cols > section li {
-	display: inline-block;
-	border: 1px solid aqua;
-	margin-bottom: 10px;
+#footer-cols > section img {
+	width: 100px;
+	height: 100px;
+	object-fit: cover;
 }
 
 #fine-print {

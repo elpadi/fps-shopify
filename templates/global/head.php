@@ -13,6 +13,7 @@
 
 		<link rel="stylesheet" href="css/vendor/normalize.css">
 		<link rel="stylesheet" href="css/vendor/initial.css">
+		<link rel="stylesheet" href="css/layouts/image-grid.css">
 		<link rel="stylesheet" href="css/global/general.css">
 		<link rel="stylesheet" href="css/global/fonts.css">
 		<link rel="stylesheet" href="css/global/colors.css">
