@@ -6,6 +6,7 @@ body {
 }
 
 body,
+#footer-cols > article ul a,
 .gray {
 	color: #58595b;
 }

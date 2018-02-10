@@ -1,8 +1,19 @@
 body > footer {
+	position: relative;
 	text-align: center;
 	padding-top: 20px;
 	background-image: url(/img/decorators/repeater-wave.png);
 	background-repeat: repeat-x;
+}
+body > footer::before {
+	content:'';
+	background: transparent url(/img/logo.svg) no-repeat center top / auto 150px;
+	position: absolute;
+	width: 100px;
+	height: 100px;
+	top: -55px;
+	left: 50%;
+	margin-left: -360px;
 }
 body > footer h2,
 body > footer article p {
@@ -53,6 +64,13 @@ body > footer form {
 	font-weight: bold;
 	line-height: 1.6;
 }
+#footer-cols > article ul {
+	margin-top: 1.1em;
+	font-size: 1.5em;
+}
+#footer-cols > article ul a {
+	padding: 0.2em;
+}
 #footer-cols p {
 	margin-top: 1em;
 }
@@ -66,8 +84,10 @@ body > footer form {
 #footer-cols ul {
 	margin: 0;
 	padding: 0;
+	list-style-type: none;
 }
 #footer-cols li {
+	display: inline-block;
 }
 #footer-cols > section ul {
 	margin-top: 1em;

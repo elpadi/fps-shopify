@@ -15,9 +15,9 @@
 	</main>
 	<footer>
 		<ul>
-			<li><a class="image-link" href="https://facebook.com" target="_blank" rel="nofollow"><img src="/img/icons/facebook.svg" alt="Like Us On Facebook"></a></li>
-			<li><a class="image-link" href="https://twitter.com" target="_blank" rel="nofollow"><img src="/img/icons/twitter.svg" alt="Follow Us On Twitter"></a></li>
-			<li><a class="image-link" href="https://instagram.com" target="_blank" rel="nofollow"><img src="/img/icons/instagram.svg" alt="Follow Us On Instagram"></a></li>
+			<li><a class="image-link" href="https://facebook.com" target="_blank" rel="nofollow"><span class="fab fa-facebook-f"></span></a></li>
+			<li><a class="image-link" href="https://twitter.com" target="_blank" rel="nofollow"><span class="fab fa-twitter"></span></a></li>
+			<li><a class="image-link" href="https://instagram.com" target="_blank" rel="nofollow"><span class="fab fa-instagram"></span></a></li>
 		</ul>
 	</footer>
 </article>
