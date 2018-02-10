@@ -22,5 +22,6 @@
 		<link rel="stylesheet" href="css/global/logo.css">
 		<link rel="stylesheet" href="css/global/top-bar.css">
 		<link rel="stylesheet" href="css/global/footer.css">
+		<link rel="stylesheet" href="css/pages/home.css">
 	</head>
 	<body>

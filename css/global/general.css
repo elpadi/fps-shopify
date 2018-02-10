@@ -41,3 +41,13 @@ footer hr,
 a > svg {
 	pointer-events: none;
 }
+
+nav ul,
+.horizontal-list {
+	display: flex;
+	margin: 0;
+	padding: 0;
+	justify-content: space-between;
+	list-style-type: none;
+	width: 100%;
+}

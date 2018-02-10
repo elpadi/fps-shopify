@@ -25,7 +25,8 @@
 	</section>
 	<hr>
 	<section id="home-featured">
-		<ul class="image-grid">
+		<h2>Featured Favorites</h2>
+		<ul class="image-grid horizontal-list">
 			<li>
 				<a class="image-link" href="/collection.php" title="Browse our Watercolors collection" class="grid-link text-center">
 					<img src="//cdn.shopify.com/s/files/1/0560/5901/collections/Front-Porch-Studio-Nantucket-Custom-Watercolors_grande.png?v=1485564771" alt="Watercolors" />
@@ -56,7 +57,7 @@
 			</li>
 		</ul>
 	</section>
-	<footer>
+	<footer id="home-footer">
 		<p><a class="btn" href="/products.php">Shop all products</a></p>
 	</footer>
 </main>

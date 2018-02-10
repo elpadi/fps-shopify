@@ -1,0 +1,29 @@
+#home-featured {
+	text-align: center;
+}
+#home-featured ul {
+	word-spacing: 0;
+}
+#home-featured li {
+}
+#home-featured img {
+	width: calc(25vw - 30px);
+	height: calc(25vw - 30px);
+	max-width: 200px;
+	max-height: 200px;
+	object-fit: cover;
+}
+#home-featured h3 {
+	font-size: 0.9em;
+	margin-bottom: 0;
+}
+#home-featured p {
+	font-size: 0.8em;
+	margin-top: 0.1em;
+	font-weight: bold;
+}
+
+#home-footer {
+	text-align: center;
+	margin: 1em 0 4em;
+}
