@@ -22,6 +22,7 @@
 		<link rel="stylesheet" href="css/global/logo.css">
 		<link rel="stylesheet" href="css/global/top-bar.css">
 		<link rel="stylesheet" href="css/global/footer.css">
-		<link rel="stylesheet" href="css/pages/home.css">
+		<link rel="stylesheet" href="css/templates/home.css">
+		<link rel="stylesheet" href="css/templates/collection.css">
 	</head>
 	<body>

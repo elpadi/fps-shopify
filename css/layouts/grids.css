@@ -4,6 +4,7 @@
 .image-grid li {
 	margin-bottom: 10px;
 }
+.product-grid img,
 .image-grid img {
 	border: 1px solid aqua;
 }
