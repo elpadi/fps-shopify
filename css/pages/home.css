@@ -1,3 +1,47 @@
+#home-main h2,
+#home-main h3 {
+	text-transform: uppercase;
+	font-weight: normal;
+}
+
+#home-slideshow ul {
+	display: block;
+}
+#home-slideshow li {
+	position: relative;
+	display: block;
+	width: 100vw;
+	max-width: 100%;
+	height: 100vw;
+	max-height: 90vh;
+}
+#home-slideshow img {
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+#home-slideshow aside {
+	width: 220px;
+	position: absolute;
+	right: 2em;
+	top: 50%; 
+	transform: translateY(-50%);
+	margin-top: 1em;
+	text-align: center;
+	padding: 1.3em;
+	background-color: white;
+	border: 2px solid yellow;
+}
+#home-slideshow aside h3 {
+	margin: 0 0 0.5em;
+	font-size: 0.7em;
+}
+#home-slideshow aside p {
+	font-size: 1.4em;
+	margin: 0 0 0.7em;
+}
+
 #home-featured {
 	text-align: center;
 }

@@ -23,6 +23,7 @@ body #main-nav,
 .btn,
 a,
 #home-featured p,
+#home-slideshow aside p,
 .strong-aqua {
 	color: #0cadb6;
 }
@@ -40,10 +41,18 @@ body > footer,
 	background-color: #b4e1e3;
 }
 
+#home-slideshow aside h3,
+.yellow {
+	color: #fecc0b;
+}
 #main-nav ul ul,
 .btn,
 .yellow--bg {
 	background-color: #fecc0b;
+}
+body #home-slideshow aside,
+.yellow--border {
+	border-color: #fecc0b;
 }
 
 #top-bar,

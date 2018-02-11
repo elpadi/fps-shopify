@@ -43,6 +43,7 @@ a > svg {
 }
 
 nav ul,
+ul.slides,
 .horizontal-list {
 	display: flex;
 	margin: 0;
@@ -50,4 +51,15 @@ nav ul,
 	justify-content: space-between;
 	list-style-type: none;
 	width: 100%;
+}
+
+ul.image-grid,
+ul.slides {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+.image-grid > li,
+.slides > li {
+	display: inline-block;
 }

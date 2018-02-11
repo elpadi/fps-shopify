@@ -1,11 +1,7 @@
 .image-grid {
-	margin: 0;
-	padding: 0;
-	list-style-type: none;
 	word-spacing: 7px;
 }
 .image-grid li {
-	display: inline-block;
 	margin-bottom: 10px;
 }
 .image-grid img {

@@ -1,25 +1,38 @@
-<main>
+<main id="home-main" class="one-column">
 	<section id="home-slideshow" class="slideshow">
+		<h2 class="visuallyhidden">Featured Collections</h2>
 		<ul class="slides">
 			<li>
-				<a href="/collection.php" class="image-link">
-					<img src="//cdn.shopify.com/s/files/1/0560/5901/t/4/assets/slide_1.jpg?18351553496918199636" alt="fps-nantucket-watercolors" />
-				</a>
+				<img src="//cdn.shopify.com/s/files/1/0560/5901/t/4/assets/slide_1.jpg?18351553496918199636" alt="fps-nantucket-watercolors" />
+				<aside>
+					<h3>Watercolors</h3>
+					<p>Custom callout headline!</p>
+					<a href="/collection.php" class="btn">Shop now</a>
+				</aside>
 			</li>
 			<li>
-				<a href="/collection.php" class="image-link">
-					<img src="//cdn.shopify.com/s/files/1/0560/5901/t/4/assets/slide_2.jpg?18351553496918199636" alt="fps-nantucket-products" />
-				</a>
+				<img src="//cdn.shopify.com/s/files/1/0560/5901/t/4/assets/slide_2.jpg?18351553496918199636" alt="fps-nantucket-products" />
+				<aside>
+					<h3>Products</h3>
+					<p>Custom callout headline!</p>
+					<a href="/collection.php" class="btn">Shop now</a>
+				</aside>
 			</li>
 			<li>
-				<a href="/collection.php" class="image-link">
-					<img src="//cdn.shopify.com/s/files/1/0560/5901/t/4/assets/slide_3.jpg?18351553496918199636" alt="fps-nantucket-fabrics" />
-				</a>
+				<img src="//cdn.shopify.com/s/files/1/0560/5901/t/4/assets/slide_3.jpg?18351553496918199636" alt="fps-nantucket-fabrics" />
+				<aside>
+					<h3>Fabrics</h3>
+					<p>Custom callout headline!</p>
+					<a href="/collection.php" class="btn">Shop now</a>
+				</aside>
 			</li>
 			<li>
-				<a href="/collection.php" class="image-link">
-					<img src="//cdn.shopify.com/s/files/1/0560/5901/t/4/assets/slide_4.jpg?18351553496918199636" alt="fps-nantucket-watercolors" />
-				</a>
+				<img src="//cdn.shopify.com/s/files/1/0560/5901/t/4/assets/slide_4.jpg?18351553496918199636" alt="fps-nantucket-watercolors" />
+				<aside>
+					<h3>Watercolors</h3>
+					<p>Custom callout headline!</p>
+					<a href="/collection.php" class="btn">Shop now</a>
+				</aside>
 			</li>
 		</ul>
 	</section>
