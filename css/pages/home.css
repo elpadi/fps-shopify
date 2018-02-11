@@ -1,7 +1,22 @@
+#home-main > section {
+	border-top: 1px solid yellow;
+}
+#home-main > section:first-child {
+	border-style: none;
+}
 #home-main h2,
 #home-main h3 {
 	text-transform: uppercase;
 	font-weight: normal;
+}
+#home-main h2 {
+	font-size: 1.1em;
+	background-color: white;
+	position: relative;
+	bottom: 1.6em;
+	display: inline-block;
+	padding: 0 1em;
+	margin-bottom: 0;
 }
 
 #home-slideshow ul {
@@ -10,10 +25,14 @@
 #home-slideshow li {
 	position: relative;
 	display: block;
+	display: none;
 	width: 100vw;
 	max-width: 100%;
 	height: 100vw;
 	max-height: 90vh;
+}
+#home-slideshow li:first-child {
+	display: block;
 }
 #home-slideshow img {
 	display: block;

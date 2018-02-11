@@ -36,7 +36,6 @@
 			</li>
 		</ul>
 	</section>
-	<hr>
 	<section id="home-featured">
 		<h2>Featured Favorites</h2>
 		<ul class="image-grid horizontal-list">

@@ -23,6 +23,7 @@ body #main-nav,
 .btn,
 a,
 #home-featured p,
+#home-main h2,
 #home-slideshow aside p,
 .strong-aqua {
 	color: #0cadb6;
@@ -51,6 +52,7 @@ body > footer,
 	background-color: #fecc0b;
 }
 body #home-slideshow aside,
+body #home-main > section,
 .yellow--border {
 	border-color: #fecc0b;
 }
