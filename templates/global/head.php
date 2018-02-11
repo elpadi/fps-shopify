@@ -25,5 +25,6 @@
 		<link rel="stylesheet" href="css/templates/home.css">
 		<link rel="stylesheet" href="css/templates/collection.css">
 		<link rel="stylesheet" href="css/templates/product.css">
+		<link rel="stylesheet" href="css/templates/cart.css">
 	</head>
 	<body>
