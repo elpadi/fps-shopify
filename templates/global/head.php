@@ -24,5 +24,6 @@
 		<link rel="stylesheet" href="css/global/footer.css">
 		<link rel="stylesheet" href="css/templates/home.css">
 		<link rel="stylesheet" href="css/templates/collection.css">
+		<link rel="stylesheet" href="css/templates/product.css">
 	</head>
 	<body>
