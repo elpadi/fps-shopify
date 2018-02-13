@@ -1,18 +1,41 @@
-<main id="collection-main" class="template-main single-column">
-	<header>
-		<img src="/img/collection.jpg" alt="Collection Background">
-		<h1>Collection Title</h1>
-	</header>
-	<main>
-		<h2>Sub Heading</h2>
-		<ul class="product-grid">
-			<li>
-				<article>
-					<a class="image-link" href="/product.php"><img src="/img/product.jpg" alt="Product Image"></a>
-					<h3>Product Title</h3>
-					<h4>$36.00</h4>
-				</article>
-			</li>
+<main id="product-main" class="template-main single-column">
+	<nav>
+		<ul>
+			<li><a href="collection.php">Collection</a></li>
+			<li><a href="collection.php">Sub-Collection</a></li>
+			<li>Product Name</li>
 		</ul>
-	</main>
+	</nav>
+	<article itemscope itemtype="http://schema.org/Product">
+		<meta itemprop="url" content="https://front-porch-studio-nantucket-2.myshopify.com/products/3-x-3-watercolor-of-nantucket-island">
+		<meta itemprop="image" content="//cdn.shopify.com/s/files/1/0560/5901/products/IMG_7107_grande.jpg?v=1510769812">
+		<aside>
+			<ul>
+				<li><img src="/img/shopify/IMG_7107_grande.jpg" alt="" data-zoom="//cdn.shopify.com/s/files/1/0560/5901/products/IMG_7107_1024x1024.jpg?v=1510769812" data-image-id="149277507587"></li>
+				<li><img src="/img/shopify/IMG_7107_grande.jpg" alt="" data-zoom="//cdn.shopify.com/s/files/1/0560/5901/products/IMG_7107_1024x1024.jpg?v=1510769812" data-image-id="149277507587"></li>
+				<li><img src="/img/shopify/IMG_7107_grande.jpg" alt="" data-zoom="//cdn.shopify.com/s/files/1/0560/5901/products/IMG_7107_1024x1024.jpg?v=1510769812" data-image-id="149277507587"></li>
+			</ul>
+		</aside>
+		<main>
+			<header>
+				<h3 itemprop="brand" class="visuallyhidden">Front Porch Studio Nantucket</h3>
+				<h1 itemprop="name">3&quot;&quot; x 3&quot;&quot; watercolor of Nantucket Island</h1>
+				<p itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+					<meta itemprop="priceCurrency" content="USD">
+					<link itemprop="availability" href="http://schema.org/InStock">
+					<span itemprop="price">$40.00</span>
+				</p>
+			</header>
+			<div itemprop="description">
+				<p>
+					Wee tiny depiction of Nantucket, a compass Rose and the incoming ferry. I call this one "Small island. Big Heart. " - because it's true. Framed in a Rustic and Refined handmade Alderwood frame with a standing peg: it can be wall hung as well.
+				</p>
+			</div>
+			<form action="/cart/add" method="post" enctype="multipart/form-data" id="AddToCartForm">
+				<input type="hidden" name="id" value="205984235523">
+				<label><input type="number" name="quantity" id="Quantity" value="1" min="1"> Quantity</label>
+				<input type="submit" class="btn" name="add" id="AddToCart" value="Add To Bag">
+			</form>
+		</main>
+	</article>
 </main>
