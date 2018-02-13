@@ -7,6 +7,7 @@ body {
 
 body,
 #footer-cols > article ul a,
+.image-grid a,
 .gray {
 	color: #58595b;
 }
@@ -22,8 +23,9 @@ body #main-nav,
 #footer-cols main,
 .btn,
 a,
-#home-featured p,
+.image-grid p,
 #home-main h2,
+#collection-main h2,
 #home-slideshow aside p,
 .strong-aqua {
 	color: #0cadb6;
