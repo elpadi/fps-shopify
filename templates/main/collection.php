@@ -5,34 +5,62 @@
 	</header>
 	<main>
 		<h2>Sub Heading</h2>
-		<ul class="product-grid">
+		<ul class="image-grid horizontal-list">
 			<li>
 				<a class="image-link" href="/product.php">
 					<img src="/img/shopify/IMG_7107_grande.jpg" alt="Product Image">
 				</a>
 				<h3><a href="/product.php">Watercolor of Nantucket Island</a></h3>
-				<h4>$36.00</h4>
+				<p>$36.00</p>
 			</li>
 			<li>
 				<a class="image-link" href="/product.php">
 					<img src="/img/shopify/IMG_7135_grande.jpg" alt="Product Image">
 				</a>
 				<h3><a href="/product.php">Blueberry Basket Watercolor</a></h3>
-				<h4>$36.00</h4>
+				<p>$36.00</p>
 			</li>
 			<li>
 				<a class="image-link" href="/product.php">
 					<img src="/img/shopify/IMG_0581_grande.jpg" alt="Product Image">
 				</a>
-				<h3><a href="/product.php">4&quo;&quo; x 4&quo;&quo; &ldquo;Hello Friend&rdquo; Watercolor</a></h3>
-				<h4>$36.00</h4>
+				<h3><a href="/product.php">4" x 4" &ldquo;Hello Friend&rdquo; Watercolor</a></h3>
+				<p>$36.00</p>
 			</li>
 			<li>
 				<a class="image-link" href="/product.php">
 					<img src="/img/shopify/IMG_0225_grande.jpg" alt="Product Image">
 				</a>
-				<h3><a href="/product.php">4&quo;&quo; x 4&quo;&quo; Watercolor &ldquo;Sweet Isle Of Mine&rdquo;</a></h3>
-				<h4>$36.00</h4>
+				<h3><a href="/product.php">4" x 4" Watercolor &ldquo;Sweet Isle Of Mine&rdquo;</a></h3>
+				<p>$36.00</p>
+			</li>
+			<li>
+				<a class="image-link" href="/product.php">
+					<img src="/img/shopify/IMG_0581_grande.jpg" alt="Product Image">
+				</a>
+				<h3><a href="/product.php">4" x 4" &ldquo;Hello Friend&rdquo; Watercolor</a></h3>
+				<p>$36.00</p>
+			</li>
+			<li>
+				<a class="image-link" href="/product.php">
+					<img src="/img/shopify/IMG_7107_grande.jpg" alt="Product Image">
+				</a>
+				<h3><a href="/product.php">Watercolor of Nantucket Island</a></h3>
+				<p>$36.00</p>
+			</li>
+			<li>
+				<a class="image-link" href="/product.php">
+					<img src="/img/shopify/IMG_0581_grande.jpg" alt="Product Image">
+				</a>
+				<h3><a href="/product.php">4" x 4" &ldquo;Hello Friend&rdquo; Watercolor</a></h3>
+				<p>$36.00</p>
+			</li>
+			<li>
+				<a class="image-link" href="/product.php">
+					<img src="/img/shopify/IMG_7135_grande.jpg" alt="Product Image">
+				</a>
+				<h3><a href="/product.php">Blueberry Basket Watercolor</a></h3>
+				<p>$36.00</p>
 			</li>
 		</ul>
 	</main>
