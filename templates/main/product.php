@@ -9,17 +9,17 @@
 	<article itemscope itemtype="http://schema.org/Product">
 		<meta itemprop="url" content="https://front-porch-studio-nantucket-2.myshopify.com/products/3-x-3-watercolor-of-nantucket-island">
 		<meta itemprop="image" content="//cdn.shopify.com/s/files/1/0560/5901/products/IMG_7107_grande.jpg?v=1510769812">
-		<aside>
-			<ul>
+		<aside id="product-images">
+			<ul class="slides">
 				<li><img src="/img/shopify/IMG_7107_grande.jpg" alt="" data-zoom="//cdn.shopify.com/s/files/1/0560/5901/products/IMG_7107_1024x1024.jpg?v=1510769812" data-image-id="149277507587"></li>
 				<li><img src="/img/shopify/IMG_7107_grande.jpg" alt="" data-zoom="//cdn.shopify.com/s/files/1/0560/5901/products/IMG_7107_1024x1024.jpg?v=1510769812" data-image-id="149277507587"></li>
 				<li><img src="/img/shopify/IMG_7107_grande.jpg" alt="" data-zoom="//cdn.shopify.com/s/files/1/0560/5901/products/IMG_7107_1024x1024.jpg?v=1510769812" data-image-id="149277507587"></li>
 			</ul>
 		</aside>
-		<main>
+		<main id="product-info">
 			<header>
 				<h3 itemprop="brand" class="visuallyhidden">Front Porch Studio Nantucket</h3>
-				<h1 itemprop="name">3&quot;&quot; x 3&quot;&quot; watercolor of Nantucket Island</h1>
+				<h1 itemprop="name">3" x 3" watercolor of Nantucket Island</h1>
 				<p itemprop="offers" itemscope itemtype="http://schema.org/Offer">
 					<meta itemprop="priceCurrency" content="USD">
 					<link itemprop="availability" href="http://schema.org/InStock">

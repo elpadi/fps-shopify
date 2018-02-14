@@ -69,9 +69,15 @@ ul.slides {
 	list-style-type: none;
 	font-size: 0.8em;
 }
-.image-grid > li,
-.slides > li {
+.image-grid > li {
 	display: inline-block;
+}
+.slides > li {
+	display: block;
+	display: none;
+}
+.slides > li:first-child {
+	display: block;
 }
 .image-grid > li {
 	width: calc(25vw - 30px);

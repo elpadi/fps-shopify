@@ -1,0 +1,44 @@
+#product-main {
+	padding-top: 3%;
+}
+
+#product-main > nav {
+	font-size: 0.8em;
+	margin-bottom: 1.3em;
+}
+#product-main > nav ul {
+	display: block;
+}
+#product-main > nav li {
+	display: inline-block;
+}
+#product-main > nav li::after {
+	content: ' /';
+	margin: 0 2px;
+}
+#product-main > nav li:last-child::after {
+	display: none;
+}
+#product-main > nav a {
+	display: inline;
+}
+
+#product-main > article {
+	display: flex;
+	justify-content: space-between;
+}
+#product-main > article > aside {
+	flex: 0 1 46%;
+}
+#product-main > article > main {
+	flex: 0 1 49.5%;
+}
+
+#product-images img {
+	border: 1px solid gray;
+	padding: 8px;
+}
+
+#product-info h1 {
+	margin-top: 0;
+}
