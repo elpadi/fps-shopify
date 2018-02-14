@@ -7,13 +7,19 @@
 
 body > main,
 #home-slideshow aside p,
+h1,
 .serif {
 	font-family: 'AmericanTypewriterITCPro-Med',serif;
 }
-h1, h2, h3, h4,
+h2, h3, h4,
 .serif--bold {
 	font-family: 'AmericanTypewriterITCPro-Bold',serif;
+	font-weight: normal;
 	letter-spacing: 0.15em;
+}
+h1 {
+	font-weight: bold;
+	letter-spacing: 0.05em;
 }
 
 body > footer,
@@ -22,6 +28,7 @@ input,
 #collection-main h2,
 .image-grid h3,
 #footer-cols h2 > a,
+#cart-main,
 .sans {
 	font-family: 'FuturaBT-Book',sans-serif;
 }

@@ -1,0 +1,76 @@
+#cart-main {
+	padding-top: 4%;
+}
+#cart-main h1 {
+	font-size: 1.5em;
+	margin: 0;
+	float: left;
+}
+#cart-main form {
+	clear: both;
+}
+#cart-main article:first-child {
+	border-top: 1px solid gray;
+}
+#cart-main p {
+	display: flex;
+	align-items: center;
+}
+#cart-main p > span {
+	flex: 1 1 100px;
+	min-height: 50px;
+	line-height: 50px;
+}
+#cart-main p > span.image {
+	flex: 0 0 150px;
+}
+#cart-main p > span.title {
+	flex: 2 0 200px;
+	padding-left: 1em;
+}
+#cart-main img {
+	width: 150px;
+	height: 150px;
+	object-fit: contain;
+}
+#cart-main .remove,
+#cart-main p > .label {
+	position: relative;
+}
+#cart-main label,
+#cart-main strong {
+	position: absolute;
+	top: -103px;
+	display: none;
+}
+#cart-main label,
+#cart-main .price {
+	font-size: 0.85em;
+	font-weight: bold;
+}
+#cart-main .remove {
+	font-size: 0.9em;
+}
+#cart-main article:first-child label,
+#cart-main article:first-child strong {
+	display: inline;
+}
+#cart-main input[type="number"] {
+	width: 3em;
+	padding-left: 0.5em;
+	border: 1px solid gray;
+}
+#cart-main .quantity {
+	text-align: center;
+}
+#cart-main .quantity > label {
+	left: 0;
+	width: 100%;
+}
+#cart-main .remove,
+#cart-main .price {
+	text-align: right;
+}
+#cart-main .price strong {
+	right: 0;
+}
