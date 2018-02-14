@@ -5,7 +5,6 @@
 @font-face {font-family: 'FuturaBT-Bold';src: url('/css/fonts/33649D_1_0.eot');src: url('/css/fonts/33649D_1_0.eot?#iefix') format('embedded-opentype'),url('/css/fonts/33649D_1_0.woff2') format('woff2'),url('/css/fonts/33649D_1_0.woff') format('woff'),url('/css/fonts/33649D_1_0.ttf') format('truetype');}
 @font-face {font-family: 'FuturaBT-Book';src: url('/css/fonts/33649D_2_0.eot');src: url('/css/fonts/33649D_2_0.eot?#iefix') format('embedded-opentype'),url('/css/fonts/33649D_2_0.woff2') format('woff2'),url('/css/fonts/33649D_2_0.woff') format('woff'),url('/css/fonts/33649D_2_0.ttf') format('truetype');}
 
-body > main,
 #home-slideshow aside p,
 h1,
 .serif {
@@ -22,6 +21,7 @@ h1 {
 	letter-spacing: 0.05em;
 }
 
+body > main,
 body > footer,
 input,
 #home-main h2,
