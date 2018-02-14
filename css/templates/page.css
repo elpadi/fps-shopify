@@ -1,7 +1,7 @@
-#page-main {
+.template-main {
 	padding: 4% 0 5%;
 }
-#page-main h1 {
+.template-main > header > h1 {
 	font-size: 1.5em;
 	margin: 0 0 4%;
 }
