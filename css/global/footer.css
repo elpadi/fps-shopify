@@ -88,9 +88,21 @@ body > footer form {
 #footer-cols > section ul {
 	margin-top: 1em;
 }
-#footer-cols > section img {
-	width: 100px;
-	height: 100px;
+.instagram-showcase .image-grid {
+	word-spacing: 4px;
+}
+.instagram-showcase li {
+	border: 1px solid aqua;
+	margin-bottom: 8px;
+}
+.instagram-showcase .image-grid > li {
+	width: 120px;
+	height: 120px;
+	padding: 0;
+}
+.instagram-showcase .image-grid img {
+	width: 118px;
+	height: 118px;
 	object-fit: cover;
 }
 

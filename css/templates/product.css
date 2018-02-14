@@ -40,5 +40,23 @@
 }
 
 #product-info h1 {
-	margin-top: 0;
+	margin-top: -3px;
+	font-size: 1.4em;
+	line-height: 1.2;
+}
+#product-info p {
+	font-size: 0.9em;
+}
+#product-main header span {
+	font-size: 1.2em;
+}
+#product-info form {
+	margin-top: 2em;
+}
+#product-info form p {
+	margin-bottom: 1.2em;
+}
+#product-info input[type="number"] {
+	margin-right: 0.5em;
+	font-size: 1.1em;
 }

@@ -33,8 +33,8 @@
 			</div>
 			<form action="/cart/add" method="post" enctype="multipart/form-data" id="AddToCartForm">
 				<input type="hidden" name="id" value="205984235523">
-				<label><input type="number" name="quantity" id="Quantity" value="1" min="1"> Quantity</label>
-				<input type="submit" class="btn" name="add" id="AddToCart" value="Add To Bag">
+				<p><label><input type="number" name="quantity" id="Quantity" value="1" min="1" max="9"> Quantity</label></p>
+				<p><input type="submit" class="btn" name="add" id="AddToCart" value="Add To Bag"></p>
 			</form>
 		</main>
 	</article>

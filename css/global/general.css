@@ -33,7 +33,7 @@ body > footer h2 {
 
 body > main {
 	position: relative;
-	min-height: 100vh;
+	min-height: calc(100vh - 620px); /* Roughly the size of header + footer + fine print. */
 }
 body > main,
 footer hr,

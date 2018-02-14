@@ -18,7 +18,7 @@ h2, h3, h4,
 	letter-spacing: 0.15em;
 }
 h1 {
-	font-weight: bold;
+	font-weight: normal;
 	letter-spacing: 0.05em;
 }
 
@@ -28,6 +28,7 @@ input,
 #collection-main h2,
 .image-grid h3,
 #footer-cols h2 > a,
+#product-info,
 #cart-main,
 .sans {
 	font-family: 'FuturaBT-Book',sans-serif;
