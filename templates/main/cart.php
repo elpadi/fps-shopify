@@ -19,6 +19,9 @@
 				<span class="remove"><a href="/cart/change?line=2&quantity=0">Remove</a></span>
 			</p>
 		</article>
+		<p id="cart-totals">
+			<span class="price label"><strong>Total cost</strong> $100.00</span>
+		</p>
 		<section id="cart-bottom">
 			<div class="notes">
 				<label for="CartSpecialInstructions">Add special instructions for your order ...</label>

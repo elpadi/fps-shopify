@@ -32,6 +32,8 @@
 #cart-main img {
 	width: 150px;
 	height: 150px;
+	padding: 8px;
+	border: 1px solid gray;
 	object-fit: contain;
 }
 #cart-main .remove,
@@ -74,6 +76,13 @@
 }
 #cart-main .price strong {
 	right: 0;
+}
+
+#cart-totals {
+	display: block;
+	text-align: right;
+	border-top: 1px solid gray;
+	padding-right: 150px;
 }
 
 #cart-bottom {
