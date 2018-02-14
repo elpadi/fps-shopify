@@ -1,5 +1,6 @@
 #cart-main {
 	padding-top: 4%;
+	padding-bottom: 8%;
 }
 #cart-main h1 {
 	font-size: 1.5em;
@@ -37,8 +38,8 @@
 #cart-main p > .label {
 	position: relative;
 }
-#cart-main label,
-#cart-main strong {
+#cart-main span label,
+#cart-main span strong {
 	position: absolute;
 	top: -103px;
 	display: none;
@@ -73,4 +74,31 @@
 }
 #cart-main .price strong {
 	right: 0;
+}
+
+#cart-bottom {
+	display: flex;
+	justify-content: space-between;
+}
+#cart-bottom > .notes {
+	flex: 1 0 300px;
+	max-width: 400px;
+}
+#cart-bottom > .buttons {
+	flex: 0 0 300px;
+	text-align: right;
+	word-spacing: 10px;
+	font-size: 0.8em;
+	letter-spacing: 1px;
+}
+#cart-bottom .btn {
+	width: 140px;
+}
+#cart-bottom label {
+	display: block;
+}
+#cart-bottom textarea {
+	width: 100%;
+	margin-top: 0.5em;
+	height: 150px;
 }

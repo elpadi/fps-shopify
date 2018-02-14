@@ -19,12 +19,12 @@
 				<span class="remove"><a href="/cart/change?line=2&quantity=0">Remove</a></span>
 			</p>
 		</article>
-		<section>
-			<div>
+		<section id="cart-bottom">
+			<div class="notes">
 				<label for="CartSpecialInstructions">Add special instructions for your order ...</label>
-				<textarea name="note" class="input-full" id="CartSpecialInstructions"></textarea>
+				<textarea name="note" id="CartSpecialInstructions"></textarea>
 			</div>
-			<div>
+			<div class="buttons">
 				<input name="update" class="btn" value="Update Cart" type="submit">
 				<input name="checkout" class="btn" value="Check Out" type="submit">
 			</div>
