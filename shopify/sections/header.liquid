@@ -40,18 +40,19 @@
 				{% endif %}
 				<li>
 					<a href="/cart">
-						{% include 'icon-cart' %}
-						{{ 'layout.cart.title' | t }}
+						{{ 'layout.cart.title' | t }}<span class="item-count visuallyhidden">
 						({{ cart.item_count }} {{ 'layout.cart.items_count' | t: count: cart.item_count }})
+						</span>{% include 'icon-cart' %}
 					</a>
 				</li>
 			</ul>
 		</nav>
 	</section><!-- end #top-bar -->
-	<h1 itemscope itemtype="http://schema.org/Organization">
+	<h1 id="logo" itemscope itemtype="http://schema.org/Organization">
 		<a href="/" itemprop="url" class="site-logo image-link">
 			<img itemprop="logo" src="{{ 'icon-logo.svg' | asset_url }}" alt="{{ shop.name }}">
 		</a>
+		{% include 'logo-headline' %}
 	</h1>
   <nav role="navigation" id="main-nav">
     <ul class="site-nav">

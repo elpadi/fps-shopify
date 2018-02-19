@@ -202,7 +202,7 @@ input.btn {
 	border-style: none;
 	visibility: visible;
 	position: absolute;
-	left: 5.3em;
+	left: 4.6em;
 	top: 0;
 	text-transform: uppercase;
 	height: 32px;
@@ -213,21 +213,31 @@ input.btn {
 	background-color: transparent;
 	padding: 6px 3px;
 }
+#top-bar form .btn svg {
+	width: 15px;
+}
 
 
 #logo {
-	text-align: center;
-}
-#logo h1 {
+	position: relative;
 	margin: 0.67em 0 0.4em;
+	text-align: center;
 }
 #logo img {
 	height: 4.5em;
 }
+#logo svg {
+	position: absolute;
+	right: 0;
+	bottom: 40%;
+}
+#logo text {
+	font-size: 14px;
+}
 
 
 #top-bar nav {
-	max-width: 214px;
+	width: auto;
 }
 #top-bar nav li {
 	position: relative;
@@ -241,6 +251,9 @@ input.btn {
 }
 #top-bar nav li:last-child::after {
 	content: none;
+}
+#top-bar nav li:last-child svg {
+	margin-left: 5px;
 }
 
 #main-nav {
@@ -323,6 +336,9 @@ h1,
 .strong-aqua {
 	color: #0cadb6;
 }
+#logo text {
+	fill: #0cadb6;
+}
 footer > hr,
 .strong-aqua--bg {
 	background-color: #08adb6;
@@ -395,6 +411,7 @@ input,
 #footer-cols h2 > a,
 #product-info,
 #cart-main,
+#logo text,
 .sans {
 	font-family: 'FuturaBT-Book',sans-serif;
 }
