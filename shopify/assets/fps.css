@@ -1,0 +1,409 @@
+
+/*
+ * =======================================================
+ * GENERAL STYLES
+ * =======================================================
+ */
+* {
+	box-sizing: border-box;
+}
+a {
+	text-decoration: none;
+}
+img,
+video,
+object,
+iframe {
+	max-width: 100%;
+}
+.image-link {
+	display: inline-block;
+}
+.image-link img {
+	display: block;
+}
+
+.btn {
+	display: inline-block;
+	padding: 0.5em 1em;
+	text-transform: uppercase;
+	cursor: pointer;
+	outline-style: none !important;
+	border-style: none;
+}
+
+input {
+	outline-style: none !important;
+	letter-spacing: inherit;
+}
+body > footer h2 {
+	letter-spacing: 0.1em;
+}
+
+body > main {
+	position: relative;
+	min-height: calc(100vh - 620px); /* Roughly the size of header + footer + fine print. */
+}
+body > main,
+footer hr,
+#top-bar > main,
+#footer-cols,
+#main-nav,
+.main-width {
+	max-width: 900px;
+	margin-left: auto;
+	margin-right: auto;
+}
+a > svg {
+	pointer-events: none;
+}
+
+nav {
+	width: 100%;
+	text-transform: uppercase;
+}
+nav a {
+	display: block;
+	text-decoration: none;
+}
+
+nav ul ul {
+	display: block;
+	display: none; /* Update with js */
+}
+nav ul ul a {
+	padding: 1em;
+}
+
+nav ul,
+ul.slides,
+.product-grid,
+.horizontal-list {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0;
+	padding: 0;
+	justify-content: space-between;
+	list-style-type: none;
+	width: 100%;
+}
+
+ul.image-grid,
+ul.slides {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	font-size: 0.8em;
+}
+.image-grid > li {
+	display: inline-block;
+}
+.slides > li {
+	display: block;
+	display: none;
+}
+.slides > li:first-child {
+	display: block;
+}
+.image-grid > li {
+	width: calc(25vw - 30px);
+	max-width: 200px;
+	padding: 1em;
+}
+.image-grid h3 {
+	font-size: 0.9em;
+	font-weight: normal;
+	text-transform: none;
+	margin-bottom: 0;
+}
+.image-grid p {
+	font-size: 0.8em;
+	margin-top: 0.1em;
+	font-weight: bold;
+}
+.image-grid img {
+	width: 100%;
+	height: calc(25vw - 30px);
+	object-fit: contain;
+}
+
+#home-main > section,
+#collection-main > main,
+.heading-with-bar {
+	border-top: 1px solid yellow;
+}
+#home-main h2,
+#collection-main h2,
+.heading-with-bar h2 {
+	font-size: 1.1em;
+	background-color: white;
+	position: relative;
+	bottom: 1.6em;
+	display: inline-block;
+	padding: 0 1em;
+	margin-bottom: 0;
+}
+
+body > header input,
+body > footer input {
+	border-style: none;
+	outline-style: none;
+	height: 32px;
+}
+input[type="text"],
+input[type="number"],
+input[type="email"],
+input[type="search"] {
+	padding: 0.3em 0.6em;
+}
+input[type="number"] {
+	width: 3.2em;
+	padding-right: 0;
+	text-align: center;
+}
+input[type="number"][max="9"] {
+	width: 2.7em;
+}
+input.btn {
+	border-style: none;
+}
+
+/*
+ * =======================================================
+ * HEADER STYLES
+ * =======================================================
+ */
+#top-bar {
+	font-size: 0.7em;
+	height: 32px;
+	line-height: 32px;
+	text-transform: uppercase;
+	padding: 0 3em;
+	letter-spacing: 1px;
+}
+#top-bar {
+}
+#top-bar form {
+	float: left;
+}
+#top-bar nav {
+	float: right;
+}
+
+#top-bar label {
+	display: inline-block;
+	position: relative;
+	white-space: nowrap;
+	width: 0;
+	visibility: hidden;
+}
+#top-bar input[type="search"] {
+	background-color: transparent;
+	border-style: none;
+	visibility: visible;
+	position: absolute;
+	left: 5.3em;
+	top: 0;
+	text-transform: uppercase;
+	height: 32px;
+	font-weight: bold;
+}
+#top-bar form .btn {
+	float: left;
+	background-color: transparent;
+	padding: 6px 3px;
+}
+
+
+#logo {
+	text-align: center;
+}
+#logo h1 {
+	margin: 0.67em 0 0.4em;
+}
+#logo img {
+	height: 4.5em;
+}
+
+
+#top-bar nav {
+	max-width: 214px;
+}
+#top-bar nav li {
+	position: relative;
+}
+#top-bar nav li::after {
+	content: '|';
+	font: lighter 1.4em/1.9 sans-serif;
+	position: absolute;
+	top: 0;
+	right: -0.8em;
+}
+#top-bar nav li:last-child::after {
+	content: none;
+}
+
+#main-nav {
+	border-top: 1px solid gray;
+	letter-spacing: 2px;
+	font-size: 0.9em;
+	height: 2.7em;
+	overflow: visible;
+}
+#main-nav a {
+	padding: 0.5em 0.5em 0.75em;
+}
+
+#footer-cols nav {
+	text-transform: none;
+}
+#footer-cols nav ul {
+	display: block;
+}
+#footer-cols nav li {
+	display: block;
+}
+
+/*
+ * =======================================================
+ * FOOTER STYLES
+ * =======================================================
+ */
+form[name="newsletter"] {
+	display: inline-block;
+	border: 1px solid green;
+}
+form[name="newsletter"] input {
+	height: 37px;
+}
+form[name="newsletter"] input[type="email"] {
+	padding: 0 1em 0 0.5em;
+}
+form[name="newsletter"] input[type="submit"] {
+	float: right;
+	border-left: 1px solid green;
+}
+
+/*
+ * =======================================================
+ * COLORS
+ * =======================================================
+ */
+body {
+	background-color: white;
+}
+#fine-print {
+	color: white;
+}
+
+body,
+#footer-cols > article ul a,
+.image-grid a,
+.gray {
+	color: #58595b;
+}
+#fine-print,
+.gray--bg {
+	background-color: #58595b;
+}
+body #main-nav,
+.gray--border {
+	border-color: #58595b;
+}
+
+#footer-cols main,
+.btn,
+a,
+h1,
+.image-grid p,
+#home-main h2,
+#collection-main h2,
+#home-slideshow aside p,
+#product-main header span,
+.strong-aqua {
+	color: #0cadb6;
+}
+footer > hr,
+.strong-aqua--bg {
+	background-color: #08adb6;
+}
+footer > hr,
+.instagram-showcase .image-grid li,
+.strong-aqua--border {
+	border-color: #08adb6;
+}
+body > footer,
+.light-aqua--bg {
+	background-color: #b4e1e3;
+}
+
+#home-slideshow aside h3,
+.yellow {
+	color: #fecc0b;
+}
+#main-nav ul ul,
+.btn,
+.yellow--bg {
+	background-color: #fecc0b;
+}
+body #home-slideshow aside,
+body #home-main > section,
+.yellow--border {
+	border-color: #fecc0b;
+}
+
+#top-bar,
+.light-tan--bg {
+	background-color: #ffe7a4;
+}
+
+#top-bar a {
+	color: inherit;
+}
+
+#top-bar a:hover {
+	color: #15aeb6;
+}
+
+/*
+ * =======================================================
+ * FONTS
+ * =======================================================
+ */
+#home-slideshow aside p,
+h1,
+.serif {
+	font-family: 'AmericanTypewriterITCPro-Med',serif;
+}
+h2, h3, h4,
+.serif--bold {
+	font-family: 'AmericanTypewriterITCPro-Bold',serif;
+	font-weight: normal;
+	letter-spacing: 0.15em;
+}
+h1 {
+	font-weight: normal;
+	letter-spacing: 0.05em;
+}
+
+body > main,
+body > footer,
+input,
+#home-main h2,
+#collection-main h2,
+.image-grid h3,
+#footer-cols h2 > a,
+#product-info,
+#cart-main,
+.sans {
+	font-family: 'FuturaBT-Book',sans-serif;
+}
+#footer-cols h2,
+#home-slideshow aside h3,
+#main-nav,
+.btn,
+#top-bar,
+.sans--bold {
+	font-family: "FuturaBT-Bold", sans-serif;
+}
+

@@ -7,6 +7,11 @@
   <meta name="theme-color" content="{{ settings.color_primary }}">
   <link rel="canonical" href="{{ canonical_url }}">
 
+	{{ 'normalize.css' | asset_url | stylesheet_tag }}
+	{{ 'initial.css' | asset_url | stylesheet_tag }}
+	{{ 'fonts.css' | asset_url | stylesheet_tag }}
+	{{ 'fps.css' | asset_url | stylesheet_tag }}
+
   {% if settings.favicon != blank %}
     <link rel="shortcut icon" href="{{ settings.favicon | img_url: '32x32' }}" type="image/png">
   {% endif %}
