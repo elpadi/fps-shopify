@@ -1,4 +1,9 @@
-<footer>
+<style>
+#main-footer {background-image:url({{ 'repeater-wave.png' | asset_url }});}
+#main-footer::before {background-image: url({{ 'icon-logo.svg' | asset_url }});}
+</style>
+<footer id="main-footer" style="background-image:url({{ 'repeater-wave.png' | asset_url }});">
+	{% include 'newsletter-prompt' %}
 
   {%- assign social_accounts = 'Facebook, Twitter, Pinterest, Instagram, Snapchat, Tumblr, YouTube, Vimeo,' | split: ', ' -%}
   <ul>
