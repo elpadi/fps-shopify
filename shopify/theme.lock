@@ -42,7 +42,7 @@ assets/33649D_2_0.woff2:
 assets/fonts.css.liquid:
   development: 2018-02-19T12:35:21-05:00   959c58f32865197f5c52d668ed94e21c
 assets/fps.css:
-  development: 2018-02-19T14:05:27-05:00   01915edfc2b7f8e080ebac8b1e786ed1
+  development: 2018-02-19T15:41:46-05:00   49cc1ea99f955823c6651667644312e0
 assets/icon-logo.svg:
   development: 2018-02-18T21:05:44-05:00   7d4b603cad4b8d2a5cb30392ae555b64
 assets/initial.css:
@@ -51,20 +51,26 @@ assets/normalize.css:
   development: 2018-02-18T20:31:27-05:00   8c6eee6b2107ef25dc486020ced13898
 assets/repeater-wave.png:
   development: 2018-02-19T13:50:26-05:00   238147dfb13a07292ab5e4152eeb96bd
+config/settings_schema.json:
+  development: 2018-02-19T15:10:00-05:00   35b4dc7f4f4962f01d058d53686b82a3
 layout/gift_card.liquid:
   development: 2018-02-18T20:50:17-05:00   fd879938040ac68e4290269f18930b0c
 layout/password.liquid:
   development: 2018-02-18T20:50:16-05:00   235ab14fbaa824ed910e149975d2747b
 layout/theme.liquid:
   development: 2018-02-19T00:10:59-05:00   938d3aa8c6bb7ec2573c97386d3bfdcc
+locales/en.default.json:
+  development: 2018-02-19T14:48:50-05:00   5fa9da9f3737675578e90e1e7d97bb85
 sections/collection-list.liquid:
   development: 2018-02-19T00:24:12-05:00   0dc2b72bbb3ca9d21613898cea99b13d
 sections/featured-collection.liquid:
   development: 2018-02-19T12:49:43-05:00   37c9a53cfd8d4ab1332c40086ee8f8f3
 sections/footer.liquid:
-  development: 2018-02-19T14:04:40-05:00   6136405920da792b52a3ad26edeee827
+  development: 2018-02-19T14:43:06-05:00   17214fd385793f301e2627f0182cd969
 sections/header.liquid:
   development: 2018-02-18T22:50:44-05:00   72dc152409c024ddfcdd02a2b590cfc7
+snippets/contact.liquid:
+  development: 2018-02-19T14:58:36-05:00   f99bfedbdf478aab0c86a58e3ab760ea
 snippets/icon-amazon_payments.liquid:
   development: 2018-02-18T20:27:23-05:00   fa528edb2afc07062b90b5dfcae4e0c4
 snippets/icon-american_express.liquid:
@@ -92,13 +98,13 @@ snippets/icon-dogecoin.liquid:
 snippets/icon-dwolla.liquid:
   development: 2018-02-18T20:27:11-05:00   655e2ed369789a6f2e374c7d5c5a1e88
 snippets/icon-facebook.liquid:
-  development: 2018-02-18T20:27:15-05:00   566c842a3b9798ce46a90a5790d7b5e5
+  development: 2018-02-19T15:40:24-05:00   afabb7c45598f24e6b31d5e94ef51ab2
 snippets/icon-forbrugsforeningen.liquid:
   development: 2018-02-18T20:27:07-05:00   6c8bf83733601bb504eb852e596c5541
 snippets/icon-hamburger.liquid:
   development: 2018-02-18T20:27:22-05:00   6ea2c9e394e6c189feb029a89c0e1902
 snippets/icon-instagram.liquid:
-  development: 2018-02-18T20:27:21-05:00   b63330018251fb00ffaae7bd7f24ce0c
+  development: 2018-02-19T15:43:00-05:00   f037339087c46fd0c77136fddcec62a8
 snippets/icon-interac.liquid:
   development: 2018-02-18T20:27:23-05:00   48308288d2c9f545dc6b05bbf1448d98
 snippets/icon-jcb.liquid:
@@ -140,6 +146,6 @@ snippets/icon-youtube.liquid:
 snippets/logo-headline.liquid:
   development: 2018-02-18T23:39:26-05:00   592f48311dcd25817378ce816ebd2cf2
 snippets/newsletter-prompt.liquid:
-  development: 2018-02-19T13:50:25-05:00   35356f9a3ccabf535615c6ba089a7030
+  development: 2018-02-19T14:33:15-05:00   a5ba8373080b03243f230e78cea00bd8
 templates/index.liquid:
   development: 2018-02-19T13:28:15-05:00   03d108c5378af90c0afdfffec5915483

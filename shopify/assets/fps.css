@@ -325,16 +325,21 @@ form[name="newsletter"] input[type="submit"] {
 }
 #main-footer .newsletter-prompt {
 	line-height: 1.4;
+	margin-bottom: 5%;
 }
 #main-footer .newsletter-prompt > header {
 	line-height: 1.6;
+}
+#main-footer hr {
+	margin-top: 0;
+	border-style: none;
 }
 #main-footer h2 {
 	text-transform: uppercase;
 	margin-top: 0.8em;
 }
 #main-footer form {
-	margin: 1.2em auto 2em;
+	margin: 1.2em auto 0;
 }
 #main-footer input[type="email"] {
 	border-right: 1px solid aqua;
@@ -345,14 +350,15 @@ form[name="newsletter"] input[type="submit"] {
 	justify-content: space-between;
 	font-size: 0.9em;
 	padding-bottom: 4%;
+	margin-top: 1.8em;
 }
-#footer-cols > article,
+#footer-cols > .contact-section,
 #footer-cols > nav,
 #footer-cols > section {
 	flex-basis: 33.33%;
 	flex-shrink: 1;
 }
-#footer-cols > article,
+#footer-cols > .contact-section,
 #footer-cols > section {
 	max-width: 250px;
 	flex-shrink: 0;
@@ -363,29 +369,30 @@ form[name="newsletter"] input[type="submit"] {
 }
 #footer-cols h2 {
 	font-size: 1.1em;
-	margin-top: 1em;
+	margin: 0;
 }
 #footer-cols ul,
 #footer-cols main {
 	font-size: 1.1em;
-	font-weight: bold;
-	line-height: 1.6;
+	line-height: 1.5;
 }
-#footer-cols > article ul {
+.contact-section ul {
 	margin-top: 1.1em;
-	font-size: 1.5em;
+	justify-content: center;
 }
-#footer-cols > article li {
-	display: inline-block;
-}
-#footer-cols > article ul a {
+.contact-section a {
 	padding: 0.2em;
+	margin: 0 3px;
+}
+.contact-section svg {
+	height: 1.5em;
+	width: auto;
 }
 #footer-cols p {
 	margin-top: 1em;
 }
 #footer-cols p:first-child {
-	margin-top: 0.6em;
+	margin-top: 0.5em;
 }
 #footer-cols h2 > a {
 	text-transform: none;
@@ -516,6 +523,12 @@ body,
 .image-grid a,
 .gray {
 	color: #58595b;
+}
+svg.icon path,
+svg.icon circle,
+svg.icon rect {
+	fill: #58595b;
+	stroke: #58595b;
 }
 #fine-print,
 .gray--bg {

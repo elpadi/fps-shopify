@@ -1,15 +1,14 @@
 <section class="newsletter-prompt">
 	<header>
-		<h2>Stay In The Know!</h2>
+		<h2>{{ 'general.newsletter.title' | t }}</h2>
 		<p>
-			Keep in touch to receive news and goodies!<br>
-			Sign up now to receive a FREE downloadable PDF watercolor painting.
+			{{ 'general.newsletter.headline' | t }}<br>{{ 'general.newsletter.offer' | t }}
 		</p>
 	</header>
 	<main>
 		<form name="newsletter">
-			<input type="email" name="email" placeholder="your email address" aria-label="Your email address">
-			<input type="submit" class="btn" value="SIGN ME UP!">
+			<input type="email" name="email" placeholder="{{ 'general.newsletter.placeholder' | t }}" aria-label="{{ 'general.newsletter.placeholder' | t }}">
+			<input type="submit" class="btn" value="{{ 'general.newsletter.submit' | t }}">
 		</form>
 	</main>
 </section>

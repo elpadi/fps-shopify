@@ -9,7 +9,7 @@
     },
     "404": {
       "title": "404 Page Not Found",
-      "subtext_html": "The page you requested does not exist. Click <a href=\"/collections/all\">here</a> to continue shopping."
+      "subtext_html": "The page you requested does not exist. Click <a href=\"\/collections\/all\">here<\/a> to continue shopping."
     },
     "password_page": {
       "opening_soon": "Opening Soon",
@@ -23,7 +23,7 @@
       "signup_form_email_placeholder": "Your email",
       "signup_form_submit": "Submit",
       "signup_form_success": "We will send you an email right before we open!",
-      "admin_link_html": "Are you the store owner? <a href=\"/admin\">Log in here</a>",
+      "admin_link_html": "Are you the store owner? <a href=\"\/admin\">Log in here<\/a>",
       "password_link": "Enter using password",
       "powered_by_shopify_html": "This shop will be powered by {{ shopify }}"
     },
@@ -41,8 +41,20 @@
       "no_results_html": "Your search for \"{{ terms }}\" did not yield any results.",
       "results_for_html": "Your search for \"{{ terms }}\" revealed the following:",
       "title": "Search for products on our site",
-      "placeholder": "Search our store",
+      "placeholder": "Search",
       "submit": "Search"
+    },
+    "newsletter": {
+      "title": "Stay In The Know!",
+      "headline": "Keep in touch to receive news and goodies!",
+      "offer": "Sign up to receive a FREE downloadable PDF watercolor painting.",
+      "placeholder": "your email address",
+      "submit": "Sign me up!"
+    },
+    "contact": {
+      "title": "Visit The Shop!",
+			"operating_hours": "10:00am - 5:00pm",
+			"days_open": "Everyday"
     }
   },
   "blogs": {
@@ -80,7 +92,7 @@
       "checkout": "Check Out",
       "empty": "Your cart is currently empty.",
       "cookies_required": "Enable cookies to use the shopping cart",
-      "continue_browsing_html": "Continue browsing <a href=\"/collections/all\">here</a>.",
+      "continue_browsing_html": "Continue browsing <a href=\"\/collections\/all\">here<\/a>.",
       "item_quantity": "Item quantity",
       "savings": "You're saving"
     },
@@ -137,7 +149,7 @@
       "city": "City",
       "country": "Country",
       "province": "Province",
-      "zip": "Postal/Zip Code",
+      "zip": "Postal\/Zip Code",
       "phone": "Phone",
       "set_default": "Set as default address",
       "add": "Add Address",
@@ -224,7 +236,7 @@
   },
   "layout": {
     "cart": {
-      "title": "Cart",
+      "title": "View Cart",
       "items_count": {
         "one": "item",
         "other": "items"
@@ -270,7 +282,7 @@
       "initial_value": "Gift card value: {{ value }}"
     }
   },
-  "date_formats":{
+  "date_formats": {
     "month_day_year": "%B %d, %Y"
   }
 }
