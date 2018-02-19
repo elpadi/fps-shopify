@@ -1,4 +1,4 @@
-<main id="home-main" class="one-column">
+<main role="main" id="home-main" class="one-column">
 	<section id="home-slideshow" class="slideshow">
 		<h2 class="visuallyhidden">Featured Collections</h2>
 		<ul class="slides">

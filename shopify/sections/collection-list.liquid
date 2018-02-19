@@ -1,36 +1,26 @@
-{% if section.settings.title != blank %}
-  <h2>{{ section.settings.title | escape }}</h2>
-{% endif %}
-
-{% for block in section.blocks limit: section.blocks.size %}
-  <div {{ block.shopify_attributes }}>
+<section id="home-slideshow" class="slideshow">
+	{% if section.settings.title != blank %}<h2 class="visuallyhidden">{{ section.settings.title | escape }}</h2>{% endif %}
+	<ul class="slides">
+		{% for block in section.blocks limit: section.blocks.size %}
     {%- assign collection = collections[block.settings.collection] -%}
-
-    <a href="{% if collection == empty %}#{% else %}{{ collection.url }}{% endif %}">
+		<li {{ block.shopify_attributes }}>
       {% if collection.image != blank %}
-        {{ collection | img_url: '480x480' | img_tag: collection.title }}
+        {{ collection | img_url: '4000x' | img_tag: collection.title }}
       {% elsif collection.products.first != blank %}
         {{ collection.products.first | img_url: '480x480' | img_tag: collection.title }}
-      {% elsif collection == empty %}
-        {% capture current %}{% cycle 1, 2, 3, 4, 5, 6 %}{% endcapture %}
-        {{ 'collection-' | append: current | placeholder_svg_tag: 'placeholder-svg placeholder-svg--small' }}
-      {% endif %}
-
-      <p>
-        {% if collection == empty %}
-          {{ 'homepage.onboarding.collection_title' | t }}
-        {% else %}
-          {{ collection.title }}
-        {% endif %}
-      </p>
-    </a>
-  </div>
-{% endfor %}
-
-{% if section.blocks.size == 0 %}
-  {% include 'no-blocks' %}
-{% endif %}
-
+			{% endif %}
+			<aside>
+				<h3>{{ block.settings.callout_title }}</h3>
+				<p>{{ block.settings.callout_headline }}</p>
+				<a href="{{ collection.url }}" class="btn">Shop now</a>
+			</aside>
+		</li>
+		{% endfor %}
+	</ul>
+	{% if section.blocks.size == 0 %}
+		{% include 'no-blocks' %}
+	{% endif %}
+</section>
 {% schema %}
   {
     "name": "Collection list",
@@ -52,7 +42,15 @@
             "label": "Collection",
             "id": "collection",
             "type": "collection"
-          }
+					},{
+            "label": "Callout Title",
+            "id": "callout_title",
+            "type": "text"
+					},{
+            "label": "Callout Headline",
+            "id": "callout_headline",
+            "type": "text"
+					}
         ]
       }
     ],
