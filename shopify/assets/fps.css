@@ -137,7 +137,7 @@ ul.slides {
 	border-top: 1px solid yellow;
 }
 #home-main h2,
-#collection-main h2,
+#collection-main h1,
 .heading-with-bar h2 {
 	font-size: 1.3em;
 	background-color: white;
@@ -505,6 +505,35 @@ form[name="newsletter"] input[type="submit"] {
 }
 /*
  * =======================================================
+ * COLLECTIONS
+ * =======================================================
+ */
+#collection-main {
+}
+#collection-main h1 {
+	text-transform: uppercase;
+	bottom: 1.5em;
+}
+#collection-main > header {
+	margin-bottom: 6%;
+}
+#collection-main > header p {
+	text-align: justify;
+	column-count: 2;
+	column-gap: 30px;
+}
+#collection-main > main {
+	text-align: center;
+}
+#collection-main ul {
+	font-size: 0.95em;
+	grid-row-gap: 3vw;
+}
+#collection-main > main img {
+	padding: 0.7em;
+}
+/*
+ * =======================================================
  * COLORS
  * =======================================================
  */
@@ -572,6 +601,7 @@ form[name="newsletter"],
 }
 
 #home-slideshow aside h3,
+.site-nav--active a,
 .yellow {
 	color: #fecc0b;
 }
@@ -582,6 +612,9 @@ form[name="newsletter"],
 }
 body #home-slideshow aside,
 body #home-main > .shopify-section,
+#home-main > .shopify-section,
+#collection-main > main,
+.heading-with-bar,
 .yellow--border {
 	border-color: #fecc0b;
 }
@@ -625,7 +658,7 @@ body > main,
 input,
 .image-grid h3,
 #home-main h2,
-#collection-main h2,
+#collection-main h1,
 #footer-cols h2 > a,
 #product-info,
 #cart-main,

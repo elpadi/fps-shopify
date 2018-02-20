@@ -42,7 +42,7 @@ assets/33649D_2_0.woff2:
 assets/fonts.css.liquid:
   development: 2018-02-19T12:35:21-05:00   959c58f32865197f5c52d668ed94e21c
 assets/fps.css:
-  development: 2018-02-19T20:29:30-05:00   6842fc3d5a7a2434cace66bb6f2f7f8a
+  development: 2018-02-19T21:20:27-05:00   61b23f77365ec3335ad205333b9026b6
 assets/icon-logo.svg:
   development: 2018-02-18T21:05:44-05:00   7d4b603cad4b8d2a5cb30392ae555b64
 assets/initial.css:
@@ -151,5 +151,7 @@ snippets/newsletter-prompt.liquid:
   development: 2018-02-19T14:33:15-05:00   a5ba8373080b03243f230e78cea00bd8
 snippets/secondary-menu.liquid:
   development: 2018-02-19T18:57:38-05:00   d4cbda8e0a52277d6fab469d0b69c876
+templates/collection.liquid:
+  development: 2018-02-19T21:06:27-05:00   7edbc5edfb0179123550f6661470c805
 templates/index.liquid:
   development: 2018-02-19T13:28:15-05:00   03d108c5378af90c0afdfffec5915483
