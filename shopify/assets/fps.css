@@ -53,6 +53,7 @@ footer hr,
 #top-bar > main,
 #footer-cols,
 #main-nav,
+#product-main,
 .main-width {
 	max-width: 900px;
 	margin-left: auto;
@@ -534,6 +535,79 @@ form[name="newsletter"] input[type="submit"] {
 }
 /*
  * =======================================================
+ * PRODUCT
+ * =======================================================
+ */
+#product-main {
+	padding-top: 2.7%;
+	border-top: 1px solid gray;
+}
+#product-main > nav {
+	font-size: 0.6em;
+	margin-bottom: 1.7em;
+	letter-spacing: 1px;
+	font-weight: bold;
+}
+#product-main > nav ul {
+	display: inline-block;
+	width: auto;
+}
+#product-main > nav li {
+	display: inline-block;
+}
+#product-main > nav li::after {
+	content: ' /';
+	margin: 0 2px;
+}
+#product-main > nav li:last-child::after {
+	display: none;
+}
+#product-main > nav a {
+	display: inline;
+	color: inherit;
+}
+
+#product-main > div {
+	display: flex;
+	justify-content: space-between;
+}
+#product-images {
+	flex: 0 1 46%;
+}
+#product-info {
+	flex: 0 1 49.5%;
+}
+
+#product-images img {
+	border: 1px solid gray;
+	padding: 8px;
+}
+#product-info h1 {
+	margin-top: -3px;
+	font-size: 1.5em;
+	line-height: 1.2;
+}
+#product-info p {
+}
+#product-main .product-price span {
+	font-size: 1.15em;
+}
+#product-info form {
+	margin-top: 2em;
+}
+#product-info form p {
+	margin-bottom: 1.5em;
+}
+#product-info input[type="number"] {
+	margin-right: 0.5em;
+	font-size: 1.1em;
+}
+#product-info .btn {
+	font-size: 0.9em;
+	line-height: 1.4;
+}
+/*
+ * =======================================================
  * COLORS
  * =======================================================
  */
@@ -565,6 +639,7 @@ svg.icon rect[stroke] {
 	background-color: #58595b;
 }
 body #main-nav,
+#product-main,
 .gray--border {
 	border-color: #58595b;
 }
@@ -650,7 +725,6 @@ h2, h3, h4,
 }
 h1 {
 	font-weight: normal;
-	letter-spacing: 0.05em;
 }
 
 body > main,
@@ -660,7 +734,7 @@ input,
 #home-main h2,
 #collection-main h1,
 #footer-cols h2 > a,
-#product-info,
+#product-main,
 #cart-main,
 #logo text,
 .sans {
