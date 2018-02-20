@@ -7,12 +7,10 @@
 	<hr>
 	<div id="footer-cols">
 		{% include 'contact' %}
-		{% include 'secondary-menu', menu_handle: 'footer' %}
+		{% include 'secondary-menu', menu_handle: section.settings.footer_linklist %}
 		{% include 'instagram-showcase' %}
 	</div>
-  <div>
-    <small>{{ 'layout.footer.copyright' | t }} &copy; {{ 'now' | date: "%Y" }}, {{ shop.name | link_to: '/' }}. {{ powered_by_link }}</small>
-  </div>
+	<p id="fine-print">&copy; {{ 'layout.footer.copyright' | t }} {{ 'now' | date: "%Y" }} {{ shop.name }}. All rights reserved. <a href="http://sheilabuchanandesigns.com" target="_blank">Site design</a></p>
 </footer>
 {% schema %}
   {
@@ -23,12 +21,6 @@
         "id": "footer_linklist",
         "label": "First menu",
         "default": "footer"
-      },
-      {
-        "type": "checkbox",
-        "id": "show_payment_icons",
-        "label": "Show payment icons",
-        "default": false
       }
     ]
   }

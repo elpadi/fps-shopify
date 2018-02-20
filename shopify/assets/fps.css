@@ -416,9 +416,10 @@ form[name="newsletter"] input[type="submit"] {
 
 #fine-print {
 	text-transform: uppercase;
-	font-size: 0.6em;
+	font-size: 0.5em;
 	line-height: 4;
 	margin-bottom: 0;
+	letter-spacing: 1px;
 }
 #fine-print a {
 	color: inherit;
