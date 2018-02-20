@@ -155,6 +155,7 @@ ul.slides {
 	border-style: none;
 	outline-style: none;
 	height: 32px;
+	line-height: 32px;
 }
 input[type="text"],
 input[type="number"],
@@ -172,6 +173,7 @@ input[type="number"][max="9"] {
 }
 input.btn {
 	border-style: none;
+	line-height: 3;
 }
 
 /*
