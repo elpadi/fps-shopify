@@ -1,0 +1,21 @@
+{% if product.compare_at_price > product.price %}
+	{% if product.price_varies %}
+		{% assign sale_price = product.price | money %}
+		{{ 'products.product.on_sale_from_html' | t: price: sale_price }}
+	{% else %}
+		{{ 'products.product.on_sale' | t }}
+		{{ product.price | money }}
+	{% endif %}
+	<span class="visually-hidden">{{ 'products.product.regular_price' | t }}</span>
+	<strike>{{ product.compare_at_price | money }}</strike>
+{% else %}
+	{% if product.price_varies %}
+		{% assign price = product.price | money %}
+		{{ 'products.product.from_text_html' | t: price: price }}
+	{% else %}
+		{{ product.price | money }}
+	{% endif %}
+{% endif %}
+{% unless product.available %}
+{{ 'products.product.sold_out' | t }}
+{% endunless %}
