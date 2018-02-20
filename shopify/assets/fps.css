@@ -539,7 +539,7 @@ form[name="newsletter"] input[type="submit"] {
  * =======================================================
  */
 #product-main {
-	padding-top: 2.7%;
+	padding: 2.7% 0 3%;
 	border-top: 1px solid gray;
 }
 #product-main > nav {
@@ -605,6 +605,124 @@ form[name="newsletter"] input[type="submit"] {
 #product-info .btn {
 	font-size: 0.9em;
 	line-height: 1.4;
+}
+/*
+ * =======================================================
+ * CART
+ * =======================================================
+ */
+#cart-main {
+	padding-top: 4%;
+	padding-bottom: 8%;
+}
+#cart-main h1 {
+	font-size: 1.5em;
+	margin: 0;
+	float: left;
+}
+#cart-main form {
+	clear: both;
+}
+#cart-main article:first-child {
+	border-top: 1px solid gray;
+}
+#cart-main p {
+	display: flex;
+	align-items: center;
+}
+#cart-main p > span {
+	flex: 1 1 100px;
+	min-height: 50px;
+	line-height: 50px;
+}
+#cart-main p > span.image {
+	flex: 0 0 150px;
+}
+#cart-main p > span.title {
+	flex: 2 0 200px;
+	padding-left: 1em;
+}
+#cart-main img {
+	width: 150px;
+	height: 150px;
+	padding: 8px;
+	border: 1px solid gray;
+	object-fit: contain;
+}
+#cart-main .remove,
+#cart-main p > .label {
+	position: relative;
+}
+#cart-main span label,
+#cart-main span strong {
+	position: absolute;
+	top: -103px;
+	display: none;
+}
+#cart-main label,
+#cart-main .price {
+	font-size: 0.85em;
+	font-weight: bold;
+}
+#cart-main .remove {
+	font-size: 0.9em;
+}
+#cart-main article:first-child label,
+#cart-main article:first-child strong {
+	display: inline;
+}
+#cart-main input[type="number"] {
+	width: 3em;
+	padding-left: 0.5em;
+	border: 1px solid gray;
+}
+#cart-main .quantity {
+	text-align: center;
+}
+#cart-main .quantity > label {
+	left: 0;
+	width: 100%;
+}
+#cart-main .remove,
+#cart-main .price {
+	text-align: right;
+}
+#cart-main .price strong {
+	right: 0;
+}
+
+#cart-totals {
+	display: block;
+	text-align: right;
+	border-top: 1px solid gray;
+	padding-right: 150px;
+}
+
+#cart-bottom {
+	display: flex;
+	justify-content: space-between;
+}
+#cart-bottom > .notes {
+	flex: 1 0 300px;
+	max-width: 400px;
+}
+#cart-bottom > .buttons {
+	flex: 0 0 300px;
+	text-align: right;
+	word-spacing: 10px;
+	font-size: 0.8em;
+	letter-spacing: 1px;
+}
+#cart-bottom .btn {
+	width: 140px;
+}
+#cart-bottom label {
+	display: block;
+}
+#cart-bottom textarea {
+	width: 100%;
+	margin-top: 0.5em;
+	height: 150px;
 }
 /*
  * =======================================================
