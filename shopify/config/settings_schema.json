@@ -40,6 +40,30 @@
       },
       {
         "type": "header",
+        "content": "Instagram Images"
+      },
+      {
+        "type": "text",
+        "id": "instagram_img_1",
+        "label": "Instagram Image 1"
+      },
+      {
+        "type": "text",
+        "id": "instagram_img_2",
+        "label": "Instagram Image 2"
+      },
+      {
+        "type": "text",
+        "id": "instagram_img_3",
+        "label": "Instagram Image 3"
+      },
+      {
+        "type": "text",
+        "id": "instagram_img_4",
+        "label": "Instagram Image 4"
+      },
+      {
+        "type": "header",
         "content": "Sharing links"
       },
       {

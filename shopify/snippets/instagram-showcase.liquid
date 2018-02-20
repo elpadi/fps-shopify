@@ -1,0 +1,12 @@
+<section class="instagram-showcase">
+	<header>
+		<h2>Follow Me <a href="{{ settings['social_instagram_link'] }}" target="_blank" rel="nofollow">@{{ settings['social_instagram_link'] | split: '/' | last }}</a></h2>
+	</header>
+	<main>
+		<ul class="image-grid">
+			{% for n in (1..4) %}{% assign img_key = 'instagram_img_' | append: n %}
+			<li><img src="{{ settings[img_key] }}" alt=""></li>
+			{% endfor %}
+		</ul>
+	</main>
+</section>

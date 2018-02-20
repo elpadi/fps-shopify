@@ -400,23 +400,17 @@ form[name="newsletter"] input[type="submit"] {
 	font-size: 0.9em;
 }
 #footer-cols > section ul {
-	margin-top: 1em;
+	margin-top: 0.7em;
 }
 .instagram-showcase .image-grid {
-	word-spacing: 4px;
+	grid: repeat(2, 120px) / repeat(2, 1fr);
+	grid-gap: 14px 10px;
 }
 .instagram-showcase li {
-	border: 1px solid aqua;
-	margin-bottom: 8px;
+	overflow: hidden;
 }
-.instagram-showcase .image-grid > li {
-	width: 120px;
-	height: 120px;
-	padding: 0;
-}
-.instagram-showcase .image-grid img {
-	width: 118px;
-	height: 118px;
+.instagram-showcase img {
+	height: 100%;
 	object-fit: cover;
 }
 
