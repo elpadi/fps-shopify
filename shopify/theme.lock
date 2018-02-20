@@ -42,7 +42,7 @@ assets/33649D_2_0.woff2:
 assets/fonts.css.liquid:
   development: 2018-02-19T12:35:21-05:00   959c58f32865197f5c52d668ed94e21c
 assets/fps.css:
-  development: 2018-02-19T20:15:55-05:00   e63e127f741d7a7e734b038be4f08bf7
+  development: 2018-02-19T20:29:30-05:00   6842fc3d5a7a2434cace66bb6f2f7f8a
 assets/icon-logo.svg:
   development: 2018-02-18T21:05:44-05:00   7d4b603cad4b8d2a5cb30392ae555b64
 assets/initial.css:
@@ -98,13 +98,13 @@ snippets/icon-dogecoin.liquid:
 snippets/icon-dwolla.liquid:
   development: 2018-02-18T20:27:11-05:00   655e2ed369789a6f2e374c7d5c5a1e88
 snippets/icon-facebook.liquid:
-  development: 2018-02-19T15:40:24-05:00   afabb7c45598f24e6b31d5e94ef51ab2
+  development: 2018-02-19T20:26:01-05:00   9972330a936b2db5de46b4699df075cc
 snippets/icon-forbrugsforeningen.liquid:
   development: 2018-02-18T20:27:07-05:00   6c8bf83733601bb504eb852e596c5541
 snippets/icon-hamburger.liquid:
   development: 2018-02-18T20:27:22-05:00   6ea2c9e394e6c189feb029a89c0e1902
 snippets/icon-instagram.liquid:
-  development: 2018-02-19T15:43:00-05:00   f037339087c46fd0c77136fddcec62a8
+  development: 2018-02-19T20:26:01-05:00   c0b922eb8e791e95226859fa05a51743
 snippets/icon-interac.liquid:
   development: 2018-02-18T20:27:23-05:00   48308288d2c9f545dc6b05bbf1448d98
 snippets/icon-jcb.liquid:

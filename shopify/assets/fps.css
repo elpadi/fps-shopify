@@ -309,7 +309,7 @@ form[name="newsletter"] input[type="submit"] {
 }
 #main-footer {
 	position: relative;
-	margin-top: 4em;
+	margin-top: 5%;
 	text-align: center;
 	padding-top: 20px;
 	background-repeat: repeat-x;
@@ -371,6 +371,7 @@ form[name="newsletter"] input[type="submit"] {
 #footer-cols h2 {
 	font-size: 1.1em;
 	margin: 0;
+	text-align: center;
 }
 #footer-cols ul,
 #footer-cols main {
@@ -500,7 +501,7 @@ form[name="newsletter"] input[type="submit"] {
 }
 #home-footer {
 	text-align: center;
-	margin: 1em 0 4em;
+	margin: 1em 0 0;
 }
 /*
  * =======================================================
@@ -520,10 +521,14 @@ body,
 .gray {
 	color: #58595b;
 }
-svg.icon path,
-svg.icon circle,
-svg.icon rect {
+svg.icon path[fill],
+svg.icon circle[fill],
+svg.icon rect[fill] {
 	fill: #58595b;
+}
+svg.icon path[stroke],
+svg.icon circle[stroke],
+svg.icon rect[stroke] {
 	stroke: #58595b;
 }
 #fine-print,
