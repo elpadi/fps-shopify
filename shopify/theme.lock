@@ -42,7 +42,7 @@ assets/33649D_2_0.woff2:
 assets/fonts.css.liquid:
   development: 2018-02-19T12:35:21-05:00   959c58f32865197f5c52d668ed94e21c
 assets/fps.css:
-  development: 2018-02-19T15:41:46-05:00   49cc1ea99f955823c6651667644312e0
+  development: 2018-02-19T19:02:33-05:00   6aa16546c64d659742b5352fa460cc17
 assets/icon-logo.svg:
   development: 2018-02-18T21:05:44-05:00   7d4b603cad4b8d2a5cb30392ae555b64
 assets/initial.css:
@@ -66,11 +66,11 @@ sections/collection-list.liquid:
 sections/featured-collection.liquid:
   development: 2018-02-19T12:49:43-05:00   37c9a53cfd8d4ab1332c40086ee8f8f3
 sections/footer.liquid:
-  development: 2018-02-19T14:43:06-05:00   17214fd385793f301e2627f0182cd969
+  development: 2018-02-19T18:55:24-05:00   344bca66514d83eb68aabd53726b9435
 sections/header.liquid:
   development: 2018-02-18T22:50:44-05:00   72dc152409c024ddfcdd02a2b590cfc7
 snippets/contact.liquid:
-  development: 2018-02-19T14:58:36-05:00   f99bfedbdf478aab0c86a58e3ab760ea
+  development: 2018-02-19T18:31:57-05:00   cfed2c903ef90ea8e42eb6e7970b15be
 snippets/icon-amazon_payments.liquid:
   development: 2018-02-18T20:27:23-05:00   fa528edb2afc07062b90b5dfcae4e0c4
 snippets/icon-american_express.liquid:
@@ -147,5 +147,7 @@ snippets/logo-headline.liquid:
   development: 2018-02-18T23:39:26-05:00   592f48311dcd25817378ce816ebd2cf2
 snippets/newsletter-prompt.liquid:
   development: 2018-02-19T14:33:15-05:00   a5ba8373080b03243f230e78cea00bd8
+snippets/secondary-menu.liquid:
+  development: 2018-02-19T18:57:38-05:00   d4cbda8e0a52277d6fab469d0b69c876
 templates/index.liquid:
   development: 2018-02-19T13:28:15-05:00   03d108c5378af90c0afdfffec5915483

@@ -277,6 +277,7 @@ input.btn {
 }
 #footer-cols nav ul {
 	display: block;
+	margin-bottom: 1em;
 }
 #footer-cols nav li {
 	display: block;
@@ -350,7 +351,7 @@ form[name="newsletter"] input[type="submit"] {
 	justify-content: space-between;
 	font-size: 0.9em;
 	padding-bottom: 4%;
-	margin-top: 1.8em;
+	margin-top: 2em;
 }
 #footer-cols > .contact-section,
 #footer-cols > nav,
