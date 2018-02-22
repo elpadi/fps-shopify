@@ -1,17 +1,17 @@
 <main id="search-main" class="template-main single-column">
 	<header>
-		<h1>{% if search.performed %}
-      {% if search.results_count == 0 %}{{ 'general.search.no_results_html' | t: terms: search.terms }}
-      {% else %}{{ 'general.search.results_for_html' | t: terms: search.terms }}
-			{% endif %}
-		{% else %}{{ 'general.search.title' | t }}{% endif %}
-		</h1>
 		<form action="/search" method="get" role="search">
 			<label>{{ 'general.search.placeholder' | t }}
 				<input type="search" name="q" value="{{ search.terms | escape }}">
 			</label>
 			<button type="submit" class="btn">{% include 'icon-search' %}</button>
 		</form>
+		<h1>{% if search.performed %}
+      {% if search.results_count == 0 %}{{ 'general.search.no_results_html' | t: terms: search.terms }}
+      {% else %}{{ 'general.search.results_for_html' | t: terms: search.terms }}
+			{% endif %}
+		{% else %}{{ 'general.search.title' | t }}{% endif %}
+		</h1>
 	</header>
 	{% paginate search.results by 10 %}
 	<main>
@@ -21,22 +21,23 @@
 			<li><article>
 				{% assign featured_image = item.image | default: item.featured_image %}
 				{% if featured_image != blank %}
-				<a class="image-link" href="{{ item.url | within: collection }}" title="{{ item.title | escape }}">
-					{{ featured_image | img_url: '240x240' | img_tag: featured_image.alt }}
-				</a>
+				<aside>
+					<a class="image-link" href="{{ item.url | within: collection }}" title="{{ item.title | escape }}">
+						{{ featured_image | img_url: '240x240' | img_tag: featured_image.alt }}
+						{% if item.object_type == 'product' %}{% include 'product-price', product: item %}
+					</a>
+				</aside>
 				{% endif %}
-
-				<h2>{{ item.title | link_to: item.url }}</h2>
-				<p class="url">{{ item.url | link_to: item.url }}</p>
-
-				<p class="summary">
-					{% if item.object_type == 'product' %}{% include 'product-price', product: item %}
-						{{ item.description | strip_html | truncatewords: 50 }}
-					{% else %}
-						{{ item.content | strip_html | truncatewords: 50 }}
-					{% endif %}
-				</p>
-
+				<main>
+					<h2>{{ (forloop.index * paginate.current_page) | append: '. ' | append: item.title | link_to: item.url }}</h2>
+					<p class="url">{{ item.url | link_to: item.url }}</p>
+					<p class="summary">
+							{{ item.description | strip_html | truncatewords: 50 }}
+						{% else %}
+							{{ item.content | strip_html | truncatewords: 50 }}
+						{% endif %}
+					</p>
+				</main>
 			</article></li>
 			{% endfor %}
 		</ol>

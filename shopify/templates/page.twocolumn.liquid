@@ -1,0 +1,10 @@
+<article id="page-main" class="template-main two-column">
+	<header><h1>{{ page.title }}</h1></header>
+	<main>{{ page.content }}</main>
+	<aside>
+		{% assign featured_image = item.image | default: item.featured_image %}
+		{% if featured_image != blank %}
+		{{ featured_image | img_url: '4000x' | img_tag: featured_image.alt }}
+		{% endif %}
+	</aside>
+</article>
