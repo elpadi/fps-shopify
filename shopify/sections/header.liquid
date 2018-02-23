@@ -43,38 +43,40 @@
 			</ul>
 		</nav>
 	</section><!-- end #top-bar -->
-	<h1 id="logo" itemscope itemtype="http://schema.org/Organization">
-		<a href="/" itemprop="url" class="site-logo image-link">
-			<img itemprop="logo" src="{{ 'icon-logo.svg' | asset_url }}" alt="{{ shop.name }}">
-		</a>
-		{% include 'logo-headline' %}
-	</h1>
-  <nav role="navigation" id="main-nav">
-    <ul class="site-nav">
-      {% for link in linklists[section.settings.main_linklist].links %}
-        {%- assign child_list_handle = link.title | handleize -%}
-        {% if menus[child_list_handle].links != blank %}
-          <li class="site-nav--has-submenu{% if link.active %} site-nav--active{% endif %}">
-            <a href="{{ link.url }}" class="site-nav__link">
-              {{ link.title }}
-              {% include 'icon-arrow-down' %}
-            </a>
-            <ul class="site-nav__submenu">
-              {% for childlink in menus[child_list_handle].links %}
-                <li {% if childlink.active %}class="site-nav--active"{% endif %}>
-                  <a href="{{ childlink.url }}" class="site-nav__link">{{ childlink.title | escape }}</a>
-                </li>
-              {% endfor %}
-            </ul>
-          </li>
-        {% else %}
-          <li {% if link.active %}class="site-nav--active"{% endif %}>
-            <a href="{{ link.url }}" class="site-nav__link">{{ link.title }}</a>
-          </li>
-        {% endif %}
-      {% endfor %}
-    </ul>
-  </nav>
+	<div class="main-width">
+		<h1 id="logo" itemscope itemtype="http://schema.org/Organization">
+			<a href="/" itemprop="url" class="site-logo image-link">
+				<img itemprop="logo" src="{{ 'icon-logo.svg' | asset_url }}" alt="{{ shop.name }}">
+			</a>
+			{% include 'logo-headline' %}
+		</h1>
+		<nav role="navigation" id="main-nav">
+			<ul class="site-nav">
+				{% for link in linklists[section.settings.main_linklist].links %}
+					{%- assign child_list_handle = link.title | handleize -%}
+					{% if menus[child_list_handle].links != blank %}
+						<li class="site-nav--has-submenu{% if link.active %} site-nav--active{% endif %}">
+							<a href="{{ link.url }}" class="site-nav__link">
+								{{ link.title }}
+								{% include 'icon-arrow-down' %}
+							</a>
+							<ul class="site-nav__submenu">
+								{% for childlink in menus[child_list_handle].links %}
+									<li {% if childlink.active %}class="site-nav--active"{% endif %}>
+										<a href="{{ childlink.url }}" class="site-nav__link">{{ childlink.title | escape }}</a>
+									</li>
+								{% endfor %}
+							</ul>
+						</li>
+					{% else %}
+						<li {% if link.active %}class="site-nav--active"{% endif %}>
+							<a href="{{ link.url }}" class="site-nav__link">{{ link.title }}</a>
+						</li>
+					{% endif %}
+				{% endfor %}
+			</ul>
+		</nav>
+	</div>
 </header>
 {% schema %}
   {

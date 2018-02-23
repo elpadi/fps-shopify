@@ -800,25 +800,22 @@ input {
 .template-main {
 	position: relative;
 	padding: 3% 0 5%;
-	border-top: 1px solid gray;
 	min-height: calc(100vh - 620px); /* Roughly the size of header + footer + fine print. */
 }
 #home-main,
-#collection-main,
-.no-top-bar {
+#collection-main {
 	padding-top: 0;
-	border-style: none;
 }
 footer hr,
 #top-bar > main,
 #footer-cols,
-#main-nav,
-#logo,
 .template-main,
 .main-width {
 	max-width: 900px;
 	margin-left: auto;
 	margin-right: auto;
+	padding-left: 8px;
+	padding-right: 8px;
 }
 a > svg {
 	pointer-events: none;
@@ -993,19 +990,20 @@ form.oneline-form {
 
 #logo {
 	position: relative;
-	margin: 0.67em auto 0.4em;
+	margin: 0.5em auto 0.4em;
 	text-align: center;
 }
 #logo img {
-	height: 4.5em;
+	height: 4.3em;
 }
 #logo svg {
 	position: absolute;
-	right: 0;
+	left: 50%;
+	margin-left: 200px;
 	bottom: 40%;
 }
 #logo text {
-	font-size: 14px;
+	font-size: 15px;
 }
 
 
@@ -1031,13 +1029,18 @@ form.oneline-form {
 
 #main-nav {
 	border-top: 1px solid gray;
+	border-bottom: 1px solid gray;
 	letter-spacing: 2px;
 	font-size: 0.9em;
 	height: 2.5em;
 	overflow: visible;
 }
+.template-index #main-nav,
+.template-collection #main-nav {
+	border-bottom-style: none;
+}
 #main-nav a {
-	padding: 0.5em 0.5em 0.75em;
+	padding: 0.5em 0 0.75em;
 }
 
 #footer-cols nav {
@@ -1387,11 +1390,11 @@ form.oneline-form {
  * =======================================================
  */
 #cart-main {
-	padding-top: 4%;
-	padding-bottom: 8%;
+	padding-top: 6.5%;
+	padding-bottom: 10%;
 }
 #cart-main h1 {
-	font-size: 1.5em;
+	font-size: 1.6em;
 	margin: 0;
 	float: left;
 }
@@ -1411,19 +1414,26 @@ form.oneline-form {
 	line-height: 50px;
 }
 #cart-main p > span.image {
-	flex: 0 0 150px;
+	flex: 0 0 112px;
 }
 #cart-main p > span.title {
 	flex: 2 0 200px;
+	font-size: 0.9em;
+	font-weight: bold;
+	letter-spacing: 0;
+	line-height: 1;
 	padding-left: 2em;
+}
+#cart-main p > span.title .price {
+	font-size: 1em;
 }
 #cart-main .title a {
 	display: block;
 	line-height: 1.6;
 }
 #cart-main img {
-	width: 150px;
-	height: 150px;
+	width: 112px;
+	height: 112px;
 	padding: 8px;
 	border: 1px solid gray;
 	object-fit: contain;
@@ -1435,7 +1445,7 @@ form.oneline-form {
 #cart-main span label,
 #cart-main span strong {
 	position: absolute;
-	top: -103px;
+	top: -87px;
 	display: none;
 }
 #cart-main label,
@@ -1477,6 +1487,7 @@ form.oneline-form {
 }
 
 #cart-bottom {
+	margin-top: 2.5%;
 	display: flex;
 	justify-content: space-between;
 }
@@ -1485,6 +1496,7 @@ form.oneline-form {
 	max-width: 400px;
 }
 #cart-bottom > .buttons {
+	padding-top: 2.6%;
 	flex: 0 0 300px;
 	text-align: right;
 	word-spacing: 10px;
@@ -1496,11 +1508,12 @@ form.oneline-form {
 }
 #cart-bottom label {
 	display: block;
+	font-weight: normal;
 }
 #cart-bottom textarea {
 	width: 100%;
-	margin-top: 0.5em;
-	height: 150px;
+	margin-top: 0.4em;
+	height: 9em;
 }
 /*
  * =======================================================
@@ -1684,11 +1697,11 @@ body #home-main > .shopify-section,
  * =======================================================
  */
 #home-slideshow aside p,
+#cart-main .title a,
 h1,
 .serif {
 	font-family: 'AmericanTypewriterITCPro-Med',serif;
 }
-#cart-main .title,
 h2, h3, h4,
 .serif--bold {
 	font-family: 'AmericanTypewriterITCPro-Bold',serif;

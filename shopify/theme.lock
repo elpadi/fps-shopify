@@ -42,7 +42,7 @@ assets/33649D_2_0.woff2:
 assets/fonts.css.liquid:
   development: 2018-02-19T12:35:21-05:00   959c58f32865197f5c52d668ed94e21c
 assets/fps.css:
-  development: 2018-02-22T19:05:20-05:00   6b5eaaaafa1bfba2a3fa491b2dcf91d6
+  development: 2018-02-23T16:24:53-05:00   09a26c04c3d4b1f314132cf8dcfe3712
 assets/icon-logo.svg:
   development: 2018-02-18T21:05:44-05:00   7d4b603cad4b8d2a5cb30392ae555b64
 assets/repeater-wave.png:
@@ -64,7 +64,7 @@ sections/featured-collection.liquid:
 sections/footer.liquid:
   development: 2018-02-19T20:14:10-05:00   c2f8b59632196f8142c1efac409af80c
 sections/header.liquid:
-  development: 2018-02-22T18:50:15-05:00   26e1c3d51a6fd4b11e1cb08446443c88
+  development: 2018-02-23T15:58:43-05:00   f3ffe91e816c5f20f9ed3b2b8342ded1
 sections/product.liquid:
   development: 2018-02-22T18:24:46-05:00   394f5efe72acc4476624f4701b316461
 snippets/contact.liquid:
@@ -144,7 +144,7 @@ snippets/icon-youtube.liquid:
 snippets/instagram-showcase.liquid:
   development: 2018-02-19T20:01:49-05:00   fe3b96f7ca32036c75aa543cd04e3bba
 snippets/logo-headline.liquid:
-  development: 2018-02-18T23:39:26-05:00   592f48311dcd25817378ce816ebd2cf2
+  development: 2018-02-23T15:58:41-05:00   137d0d54de68101b3114abe4ccf7868a
 snippets/newsletter-prompt.liquid:
   development: 2018-02-22T18:43:10-05:00   158dfd1b0144f32ffd1c607fd1a7e8c7
 snippets/product-price.liquid:
@@ -156,7 +156,7 @@ templates/404.liquid:
 templates/article.liquid:
   development: 2018-02-21T17:25:56-05:00   dc2fe00634c31a2318e7dd1eb2327174
 templates/cart.liquid:
-  development: 2018-02-20T10:10:42-05:00   a256456db81237696e4126856324a69f
+  development: 2018-02-23T16:19:36-05:00   4f4b4f4dbc97dfa0617b9c0206897441
 templates/collection.liquid:
   development: 2018-02-21T17:25:55-05:00   22ae23b17fd446e8e1150433312b76f4
 templates/index.liquid:
