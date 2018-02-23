@@ -3,12 +3,14 @@
 #main-footer::before {background-image: url({{ 'icon-logo.svg' | asset_url }});}
 </style>
 <footer id="main-footer" style="background-image:url({{ 'repeater-wave.png' | asset_url }});">
-	{% include 'newsletter-prompt' %}
-	<hr>
-	<div id="footer-cols">
-		{% include 'contact' %}
-		{% include 'secondary-menu', menu_handle: section.settings.footer_linklist %}
-		{% include 'instagram-showcase' %}
+	<div class="main-width">
+		{% include 'newsletter-prompt' %}
+		<hr>
+		<div id="footer-cols">
+			{% include 'contact' %}
+			{% include 'secondary-menu', menu_handle: section.settings.footer_linklist %}
+			{% include 'instagram-showcase' %}
+		</div>
 	</div>
 	<p id="fine-print">&copy; {{ 'layout.footer.copyright' | t }} {{ 'now' | date: "%Y" }} {{ shop.name }}. All rights reserved. <a href="http://sheilabuchanandesigns.com" target="_blank">Site design</a></p>
 </footer>

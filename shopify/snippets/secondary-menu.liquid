@@ -2,10 +2,6 @@
 	{% for link in linklists[menu_handle].links %}
 	<h2>{{ link.title }}</h2>
 	<ul>
-		{% if link.title == 'Contact' %}
-		<li><a href="mailto:{{ shop.email }}">{{ shop.email }}</a></li>
-		<li><a href="tel:{{ shop.phone }}">{{ shop.phone }}</a></li>
-		{% endif %}
 		{% for childlink in link.links %}
 		<li><a href="{{ childlink.url }}">{{ childlink.title }}</a></li>
 		{% endfor %}
