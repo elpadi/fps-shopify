@@ -42,7 +42,7 @@ assets/33649D_2_0.woff2:
 assets/fonts.css.liquid:
   development: 2018-02-19T12:35:21-05:00   959c58f32865197f5c52d668ed94e21c
 assets/fps.css:
-  development: 2018-02-22T10:10:05-05:00   bb90a4437351d3c2a3f377f6a0e5f39e
+  development: 2018-02-22T19:05:20-05:00   6b5eaaaafa1bfba2a3fa491b2dcf91d6
 assets/icon-logo.svg:
   development: 2018-02-18T21:05:44-05:00   7d4b603cad4b8d2a5cb30392ae555b64
 assets/repeater-wave.png:
@@ -64,9 +64,9 @@ sections/featured-collection.liquid:
 sections/footer.liquid:
   development: 2018-02-19T20:14:10-05:00   c2f8b59632196f8142c1efac409af80c
 sections/header.liquid:
-  development: 2018-02-18T22:50:44-05:00   72dc152409c024ddfcdd02a2b590cfc7
+  development: 2018-02-22T18:50:15-05:00   26e1c3d51a6fd4b11e1cb08446443c88
 sections/product.liquid:
-  development: 2018-02-19T22:38:32-05:00   02a7602c923a567b4c0d82748e834cb8
+  development: 2018-02-22T18:24:46-05:00   394f5efe72acc4476624f4701b316461
 snippets/contact.liquid:
   development: 2018-02-19T18:31:57-05:00   cfed2c903ef90ea8e42eb6e7970b15be
 snippets/icon-amazon_payments.liquid:
@@ -146,7 +146,7 @@ snippets/instagram-showcase.liquid:
 snippets/logo-headline.liquid:
   development: 2018-02-18T23:39:26-05:00   592f48311dcd25817378ce816ebd2cf2
 snippets/newsletter-prompt.liquid:
-  development: 2018-02-19T14:33:15-05:00   a5ba8373080b03243f230e78cea00bd8
+  development: 2018-02-22T18:43:10-05:00   158dfd1b0144f32ffd1c607fd1a7e8c7
 snippets/product-price.liquid:
   development: 2018-02-21T17:25:54-05:00   8cd3f161dcf9014222cd4879d4256657
 snippets/secondary-menu.liquid:
@@ -170,4 +170,4 @@ templates/page.styles.liquid:
 templates/page.twocolumn.liquid:
   development: 2018-02-22T08:26:51-05:00   318bc845caafa5137c714b204560696d
 templates/search.liquid:
-  development: 2018-02-22T10:14:02-05:00   b10ae3f5a16260898c94a59f306d9b02
+  development: 2018-02-22T17:37:49-05:00   c5d8e77cac9a05717220cd6265c81a35

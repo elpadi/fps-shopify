@@ -6,9 +6,11 @@
 		</p>
 	</header>
 	<main>
-		<form name="newsletter">
-			<input type="email" name="email" placeholder="{{ 'general.newsletter.placeholder' | t }}" aria-label="{{ 'general.newsletter.placeholder' | t }}">
-			<input type="submit" class="btn" value="{{ 'general.newsletter.submit' | t }}">
+		<form name="newsletter" class="oneline-form">
+			<label><span class="visuallyhidden">{{ 'general.newsletter.placeholder' | t }}</span>
+				<input type="email" name="email" placeholder="{{ 'general.newsletter.placeholder' | t }}">
+			</label>
+			<button type="submit" class="btn">{{ 'general.newsletter.submit' | t }}</button>
 		</form>
 	</main>
 </section>

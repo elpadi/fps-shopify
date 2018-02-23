@@ -29,23 +29,21 @@
 			<header>
 				<h3 itemprop="brand" class="visuallyhidden">{{ product.vendor }}</h3>
 				<h1 itemprop="name">{{ product.title }}</h1>
-				<p itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+				<p class="product-price" data-price-wrapper itemprop="offers" itemscope itemtype="http://schema.org/Offer">
 					<meta itemprop="priceCurrency" content="{{ shop.currency }}">
 					<meta itemprop="price" content="{{ current_variant.price | divided_by: 100.00 }}">
 					<link itemprop="availability" href="http://schema.org/{% if current_variant.available %}InStock{% else %}OutOfStock{% endif %}">
-					<div class="product-price" data-price-wrapper>
-						<span data-product-price>
-							{{ current_variant.price | money }}
-						</span>
-						{% if product.compare_at_price_max > product.price %}
-							<span class="visually-hidden" data-compare-text>{{ 'products.product.regular_price' | t }}</span>
-							<s data-compare-price>
-								{% if current_variant.compare_at_price > current_variant.price %}
-									{{ current_variant.compare_at_price | money }}
-								{% endif %}
-							</s>
-						{% endif %}
-					</div>
+					<span data-product-price>
+						{{ current_variant.price | money }}
+					</span>
+					{% if product.compare_at_price_max > product.price %}
+						<span class="visually-hidden" data-compare-text>{{ 'products.product.regular_price' | t }}</span>
+						<s data-compare-price>
+							{% if current_variant.compare_at_price > current_variant.price %}
+								{{ current_variant.compare_at_price | money }}
+							{% endif %}
+						</s>
+					{% endif %}
 				</p>
 			</header>
 			<div itemprop="description"><p>{{ product.description }}</p></div>

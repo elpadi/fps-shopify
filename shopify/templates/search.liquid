@@ -1,7 +1,7 @@
 <main id="search-main" class="template-main single-column">
 	<header>
-		<form action="/search" method="get" role="search">
-			<label>{{ 'general.search.placeholder' | t }}
+		<form action="/search" method="get" role="search" class="oneline-form">
+			<label><span class="visuallyhidden">{{ 'general.search.placeholder' | t }}</span>
 				<input type="search" name="q" value="{{ search.terms | escape }}">
 			</label>
 			<button type="submit" class="btn">{% include 'icon-search' %}</button>

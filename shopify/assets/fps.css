@@ -783,6 +783,12 @@ input.btn {
 	padding: 0 1.2em;
 }
 
+input,
+textarea {
+	border-width: 1px;
+	border-style: solid;
+}
+
 input {
 	outline-style: none !important;
 	letter-spacing: inherit;
@@ -807,6 +813,7 @@ footer hr,
 #top-bar > main,
 #footer-cols,
 #main-nav,
+#logo,
 .template-main,
 .main-width {
 	max-width: 900px;
@@ -855,11 +862,11 @@ ul.slides {
 }
 .image-grid {
 	display: grid;
-	grid: minmax(24vw, min-content) / repeat(4, 1fr);
+	grid-template-columns: repeat(4, 1fr);
 	grid-gap: 4%;
 }
 .image-grid img {
-	border: 2px solid aqua;
+	border: 1px solid aqua;
 }
 .slides > li {
 	display: block;
@@ -904,13 +911,6 @@ ul.slides {
 	font-weight: bold;
 }
 
-#main-header input,
-#main-footer input {
-	border-style: none;
-	outline-style: none;
-	height: 32px;
-	line-height: 32px;
-}
 input[type="text"],
 input[type="number"],
 input[type="email"],
@@ -929,7 +929,31 @@ input.btn {
 	border-style: none;
 	line-height: 3;
 }
-
+.pagination {
+	font-size: 1.2em;
+	word-spacing: 0.6em;
+	margin-top: 4%;
+}
+.pagination .next, .pagination .prev {
+	word-spacing: 0;
+}
+form.oneline-form {
+	display: flex;
+	justify-content: center;
+}
+.oneline-form label {
+}
+.oneline-form input, #search-main button {
+	border-style: none;
+	height: 32px;
+	line-height: 32px;
+}
+.oneline-form input {
+	width: 100%;
+}
+.oneline-form button {
+	padding: 0 1em;
+}
 /*
  * =======================================================
  * HEADER STYLES
@@ -952,37 +976,24 @@ input.btn {
 	float: right;
 }
 
-#top-bar label {
-	display: inline-block;
-	position: relative;
-	white-space: nowrap;
-	width: 0;
-	visibility: hidden;
-}
-#top-bar input[type="search"] {
+#header-search-form input,
+#header-search-form .btn {
 	background-color: transparent;
-	border-style: none;
-	visibility: visible;
-	position: absolute;
-	left: 4.6em;
-	top: 0;
+}
+#header-search-form .btn {
+	padding-right: 0.3em;
+}
+#header-search-form input[type="search"] {
 	text-transform: uppercase;
-	height: 32px;
 	font-weight: bold;
 }
-#top-bar form .btn {
-	float: left;
-	background-color: transparent;
-	padding: 6px 3px;
-}
-#top-bar form .btn svg {
+#header-search-form svg {
 	width: 15px;
 }
 
-
 #logo {
 	position: relative;
-	margin: 0.67em 0 0.4em;
+	margin: 0.67em auto 0.4em;
 	text-align: center;
 }
 #logo img {
@@ -1045,25 +1056,6 @@ input.btn {
  * FOOTER STYLES
  * =======================================================
  */
-.newsletter-prompt h2,
-.newsletter-prompt p {
-	margin: 0;
-}
-form[name="newsletter"] {
-	display: inline-block;
-	border: 1px solid aqua;
-}
-form[name="newsletter"] input {
-	border-style: none;
-	height: 37px;
-}
-form[name="newsletter"] input[type="email"] {
-	padding: 0 1em 0 0.5em;
-}
-form[name="newsletter"] input[type="submit"] {
-	float: right;
-	font-size: 0.8em;
-}
 #main-footer {
 	position: relative;
 	margin-top: 5%;
@@ -1088,6 +1080,26 @@ form[name="newsletter"] input[type="submit"] {
 #main-footer .newsletter-prompt > header {
 	line-height: 1.6;
 }
+.newsletter-prompt h2,
+.newsletter-prompt p {
+	margin: 0;
+}
+#main-footer .newsletter-prompt form {
+	margin: 1.2em auto 0;
+	border: 1px solid aqua;
+	display: inline-flex;
+}
+.newsletter-prompt input, .newsletter-prompt button {
+	height: 32px;
+	line-height: 32px;
+}
+.newsletter-prompt input {
+	border-right: 1px solid aqua;
+	padding: 0 1em 0 0.5em;
+}
+.newsletter-prompt button {
+	font-size: 0.8em;
+}
 #main-footer hr {
 	margin-top: 0;
 	border-style: none;
@@ -1096,13 +1108,6 @@ form[name="newsletter"] input[type="submit"] {
 	text-transform: uppercase;
 	margin-top: 0.8em;
 }
-#main-footer form {
-	margin: 1.2em auto 0;
-}
-#main-footer input[type="email"] {
-	border-right: 1px solid aqua;
-}
-
 #footer-cols {
 	display: flex;
 	justify-content: space-between;
@@ -1168,6 +1173,7 @@ form[name="newsletter"] input[type="submit"] {
 	overflow: hidden;
 }
 .instagram-showcase img {
+	border-width: 2px;
 	height: 100%;
 	object-fit: cover;
 }
@@ -1276,11 +1282,13 @@ form[name="newsletter"] input[type="submit"] {
  * COLLECTIONS
  * =======================================================
  */
-#collection-main {
+#collection-main > main {
+	padding-top: 0.4em;
 }
 #collection-main h1 {
 	text-transform: uppercase;
-	bottom: 1.5em;
+	bottom: 1.1em;
+	letter-spacing: 2px;
 }
 #collection-main > header {
 	margin-bottom: 6%;
@@ -1352,6 +1360,7 @@ form[name="newsletter"] input[type="submit"] {
 	margin-top: -3px;
 	font-size: 1.5em;
 	line-height: 1.2;
+	margin-bottom: 4%;
 }
 #product-info p {
 }
@@ -1408,6 +1417,10 @@ form[name="newsletter"] input[type="submit"] {
 	flex: 2 0 200px;
 	padding-left: 2em;
 }
+#cart-main .title a {
+	display: block;
+	line-height: 1.6;
+}
 #cart-main img {
 	width: 150px;
 	height: 150px;
@@ -1440,7 +1453,6 @@ form[name="newsletter"] input[type="submit"] {
 #cart-main input[type="number"] {
 	width: 3em;
 	padding-left: 0.5em;
-	border: 1px solid gray;
 }
 #cart-main .quantity {
 	text-align: center;
@@ -1498,8 +1510,20 @@ form[name="newsletter"] input[type="submit"] {
 #search-main > header {
 	text-align: center;
 }
-#search-main > header form {
+#search-main form {
 	margin-bottom: 2%;
+}
+#search-main label {
+	width: 50%;
+}
+#search-main input, #search-main button {
+	height: 40px;
+	line-height: 40px;
+}
+#search-main input {
+}
+#search-main button {
+	padding: 0 1em;
 }
 #search-main h1 {
 	margin-bottom: 9%;
@@ -1571,16 +1595,22 @@ svg.icon rect[stroke] {
 .gray--bg {
 	background-color: #58595b;
 }
+input,
+textarea,
 body #main-nav,
 .template-main,
-.gray--border {
-	border-color: #58595b;
+#product-images img,
+#cart-main article:first-child,
+#cart-main img,
+#cart-totals,
+.light-gray--border {
+	border-color: #dddcdf;
 }
 
 #footer-cols main,
 .btn,
 a,
-h1,
+h1, h2,
 .image-grid p,
 #home-main h2,
 #collection-main h2,
@@ -1588,6 +1618,9 @@ h1,
 #product-main header span,
 .strong-aqua {
 	color: #0cadb6;
+}
+.btn[disabled] {
+	color: #0cadb650;
 }
 #logo text {
 	fill: #0cadb6;
@@ -1597,7 +1630,7 @@ h1,
 	background-color: #08adb6;
 }
 #main-footer hr,
-form[name="newsletter"],
+#main-footer .newsletter-prompt form,
 #main-footer input[type="email"],
 .image-grid img,
 .strong-aqua--border {
@@ -1609,6 +1642,7 @@ form[name="newsletter"],
 }
 
 #home-slideshow aside h3,
+#main-nav a:hover,
 .site-nav--active a,
 .yellow {
 	color: #fecc0b;
@@ -1618,10 +1652,14 @@ form[name="newsletter"],
 .yellow--bg {
 	background-color: #fecc0b;
 }
+.btn[disabled] {
+	background-color: #fecc0b50;
+}
 body #home-slideshow aside,
 body #home-main > .shopify-section,
 #home-main > .shopify-section,
 #collection-main > main,
+.image-grid a:hover img,
 .heading-with-bar,
 .yellow--border {
 	border-color: #fecc0b;
@@ -1676,6 +1714,7 @@ input,
 }
 #cart-main label,
 #cart-main strong,
+#cart-totals .price,
 #footer-cols h2,
 #home-slideshow aside h3,
 #main-nav,
