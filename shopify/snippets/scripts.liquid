@@ -1,0 +1,31 @@
+{{ 'app.js' | asset_url | script_tag }}
+<script>
+	(function() {
+		var TEMPLATE_NAME = '{{ template.name | handle }}';
+		var LIBRARIES = {
+			JQUERY: {
+				NAME: 'jquery',
+				VERSION: '3.3.1',
+				FILES: ['dist/jquery.min.js']
+			},
+			SLICK: {
+				NAME: 'slick-carousel',
+				VERSION: '1.8.1',
+				FILES: ['slick/slick.min.js','slick/slick.css','slick/slick-theme.css']
+			},
+			ZOOM: {
+				NAME: 'jquery-zoom',
+				VERSION: '1.7.20',
+				FILES: ['jquery.zoom.min.js']
+			}
+		};
+		var app = new App();
+		var init = function init() {
+			if (['index','product'].includes(TEMPLATE_NAME)) app.loadLibrary(LIBRARIES.SLICK).then(app.initSlideshows.bind(app));
+			if (['product'].includes(TEMPLATE_NAME)) app.loadLibrary(LIBRARIES.ZOOM).then(app.initZoom.bind(app));
+		};
+		window.addEventListener('load', function() {
+			app.loadLibrary(LIBRARIES.JQUERY).then(init);
+		});
+	})();
+</script>

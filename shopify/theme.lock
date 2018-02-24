@@ -39,10 +39,12 @@ assets/33649D_2_0.woff:
   development: 2018-02-18T22:02:22-05:00   858adfc1f69db2472227504d6a48788c
 assets/33649D_2_0.woff2:
   development: 2018-02-18T22:02:21-05:00   96394a99553f2753b309885146ef915d
+assets/app.js:
+  development: 2018-02-24T17:27:33-05:00   67a2bb785be93a79688430d937979f1d
 assets/fonts.css.liquid:
   development: 2018-02-19T12:35:21-05:00   959c58f32865197f5c52d668ed94e21c
 assets/fps.css:
-  development: 2018-02-23T18:58:59-05:00   94cd935a34cd0a36347d274afe6d1a6d
+  development: 2018-02-24T17:29:35-05:00   d97a8e5f653b15addacea91ead7d24cf
 assets/icon-logo.svg:
   development: 2018-02-18T21:05:44-05:00   7d4b603cad4b8d2a5cb30392ae555b64
 assets/repeater-wave.png:
@@ -54,7 +56,7 @@ layout/gift_card.liquid:
 layout/password.liquid:
   development: 2018-02-18T20:50:16-05:00   235ab14fbaa824ed910e149975d2747b
 layout/theme.liquid:
-  development: 2018-02-21T17:25:53-05:00   633939aa0ed4c9d96bbcb9e4cd705045
+  development: 2018-02-24T17:20:24-05:00   fa6d4de238d60bf60df4b62ebf7eef3f
 locales/en.default.json:
   development: 2018-02-19T22:35:43-05:00   e1e90cf86397de457ee02575db9bed4b
 sections/collection-list.liquid:
@@ -66,7 +68,7 @@ sections/footer.liquid:
 sections/header.liquid:
   development: 2018-02-23T15:58:43-05:00   f3ffe91e816c5f20f9ed3b2b8342ded1
 sections/product.liquid:
-  development: 2018-02-22T18:24:46-05:00   394f5efe72acc4476624f4701b316461
+  development: 2018-02-24T16:46:34-05:00   173c9af047016fefb03a18eb261ca500
 snippets/contact.liquid:
   development: 2018-02-23T18:32:26-05:00   7f5dafbb8f96b47890bc06d58eda6f4c
 snippets/icon-amazon_payments.liquid:
@@ -149,6 +151,8 @@ snippets/newsletter-prompt.liquid:
   development: 2018-02-22T18:43:10-05:00   158dfd1b0144f32ffd1c607fd1a7e8c7
 snippets/product-price.liquid:
   development: 2018-02-21T17:25:54-05:00   8cd3f161dcf9014222cd4879d4256657
+snippets/scripts.liquid:
+  development: 2018-02-24T17:11:58-05:00   b506f0924b5a50e2288052cc5cbd0b5f
 snippets/secondary-menu.liquid:
   development: 2018-02-23T18:32:25-05:00   33af0ecccd6ae464f01a16dbd729d083
 templates/404.liquid:
