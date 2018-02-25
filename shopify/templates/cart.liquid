@@ -6,7 +6,7 @@
 		<article>
 			<p>
 				<span class="image">{{ item | img_url: '240x240' | img_tag: item.title }}</span>
-				<span class="title">{{ item.product.title | link_to: (item.url | within: collections.all) }}</a><span class="price">{{ item.price | money }}</span>{% unless item.product.has_only_default_variant %}<small>{{ item.variant.title }}{% endunless %}</small></span>
+				<span class="title"><a href="{{ item.url | within: collections.all }}">{{ item.product.title }}{% unless item.product.has_only_default_variant %} <small>({{ item.variant.title }})</small>{% endunless %}</a><span class="price">{{ item.price | money }}</span></span>
 				<span class="quantity label"><label for="updates_{{ item.key }}">{{ 'cart.label.quantity' | t }}</label> <input class="cart__quantity-selector" name="updates[]" id="updates_{{ item.key }}" value="{{ item.quantity }}" min="0" type="number"></span>
 				<span class="price label"><strong>{{ 'cart.label.price' | t }}</strong> {% if item.original_line_price != item.line_price %}{{ item.price | money }}<small>{{ item.original_price | money }}</small>{% else %}{{ item.price | money }}{% endif %}</span>
 				<span class="remove"><a href="/cart/change?line={{ forloop.index }}&quantity=0">{{ 'cart.general.remove' | t }}</a></span>

@@ -7,7 +7,7 @@
 		{% endif %}
 	{% endfor %}
 {% endif %}
-<article id="product-main" class="template-main single-column {% if product.has_only_default_variant %}no-variants{% endif %} {% if collection and collection.products_count > 1 %}has-related-products{% endif %}" itemscope itemtype="http://schema.org/Product">
+<article id="product-main" class="template-main single-column {% if product.has_only_default_variant %}no{% else %}has{% endif %}-variants {% if collection and collection.products_count > 1 %}has{% else %}no{% endif %}-related-products" itemscope itemtype="http://schema.org/Product">
 	<meta itemprop="name" content="{{ product.title }}{% unless product.has_only_default_variant %} - {{ current_variant.title }}{% endunless %}">
 	<meta itemprop="url" content="{{ shop.url }}{{ current_variant.url }}">
 	<meta itemprop="brand" content="{{ product.vendor }}">
@@ -31,6 +31,16 @@
 				<li><img src="{{ image.src | img_url: '480x480' }}" data-zoom="{{ image.src | img_url: '4000x' }}" alt="{{ image.alt | escape }}"></li>
 				{% endfor %}{% endif %}
 			</ul>
+			{% if product.options contains 'Color' %}
+			<h3 id="product-colors-title">Colors</h3>
+			<ul id="product-colors" class="horizontal-list">
+				{% for option in product.options_with_values %}{% if option.name != 'Color' %}{% break %}{% endif %}
+				{% for value in option.values %}
+				<li><button class="btn" style="background-color: {{ value | replace: ' ', '' }};" data-color-slug="{{ value | handleize }}">&nbsp;<span class="visuallyhidden">{{ value }}</span></button></li>
+				{% endfor %}
+				{% endfor %}
+			</ul>
+			{% endif %}
 		</aside>
 		<main id="product-info">
 			<header>
@@ -55,25 +65,27 @@
 			</header>
 			<div itemprop="description"><p>{{ product.description }}</p></div>
 			<form action="/cart/add" method="post" enctype="multipart/form-data">
-				{% if product.has_only_default_variant %}{% for variant in product.variants %}<input type="hidden" name="id" value="{{ variant.id }}">{% endfor %}{% endif %}
+				{% if product.has_only_default_variant %}{% for variant in product.variants %}<input type="hidden" name="id" value="{{ variant.id }}">{% endfor %}
+				{% else %}
+				<p id="product-variants" class="visuallyhidden">
+					<label for="product-variants-select">Select variant: </label>
+					<select name="id" id="product-variants-select">
+						{% for variant in product.variants %}<option value="{{ variant.id }}" data-option1="{{ variant.option1 }}" data-option2="{{ variant.option2 }}" data-option3="{{ variant.option3 }}" {% if product.selected_variant == variant.id %}selected{% endif %}>{{ variant.title }}</option>{% endfor %}
+					</select>
+				</p>
+				{% endif %}
 				{% unless product.has_only_default_variant %}{% for option in product.options_with_values %}
-				<div class="selector-wrapper js">
-					<label for="SingleOptionSelector-{{ forloop.index0 }}">
-						{{ option.name }}
-					</label>
-					<select
-						id="SingleOptionSelector-{{ forloop.index0 }}"
-						data-single-option-selector
-						data-index="option{{ option.position }}">
+				<p class="product__variant" data-variant-name="{{ option.name }}">
+					<label class="visuallyhidden" for="variant--{{ option.name | handleize }}">{{ option.name }}</label>
+					<select id="variant--{{ option.name | handleize }}">
+						<option value="">Select {{ option.name }}</option>
 						{% for value in option.values %}
-							<option
-								value="{{ value | escape }}"
-								{% if option.selected_value == value %}selected="selected"{% endif %}>
-									{{ value }}
-							</option>
+						<option data-value-slug="{{ value | handleize }}" value="{{ value | escape }}" {% if product.selected_variant and option.selected_value == value %}selected="selected"{% endif %}>
+							{{ value }}
+						</option>
 						{% endfor %}
 					</select>
-				</div>
+				</p>
 				{% endfor %}{% endunless %}
 				<p><label><input type="number" name="quantity" id="Quantity" value="1" min="1" max="9"> Quantity</label></p>
 				<p><button type="submit" name="add" data-add-to-cart class="btn"
@@ -105,11 +117,6 @@
 	</div>
 </section>
 {% endif %}
-{% unless product == empty %}
-	<script type="application/json" data-product-json>
-		{{ product | json }}
-	</script>
-{% endunless %}
 {% schema %}
   {
     "name": "Product pages",

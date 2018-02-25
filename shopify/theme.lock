@@ -40,11 +40,11 @@ assets/33649D_2_0.woff:
 assets/33649D_2_0.woff2:
   development: 2018-02-18T22:02:21-05:00   96394a99553f2753b309885146ef915d
 assets/app.js:
-  development: 2018-02-24T17:27:33-05:00   67a2bb785be93a79688430d937979f1d
+  development: 2018-02-25T15:47:44-05:00   03b5c888bbff4a8f38bf3be916b463ad
 assets/fonts.css.liquid:
   development: 2018-02-19T12:35:21-05:00   959c58f32865197f5c52d668ed94e21c
 assets/fps.css:
-  development: 2018-02-24T19:17:36-05:00   ce3997e1ba93ce98786471f4e6efb0a4
+  development: 2018-02-25T16:26:57-05:00   b6cf562c408845e440c3fb99fe8b2add
 assets/icon-logo.svg:
   development: 2018-02-18T21:05:44-05:00   7d4b603cad4b8d2a5cb30392ae555b64
 assets/repeater-wave.png:
@@ -70,7 +70,7 @@ sections/footer.liquid:
 sections/header.liquid:
   development: 2018-02-23T15:58:43-05:00   f3ffe91e816c5f20f9ed3b2b8342ded1
 sections/product.liquid:
-  development: 2018-02-24T18:54:12-05:00   a2bc422cc89a81069b7b12207f70c860
+  development: 2018-02-25T16:16:14-05:00   60e51563f1ee64285b1b481c06ababc6
 snippets/collection-product.liquid:
   development: 2018-02-24T18:38:20-05:00   25b884ac87c4582a9ee8b014ddfe7586
 snippets/contact.liquid:
@@ -156,7 +156,7 @@ snippets/newsletter-prompt.liquid:
 snippets/product-price.liquid:
   development: 2018-02-21T17:25:54-05:00   8cd3f161dcf9014222cd4879d4256657
 snippets/scripts.liquid:
-  development: 2018-02-24T17:11:58-05:00   b506f0924b5a50e2288052cc5cbd0b5f
+  development: 2018-02-25T15:23:56-05:00   2bd950ea2016a08d1657ef045bc4429c
 snippets/secondary-menu.liquid:
   development: 2018-02-23T18:32:25-05:00   33af0ecccd6ae464f01a16dbd729d083
 templates/404.liquid:
@@ -164,7 +164,7 @@ templates/404.liquid:
 templates/article.liquid:
   development: 2018-02-21T17:25:56-05:00   dc2fe00634c31a2318e7dd1eb2327174
 templates/cart.liquid:
-  development: 2018-02-23T18:53:42-05:00   03a785e29099781f1987b45e94f86cb2
+  development: 2018-02-25T16:21:27-05:00   bd1871296b2a7f481d868729eb052936
 templates/collection.liquid:
   development: 2018-02-21T17:25:55-05:00   22ae23b17fd446e8e1150433312b76f4
 templates/index.liquid:
