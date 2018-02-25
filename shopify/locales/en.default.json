@@ -83,12 +83,12 @@
   },
   "cart": {
     "general": {
-      "title": "Shopping Cart",
+      "title": "Your Cart",
       "remove": "Remove",
-      "note": "Special instructions for seller",
+      "note": "Add special instructions for your order...",
       "subtotal": "Subtotal",
       "shipping_at_checkout": "Shipping & taxes calculated at checkout",
-      "update": "Update Cart",
+      "update": "Update",
       "checkout": "Check Out",
       "empty": "Your cart is currently empty.",
       "cookies_required": "Enable cookies to use the shopping cart",
@@ -264,7 +264,8 @@
       "on_sale_from_html": "On Sale from {{ price }}",
       "from_text_html": "From {{ price }}",
       "quantity": "Quantity",
-      "add_to_cart": "Add to Bag"
+      "add_to_cart": "Add to Bag",
+			"related_products_title": "You May Also Like"
     }
   },
   "gift_cards": {

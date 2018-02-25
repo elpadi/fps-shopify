@@ -44,7 +44,7 @@ assets/app.js:
 assets/fonts.css.liquid:
   development: 2018-02-19T12:35:21-05:00   959c58f32865197f5c52d668ed94e21c
 assets/fps.css:
-  development: 2018-02-24T17:29:35-05:00   d97a8e5f653b15addacea91ead7d24cf
+  development: 2018-02-24T19:17:36-05:00   ce3997e1ba93ce98786471f4e6efb0a4
 assets/icon-logo.svg:
   development: 2018-02-18T21:05:44-05:00   7d4b603cad4b8d2a5cb30392ae555b64
 assets/repeater-wave.png:
@@ -58,17 +58,21 @@ layout/password.liquid:
 layout/theme.liquid:
   development: 2018-02-24T17:20:24-05:00   fa6d4de238d60bf60df4b62ebf7eef3f
 locales/en.default.json:
-  development: 2018-02-19T22:35:43-05:00   e1e90cf86397de457ee02575db9bed4b
+  development: 2018-02-24T18:43:18-05:00   ebe96c09348d65e9a254010d08df10a0
 sections/collection-list.liquid:
   development: 2018-02-19T00:24:12-05:00   0dc2b72bbb3ca9d21613898cea99b13d
 sections/featured-collection.liquid:
   development: 2018-02-19T12:49:43-05:00   37c9a53cfd8d4ab1332c40086ee8f8f3
+sections/featured-product.liquid:
+  development: 2018-02-18T20:06:10-05:00   fb5c9c800bf3dc82d073817363333542
 sections/footer.liquid:
-  development: 2018-02-23T18:44:40-05:00   7ad03621681a4caabb4552ef0e2a9882
+  development: 2018-02-24T19:11:27-05:00   4e0f908043c046ac4e065d6ed469348e
 sections/header.liquid:
   development: 2018-02-23T15:58:43-05:00   f3ffe91e816c5f20f9ed3b2b8342ded1
 sections/product.liquid:
-  development: 2018-02-24T16:46:34-05:00   173c9af047016fefb03a18eb261ca500
+  development: 2018-02-24T18:54:12-05:00   a2bc422cc89a81069b7b12207f70c860
+snippets/collection-product.liquid:
+  development: 2018-02-24T18:38:20-05:00   25b884ac87c4582a9ee8b014ddfe7586
 snippets/contact.liquid:
   development: 2018-02-23T18:32:26-05:00   7f5dafbb8f96b47890bc06d58eda6f4c
 snippets/icon-amazon_payments.liquid:

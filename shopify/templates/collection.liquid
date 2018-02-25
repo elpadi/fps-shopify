@@ -7,15 +7,7 @@
 		<h1>{{ collection.title }}</h1>
 		{% paginate collection.products by 12 %}
 		<ul class="image-grid">
-			{% for product in collection.products %}
-			<li>
-				<a class="image-link" href="{{ product.url | within: collection }}">
-					{{ product.featured_image.src | img_url: '480x480' | img_tag: product.featured_image.alt }}
-				</a>
-				<h3><a href="{{ product.url | within: collection }}">{{ product.title }}</a></h3>
-				<p>{% include 'product-price' %}</p>
-			</li>
-			{% endfor %}
+			{% for product in collection.products %}<li>{% include 'collection-product' %}</li>{% endfor %}
 		</ul>
 		{% if paginate.pages > 1 %}
 			{% include 'pagination' %}

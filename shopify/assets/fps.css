@@ -55,7 +55,7 @@ input {
 
 .template-main {
 	position: relative;
-	padding: 3% 0 5%;
+	padding: 3% 0 10%;
 	min-height: calc(100vh - 620px); /* Roughly the size of header + footer + fine print. */
 }
 #home-main,
@@ -117,6 +117,7 @@ ul.slides {
 	display: grid;
 	grid-template-columns: repeat(4, 1fr);
 	grid-gap: 4%;
+	text-align: center;
 }
 .image-grid img {
 	border: 1px solid aqua;
@@ -148,13 +149,16 @@ ul.slides {
 
 #home-main > .shopify-section,
 #collection-main > main,
+#related-products > div,
 .heading-with-bar {
 	border-top: 1px solid yellow;
 }
 #home-main h2,
 #collection-main h1,
+#related-products h2,
 .heading-with-bar h2 {
 	font-size: 1.3em;
+	text-transform: uppercase;
 	background-color: white;
 	position: relative;
 	bottom: 1.6em;
@@ -320,7 +324,6 @@ form.oneline-form {
  */
 #main-footer {
 	position: relative;
-	margin-top: 5%;
 	text-align: center;
 	padding-top: 20px;
 	background-repeat: repeat-x;
@@ -584,8 +587,10 @@ form.oneline-form {
  * =======================================================
  */
 #product-main {
-	padding: 2.7% 0 3%;
+	padding-top: 2.7%;
 }
+#product-main.has-related-products { padding-bottom: 3%; }
+#product-main.has-related-products.no-variants { padding-bottom: 4.5%; }
 #product-main > nav {
 	font-size: 0.6em;
 	margin-bottom: 1.7em;
@@ -650,6 +655,20 @@ form.oneline-form {
 #product-info .btn {
 	font-size: 0.9em;
 	line-height: 1.4;
+}
+#related-products {
+	text-align: center;
+	padding-top: 3.1em;
+}
+#related-products,
+#related-products h2 {
+	background-color: #fafaf2;
+}
+#related-products ul {
+	padding-bottom: 9%;
+}
+#related-products p {
+	font-size: 1em;
 }
 /*
  * =======================================================
@@ -990,10 +1009,12 @@ input,
 .image-grid h3,
 #home-main h2,
 #collection-main h1,
+#related-products h2,
 #footer-cols h2 > a,
 #product-main,
 #cart-main,
 #logo text,
+.image-grid,
 .sans {
 	font-family: 'FuturaBT-Book',sans-serif;
 }

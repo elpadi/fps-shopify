@@ -1,6 +1,13 @@
-<article id="product-main" class="template-main single-column" itemscope itemtype="http://schema.org/Product">
-  {%- assign current_variant = product.selected_or_first_available_variant -%}
-  {%- assign featured_image = current_variant.featured_image | default: product.featured_image -%}
+{%- assign current_variant = product.selected_or_first_available_variant -%}
+{%- assign featured_image = current_variant.featured_image | default: product.featured_image -%}
+{% if collection == null or collection.handle == 'frontpage' or collection.handle == 'all' %}
+	{% for c in product.collections %}
+		{% if c.handle != 'frontpage' and c.handle != 'all' and c.all_products_count > 1 %}
+			{% assign collection = c %}
+		{% endif %}
+	{% endfor %}
+{% endif %}
+<article id="product-main" class="template-main single-column {% if product.has_only_default_variant %}no-variants{% endif %} {% if collection and collection.products_count > 1 %}has-related-products{% endif %}" itemscope itemtype="http://schema.org/Product">
 	<meta itemprop="name" content="{{ product.title }}{% unless product.has_only_default_variant %} - {{ current_variant.title }}{% endunless %}">
 	<meta itemprop="url" content="{{ shop.url }}{{ current_variant.url }}">
 	<meta itemprop="brand" content="{{ product.vendor }}">
@@ -82,12 +89,27 @@
 			</form>
 		</main>
 	</div>
-  {% unless product == empty %}
-    <script type="application/json" data-product-json>
-      {{ product | json }}
-    </script>
-  {% endunless %}
 </article>
+{% if collection and collection.products_count > 1 %}
+<section id="related-products">
+	<div class="main-width">
+		<h2>{{ 'products.product.related_products_title' | t }}</h2>
+		<ul class="image-grid">
+			{% assign current_product = product %}{% assign count = 0 %}
+			{% for product in collection.products %}
+				{% if product.handle != current_product.handle and product.available and count < 4 %}
+					<li>{% include 'collection-product' %}</li>{% assign count = count | plus: 1 %}
+				{% endif %}
+			{% endfor %}
+		</ul>
+	</div>
+</section>
+{% endif %}
+{% unless product == empty %}
+	<script type="application/json" data-product-json>
+		{{ product | json }}
+	</script>
+{% endunless %}
 {% schema %}
   {
     "name": "Product pages",
