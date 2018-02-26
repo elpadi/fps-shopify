@@ -21,8 +21,14 @@
 		};
 		var app = new App();
 		var init = function init() {
-			if (['index','product'].includes(TEMPLATE_NAME)) app.loadLibrary(LIBRARIES.SLICK).then(app.initSlideshows.bind(app));
-			if (['product'].includes(TEMPLATE_NAME)) app.loadLibrary(LIBRARIES.ZOOM).then(app.initProduct.bind(app));
+			switch (TEMPLATE_NAME) {
+				case 'product':
+					Promise.all([app.loadLibrary(LIBRARIES.SLICK), app.loadLibrary(LIBRARIES.ZOOM)])
+						.then(app.initProduct.bind(app));
+					break;
+				case 'index':
+					app.loadLibrary(LIBRARIES.SLICK).then(app.initSlideshows.bind(app));
+			}
 		};
 		window.addEventListener('load', function() {
 			app.loadLibrary(LIBRARIES.JQUERY).then(init);

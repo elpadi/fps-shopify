@@ -33,15 +33,17 @@ Object.defineProperty(App.prototype, 'loadLibrary', { value: function loadLibrar
 	return Promise.all(promises);
 }});
 
-Object.defineProperty(App.prototype, 'initSlideshows', { value: function initSlideshows() {
-	$('.slides').slick({ dots: true, arrows: false, fade: true });
+Object.defineProperty(App.prototype, 'initSlideshows', { value: function initSlideshows(options) {
+	if (arguments.length < 1) options = {};
+	$('.slides').slick($.extend({ dots: true, arrows: false }, options));
 }});
 
 Object.defineProperty(App.prototype, 'initProduct', { value: function initProduct() {
-	//this.initZoom();
 	var p = new App.Product();
 	$('#product-colors').find('button').on('click', p.onColorBoxClick.bind(p));
 	$('.product__variant select').on('change', p.onVariantMenuChange.bind(p));
+	this.initSlideshows({ fade: true });
+	setTimeout(this.initZoom.bind(this), 1000);
 }});
 
 Object.defineProperty(App.prototype, 'initZoom', { value: function initZoom() {
