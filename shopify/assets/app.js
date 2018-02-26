@@ -34,10 +34,11 @@ Object.defineProperty(App.prototype, 'loadLibrary', { value: function loadLibrar
 }});
 
 Object.defineProperty(App.prototype, 'initSlideshows', { value: function initSlideshows() {
+	$('.slides').slick({ dots: true, arrows: false, fade: true });
 }});
 
 Object.defineProperty(App.prototype, 'initProduct', { value: function initProduct() {
-	this.initZoom();
+	//this.initZoom();
 	var p = new App.Product();
 	$('#product-colors').find('button').on('click', p.onColorBoxClick.bind(p));
 	$('.product__variant select').on('change', p.onVariantMenuChange.bind(p));
