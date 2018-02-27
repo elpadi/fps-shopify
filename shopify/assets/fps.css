@@ -123,9 +123,6 @@ ul.slides {
 	grid-gap: 4%;
 	text-align: center;
 }
-.image-grid img {
-	border: 1px solid aqua;
-}
 ul.slides {
 	display: block;
 	width: 100%;
@@ -165,9 +162,12 @@ ul.slick-dots button::before {
 	font-weight: bold;
 }
 .image-grid img {
+	border: 1px solid aqua;
 	width: 100%;
 	height: calc(25vw - 30px);
+	max-height: 200px;
 	object-fit: contain;
+	padding: 8px;
 }
 
 #home-main > .shopify-section,
@@ -469,6 +469,7 @@ form.oneline-form {
 	overflow: hidden;
 }
 .instagram-showcase img {
+	padding: 0;
 	height: 100%;
 	object-fit: cover;
 }
@@ -568,6 +569,7 @@ form.oneline-form {
 #home-featured li {
 }
 #home-featured img {
+	padding: 0;
 	object-fit: cover;
 }
 #home-footer {
