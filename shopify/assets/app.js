@@ -35,7 +35,7 @@ Object.defineProperty(App.prototype, 'loadLibrary', { value: function loadLibrar
 
 Object.defineProperty(App.prototype, 'initSlideshows', { value: function initSlideshows(options) {
 	if (arguments.length < 1) options = {};
-	$('.slides').slick($.extend({ dots: true, arrows: false }, options));
+	$('.slides').slick($.extend({ dots: true, arrows: false, autoplay: true, autoplaySpeed: 6000 }, options));
 }});
 
 Object.defineProperty(App.prototype, 'initProduct', { value: function initProduct() {

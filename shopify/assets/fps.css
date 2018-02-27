@@ -129,7 +129,6 @@ ul.slides {
 ul.slides {
 	display: block;
 	width: 100%;
-	overflow: hidden;
 }
 .slides > li {
 	display: block;
@@ -140,6 +139,18 @@ ul.slides {
 .slides > li:first-child {
 	position: relative;
 	visibility: visible;
+}
+ul.slick-dots li {
+	margin: 0 4px;
+}
+ul.slick-dots li button {
+	border: 3px solid gray;
+	background-color: white;
+	border-radius: 50%;
+	transform: scale(0.6);
+}
+ul.slick-dots button::before {
+	display: none;
 }
 .image-grid h3 {
 	font-size: 1em;
@@ -510,7 +521,8 @@ form.oneline-form {
 #home-slideshow ul {
 	display: block;
 }
-#home-slideshow li {
+#home-slideshow .slides > li,
+#home-slideshow .slick-slide {
 	position: relative;
 	width: 100vw;
 	max-width: 100%;
@@ -649,21 +661,6 @@ form.oneline-form {
 	width: 100%;
 	height: 40vw;
 	object-fit: contain;
-}
-#product-images .slick-dots li {
-	margin: 0 4px;
-}
-#product-images .slick-dots button {
-	border: 3px solid gray;
-	background-color: white;
-	border-radius: 50%;
-	transform: scale(0.6);
-}
-#product-images .slick-dots button::before {
-	display: none;
-}
-#product-images ul {
-	overflow: visible;
 }
 #product-info h1 {
 	margin-top: -3px;
@@ -972,7 +969,7 @@ body #main-nav,
 #cart-main article:first-child,
 #cart-main img,
 #cart-totals,
-#product-images .slick-dots button,
+ul.slick-dots li button,
 #product-colors li.selected,
 .light-gray--border {
 	border-color: #dddcdf;
@@ -1019,7 +1016,7 @@ h1, h2,
 	color: #fecc0b;
 }
 #main-nav ul ul,
-#product-images .slick-dots .slick-active button,
+ul.slick-dots .slick-active button,
 .btn,
 .yellow--bg {
 	background-color: #fecc0b;
@@ -1032,7 +1029,7 @@ body #home-main > .shopify-section,
 #home-main > .shopify-section,
 #collection-main > main,
 .image-grid a:hover img,
-#product-images .slick-dots .slick-active button,
+ul.slick-dots .slick-active button,
 .heading-with-bar,
 .yellow--border {
 	border-color: #fecc0b;
