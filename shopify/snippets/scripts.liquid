@@ -29,6 +29,7 @@
 				case 'index':
 					app.loadLibrary(LIBRARIES.SLICK).then(app.initSlideshows.bind(app));
 			}
+			app.init();
 		};
 		window.addEventListener('load', function() {
 			app.loadLibrary(LIBRARIES.JQUERY).then(init);

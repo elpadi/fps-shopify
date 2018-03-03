@@ -35,7 +35,9 @@ Object.defineProperty(App.prototype, 'loadLibrary', { value: function loadLibrar
 
 Object.defineProperty(App.prototype, 'initSlideshows', { value: function initSlideshows(options) {
 	if (arguments.length < 1) options = {};
-	$('.slides').slick($.extend({ dots: true, arrows: false, autoplay: true, autoplaySpeed: 6000 }, options));
+	$('.slides')
+		.filter((i, node) => node.children.length > 1)
+		.slick($.extend({ dots: true, arrows: false, autoplay: true, autoplaySpeed: 6000 }, options));
 }});
 
 Object.defineProperty(App.prototype, 'initProduct', { value: function initProduct() {
@@ -52,7 +54,18 @@ Object.defineProperty(App.prototype, 'initZoom', { value: function initZoom() {
 	});
 }});
 
+Object.defineProperty(App.prototype, 'setupBurger', { value: function setupBurger() {
+	document.getElementById('hamburger').addEventListener('click', function(e) {
+		var burgerClasses = e.currentTarget.classList,
+			menuClasses = document.getElementById('main-nav').classList;
+		burgerClasses.toggle('is-open');
+		burgerClasses.toggle('is-closed');
+		menuClasses.toggle('is-open');
+	});
+}});
+
 Object.defineProperty(App.prototype, 'init', { value: function init() {
+	this.setupBurger();
 }});
 
 App.Product = function() {

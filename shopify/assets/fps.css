@@ -237,6 +237,16 @@ form.oneline-form {
  * HEADER STYLES
  * =======================================================
  */
+#top-bar { z-index: 3; }
+#main-nav { z-index: 2; }
+#main-header {
+	padding-top: 32px;
+}
+#top-bar {
+	position: fixed;
+	top: 0;
+	width: 100%;
+}
 #top-bar {
 	font-size: 0.7em;
 	height: 32px;
@@ -244,14 +254,20 @@ form.oneline-form {
 	text-transform: uppercase;
 	padding: 0 3em;
 	letter-spacing: 1px;
-}
-#top-bar {
+	text-align: right;
 }
 #top-bar form {
 	float: left;
 }
 #top-bar nav {
-	float: right;
+	display: inline-block;
+}
+#top-bar .hamburglar {
+	display: inline-block;
+	background-color: transparent;
+	margin: 2px 0 0;
+	transform: scale(0.4);
+	transform-origin: center top;
 }
 
 #header-search-form input,
@@ -305,12 +321,25 @@ form.oneline-form {
 	border-bottom: 1px solid gray;
 }
 #main-nav {
-	display: none;
-	border-top: 1px solid gray;
+	position: fixed;
+	top: 0;
+	left: 0;
+	padding: 32px 0 0;
+	height: auto;
+	transform: translateY(-100%);
+	transition: transform 0.2s;
+}
+#main-nav.is-open {
+	transform: translateY(0);
+}
+#main-nav {
 	letter-spacing: 2px;
 	font-size: 0.9em;
-	height: 2.5em;
 	overflow: visible;
+}
+#main-nav ul {
+	display: block;
+	text-align: center;
 }
 .template-index #main-nav,
 .template-collection #main-nav {
@@ -318,17 +347,6 @@ form.oneline-form {
 }
 #main-nav a {
 	padding: 0.5em 0 0.75em;
-}
-
-#footer-cols nav {
-	text-transform: none;
-}
-#footer-cols nav ul {
-	display: block;
-	margin-bottom: 1em;
-}
-#footer-cols nav li {
-	display: block;
 }
 
 /*
@@ -441,6 +459,17 @@ form.oneline-form {
 #footer-cols > section ul {
 	margin-top: 0.7em;
 }
+#footer-cols nav {
+	text-transform: none;
+}
+#footer-cols nav ul {
+	display: block;
+	margin-bottom: 1em;
+}
+#footer-cols nav li {
+	display: block;
+}
+
 .instagram-showcase .image-grid {
 	max-width: 230px;
 	grid: repeat(2, 108px) / repeat(2, 108px);
@@ -626,7 +655,7 @@ form.oneline-form {
 }
 #related-products {
 	text-align: center;
-	padding-top: 3.1em;
+	padding-top: 1em;
 }
 #related-products,
 #related-products h2 {
@@ -912,6 +941,7 @@ ul.slick-dots .slick-active button,
 }
 
 #top-bar,
+#main-nav,
 .light-tan--bg {
 	background-color: #ffe7a4;
 }
