@@ -22,6 +22,26 @@
 	</nav>
 	{% endif %}
 	<div>
+		<header id="product-header">
+			<h3 itemprop="brand" class="visuallyhidden">{{ product.vendor }}</h3>
+			<h1 itemprop="name">{{ product.title }}</h1>
+			<p class="product-price" data-price-wrapper itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+				<meta itemprop="priceCurrency" content="{{ shop.currency }}">
+				<meta itemprop="price" content="{{ current_variant.price | divided_by: 100.00 }}">
+				<link itemprop="availability" href="http://schema.org/{% if current_variant.available %}InStock{% else %}OutOfStock{% endif %}">
+				<span data-product-price>
+					{{ current_variant.price | money }}
+				</span>
+				{% if product.compare_at_price_max > product.price %}
+					<span class="visually-hidden" data-compare-text>{{ 'products.product.regular_price' | t }}</span>
+					<s data-compare-price>
+						{% if current_variant.compare_at_price > current_variant.price %}
+							{{ current_variant.compare_at_price | money }}
+						{% endif %}
+					</s>
+				{% endif %}
+			</p>
+		</header>
 		<aside id="product-images">
 			<ul class="slides {% if product.images.size > 1 %}has{% else %}no{% endif %}-multiple-images zoom">
 				{% if featured_image != blank %}
@@ -43,31 +63,11 @@
 			{% endif %}
 		</aside>
 		<main id="product-info">
-			<header>
-				<h3 itemprop="brand" class="visuallyhidden">{{ product.vendor }}</h3>
-				<h1 itemprop="name">{{ product.title }}</h1>
-				<p class="product-price" data-price-wrapper itemprop="offers" itemscope itemtype="http://schema.org/Offer">
-					<meta itemprop="priceCurrency" content="{{ shop.currency }}">
-					<meta itemprop="price" content="{{ current_variant.price | divided_by: 100.00 }}">
-					<link itemprop="availability" href="http://schema.org/{% if current_variant.available %}InStock{% else %}OutOfStock{% endif %}">
-					<span data-product-price>
-						{{ current_variant.price | money }}
-					</span>
-					{% if product.compare_at_price_max > product.price %}
-						<span class="visually-hidden" data-compare-text>{{ 'products.product.regular_price' | t }}</span>
-						<s data-compare-price>
-							{% if current_variant.compare_at_price > current_variant.price %}
-								{{ current_variant.compare_at_price | money }}
-							{% endif %}
-						</s>
-					{% endif %}
-				</p>
-			</header>
 			<div itemprop="description"><p>{{ product.description }}</p></div>
 			<form action="/cart/add" method="post" enctype="multipart/form-data">
 				{% if product.has_only_default_variant %}{% for variant in product.variants %}<input type="hidden" name="id" value="{{ variant.id }}">{% endfor %}
 				{% else %}
-				<p id="product-variants" class="visuallyhidden">
+				<p id="product-variants">
 					<label for="product-variants-select">Select variant: </label>
 					<select name="id" id="product-variants-select">
 						{% for variant in product.variants %}<option value="{{ variant.id }}" data-option1="{{ variant.option1 }}" data-option2="{{ variant.option2 }}" data-option3="{{ variant.option3 }}" {% if product.selected_variant == variant.id %}selected{% endif %}>{{ variant.title }}</option>{% endfor %}

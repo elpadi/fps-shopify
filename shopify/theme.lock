@@ -44,9 +44,11 @@ assets/app.js:
 assets/fonts.css.liquid:
   development: 2018-02-19T12:35:21-05:00   959c58f32865197f5c52d668ed94e21c
 assets/fps.css:
-  development: 2018-02-26T23:39:42-05:00   d4a4f835920c534279f302c3eafb96a9
+  development: 2018-03-03T12:20:58-05:00   548c071f5a7ad75e753a0044610e5476
 assets/icon-logo.svg:
   development: 2018-02-18T21:05:44-05:00   7d4b603cad4b8d2a5cb30392ae555b64
+assets/medium-screens.css:
+  development: 2018-03-03T12:20:57-05:00   e43b406e616667eb7e57374ec63ce2de
 assets/repeater-wave.png:
   development: 2018-02-19T13:50:26-05:00   238147dfb13a07292ab5e4152eeb96bd
 config/settings_schema.json:
@@ -56,7 +58,7 @@ layout/gift_card.liquid:
 layout/password.liquid:
   development: 2018-02-18T20:50:16-05:00   235ab14fbaa824ed910e149975d2747b
 layout/theme.liquid:
-  development: 2018-02-24T17:20:24-05:00   fa6d4de238d60bf60df4b62ebf7eef3f
+  development: 2018-03-03T10:09:32-05:00   2a5eafa6d631df4cdc1a90469cc01c9c
 locales/en.default.json:
   development: 2018-02-24T18:43:18-05:00   ebe96c09348d65e9a254010d08df10a0
 sections/collection-list.liquid:
@@ -66,11 +68,11 @@ sections/featured-collection.liquid:
 sections/featured-product.liquid:
   development: 2018-02-18T20:06:10-05:00   fb5c9c800bf3dc82d073817363333542
 sections/footer.liquid:
-  development: 2018-02-24T19:11:27-05:00   4e0f908043c046ac4e065d6ed469348e
+  development: 2018-03-02T21:29:43-05:00   d2d59d8483270fb1ef4edcae129b1fb2
 sections/header.liquid:
   development: 2018-02-23T15:58:43-05:00   f3ffe91e816c5f20f9ed3b2b8342ded1
 sections/product.liquid:
-  development: 2018-02-26T00:17:52-05:00   6a48bd536e2c49834e55b7c2c28db907
+  development: 2018-03-03T11:39:23-05:00   b226aeeee8697af199ee8652832421b6
 snippets/collection-product.liquid:
   development: 2018-02-24T18:38:20-05:00   25b884ac87c4582a9ee8b014ddfe7586
 snippets/contact.liquid:
@@ -156,7 +158,7 @@ snippets/newsletter-prompt.liquid:
 snippets/product-price.liquid:
   development: 2018-02-21T17:25:54-05:00   8cd3f161dcf9014222cd4879d4256657
 snippets/scripts.liquid:
-  development: 2018-02-26T10:11:11-05:00   bda36364adfc23f2610c157a1d43c485
+  development: 2018-03-03T11:39:22-05:00   6eba9f88150ac1a2c66cfb2d2d939029
 snippets/secondary-menu.liquid:
   development: 2018-02-23T18:32:25-05:00   33af0ecccd6ae464f01a16dbd729d083
 templates/404.liquid:

@@ -33,5 +33,8 @@
 		window.addEventListener('load', function() {
 			app.loadLibrary(LIBRARIES.JQUERY).then(init);
 		});
+		Array.from(document.querySelectorAll('#product-variants')).forEach(function(node) {
+			node.classList.add('visuallyhidden');
+		});
 	})();
 </script>
