@@ -261,11 +261,17 @@ form.oneline-form {
 }
 #top-bar nav {
 	display: inline-block;
+	margin-right: 32px;
+}
+#top-bar nav svg {
+	display: none;
 }
 #top-bar .hamburglar {
+	position: absolute;
+	right: 15px;
 	display: inline-block;
 	background-color: transparent;
-	margin: 2px 0 0;
+	margin: 3px 0 0;
 	transform: scale(0.4);
 	transform-origin: center top;
 }
@@ -405,7 +411,6 @@ form.oneline-form {
 	font-size: 0.8em;
 }
 #main-footer {
-	font-size: 1.1em;
 }
 #main-footer hr {
 	margin-top: 0;

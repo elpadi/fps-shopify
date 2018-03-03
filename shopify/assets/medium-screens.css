@@ -40,6 +40,9 @@ ul.slides,
 	position: relative;
 	width: auto;
 }
+#top-bar .hamburglar {
+	display: none;
+}
 #logo svg {
 	position: absolute;
 	left: 50%;
