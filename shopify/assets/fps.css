@@ -275,6 +275,12 @@ form.oneline-form {
 	transform: scale(0.4);
 	transform-origin: center top;
 }
+#top-bar .burger-ring {
+	transition: opacity 0.2s;
+}
+#top-bar .is-open .burger-ring {
+	opacity: 0;
+}
 
 #header-search-form input,
 #header-search-form .btn {
@@ -360,11 +366,14 @@ form.oneline-form {
  * FOOTER STYLES
  * =======================================================
  */
+#shopify-section-footer {
+	background-repeat: repeat-x;
+	padding-top: 12px;
+}
 #main-footer {
+	padding-top: 1px;
 	position: relative;
 	text-align: center;
-	padding-top: 20px;
-	background-repeat: repeat-x;
 }
 #main-footer::before {
 	content:'';
@@ -422,7 +431,7 @@ form.oneline-form {
 	margin-top: 0.4em;
 }
 #main-footer .newsletter-prompt h2 {
-	margin-top: 0.7em;
+	margin-top: 1.2em;
 }
 #footer-cols > .contact-section,
 #footer-cols > nav,
@@ -661,10 +670,6 @@ form.oneline-form {
 #related-products {
 	text-align: center;
 	padding-top: 1em;
-}
-#related-products,
-#related-products h2 {
-	background-color: #fafaf2;
 }
 #related-products ul {
 	padding-bottom: 9%;
@@ -944,19 +949,21 @@ ul.slick-dots .slick-active button,
 .yellow--border {
 	border-color: #fecc0b;
 }
-
 #top-bar,
 #main-nav,
 .light-tan--bg {
 	background-color: #ffe7a4;
 }
-
 #top-bar a {
 	color: inherit;
 }
-
 #top-bar a:hover {
 	color: #15aeb6;
+}
+.template-product #shopify-section-footer,
+#related-products,
+#related-products h2 {
+	background-color: #fafaf2;
 }
 
 /*

@@ -46,13 +46,13 @@ assets/burger.scss:
 assets/fonts.css.liquid:
   development: 2018-02-19T12:35:21-05:00   959c58f32865197f5c52d668ed94e21c
 assets/fps.css:
-  development: 2018-03-03T17:19:02-05:00   abbcc803abfb82472e580dc41495501a
+  development: 2018-03-04T00:25:14-05:00   6be9640333daf1a5bb1abd393861065c
 assets/icon-logo.svg:
   development: 2018-02-18T21:05:44-05:00   7d4b603cad4b8d2a5cb30392ae555b64
 assets/medium-screens.css:
-  development: 2018-03-03T17:05:00-05:00   3a53229ac9f1cecf01f304a1995fe690
+  development: 2018-03-04T00:07:59-05:00   c839dffd11d03f3702a4c9f74342912f
 assets/repeater-wave.png:
-  development: 2018-02-19T13:50:26-05:00   238147dfb13a07292ab5e4152eeb96bd
+  development: 2018-03-04T00:17:02-05:00   d3bc4fb6848229f908effe20fd8dd6dc
 config/settings_schema.json:
   development: 2018-02-19T19:33:43-05:00   9d336146be9fdce0de7b57a9720a465b
 layout/gift_card.liquid:
@@ -70,7 +70,7 @@ sections/featured-collection.liquid:
 sections/featured-product.liquid:
   development: 2018-02-18T20:06:10-05:00   fb5c9c800bf3dc82d073817363333542
 sections/footer.liquid:
-  development: 2018-03-02T21:29:43-05:00   d2d59d8483270fb1ef4edcae129b1fb2
+  development: 2018-03-04T00:21:06-05:00   2fc394c68620cbf2939acc6fdad0e391
 sections/header.liquid:
   development: 2018-03-03T17:19:02-05:00   bccc44111692e9d16b78896712018e56
 sections/product.liquid:
