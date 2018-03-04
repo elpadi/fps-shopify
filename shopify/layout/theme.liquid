@@ -12,7 +12,7 @@
 	{{ 'fonts.css' | asset_url | stylesheet_tag }}
 	{{ 'burger.scss.css' | asset_url | stylesheet_tag }}
 	{{ 'fps.css' | asset_url | stylesheet_tag }}
-	<link rel="stylesheet" href="{{ 'medium-screens.css' | asset_url }}" media="(min-width: 768px)">
+	<link rel="stylesheet" href="{{ 'medium-screens.css' | asset_url }}" media="all and (min-width: 768px)">
 
   {% if settings.favicon != blank %}
     <link rel="shortcut icon" href="{{ settings.favicon | img_url: '32x32' }}" type="image/png">

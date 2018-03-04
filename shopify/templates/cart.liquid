@@ -14,7 +14,11 @@
 		</article>
 		{% endfor %}
 		<p id="cart-totals">
+			<span class="image">&nbsp;</span>
+			<span class="title">&nbsp;</span>
+			<span class="quantity label">&nbsp;</span>
 			<span class="price label"><strong>{{ 'cart.general.subtotal' | t }}</strong> {{ cart.total_price | money }}{% if cart.total_discounts > 0 %}<small>{{ 'cart.general.savings' | t }} {{ cart.total_discounts | money }}{% endif %}</span>
+			<span class="remove">&nbsp;</span>
 		</p>
 		<section id="cart-bottom">
 			<div class="notes">

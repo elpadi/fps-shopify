@@ -69,6 +69,10 @@ Object.defineProperty(App.prototype, 'init', { value: function init() {
 }});
 
 App.Product = function() {
+	var info = document.getElementById('product-info'),
+		header = document.getElementById('product-header');
+	info.insertBefore(header, info.children[0]);
+	info.classList.add('header-moved');
 };
 
 /**

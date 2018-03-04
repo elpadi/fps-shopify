@@ -353,8 +353,8 @@ form.oneline-form {
 	display: block;
 	text-align: center;
 }
-.template-index #main-nav,
-.template-collection #main-nav {
+.template-index #main-header > div:last-child,
+.template-collection #main-header > div:last-child {
 	border-bottom-style: none;
 }
 #main-nav a {
@@ -718,7 +718,8 @@ form.oneline-form {
 }
 #cart-main .title a {
 	display: block;
-	line-height: 1.6;
+	line-height: 1.3;
+	margin-bottom: 0.3em;
 }
 #cart-main .label > strong::after {
 	content:':';
@@ -764,7 +765,7 @@ form.oneline-form {
 	text-align: center;
 }
 #cart-bottom > .buttons {
-	padding-top: 2.6%;
+	padding-top: 2em;
 	word-spacing: 10px;
 	font-size: 0.8em;
 	letter-spacing: 1px;
@@ -962,7 +963,7 @@ ul.slick-dots .slick-active button,
 }
 .template-product #shopify-section-footer,
 #related-products,
-#related-products h2 {
+.template-product #related-products h2 {
 	background-color: #fafaf2;
 }
 
