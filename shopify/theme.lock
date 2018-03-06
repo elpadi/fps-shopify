@@ -46,11 +46,11 @@ assets/burger.scss:
 assets/fonts.css.liquid:
   development: 2018-02-19T12:35:21-05:00   959c58f32865197f5c52d668ed94e21c
 assets/fps.css:
-  development: 2018-03-04T01:21:30-05:00   7a7f9515f3a404fe959a1efc00cbf774
+  development: 2018-03-05T23:26:07-05:00   44bfc05a0ea7a85d0bb580ad5205e1dc
 assets/icon-logo.svg:
   development: 2018-02-18T21:05:44-05:00   7d4b603cad4b8d2a5cb30392ae555b64
 assets/medium-screens.css:
-  development: 2018-03-04T02:03:35-05:00   d1902cd978bbeeaae63d489ef63e17e4
+  development: 2018-03-05T23:26:07-05:00   fc59a994e9ec3001e0a6c2ea303cf6eb
 assets/repeater-wave.png:
   development: 2018-03-04T00:17:02-05:00   d3bc4fb6848229f908effe20fd8dd6dc
 config/settings_schema.json:
@@ -72,7 +72,7 @@ sections/featured-product.liquid:
 sections/footer.liquid:
   development: 2018-03-04T00:21:06-05:00   2fc394c68620cbf2939acc6fdad0e391
 sections/header.liquid:
-  development: 2018-03-03T17:19:02-05:00   bccc44111692e9d16b78896712018e56
+  development: 2018-03-05T22:54:20-05:00   ee6bf1cf0b3b0ef6ef1afc76b1a5b3c1
 sections/product.liquid:
   development: 2018-03-03T11:39:23-05:00   b226aeeee8697af199ee8652832421b6
 snippets/burger.liquid:

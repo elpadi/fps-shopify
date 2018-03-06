@@ -27,6 +27,9 @@ ul.slides,
 	margin-bottom: 0;
 	font-weight: bold;
 }
+#collection-main h1 {
+	bottom: 1.1em;
+}
 #home-main > .shopify-section,
 #collection-main > main,
 #related-products > div,
@@ -50,6 +53,7 @@ ul.slides,
 	display: none;
 }
 #logo svg {
+	display: block;
 	position: absolute;
 	left: 50%;
 	margin-left: 200px;
@@ -72,8 +76,33 @@ ul.slides,
 .template-collection #main-nav {
 	border-bottom-style: none;
 }
+#main-nav a {
+	padding-bottom: 0.75em !important;
+}
 #main-nav ul {
 	display: flex;
+}
+#main-nav ul ul {
+	visibility: hidden;
+	opacity: 0;
+	display: inline-block;
+	margin-top: -3px;
+	float: left;
+	text-align: left;
+	width: auto;
+	font-size: 1em;
+	padding-bottom: 0;
+	transition: opacity 0.2s 0s, visibility 0s 0.2s;
+}
+#main-nav ul ul a {
+	padding-left: 1.2em;
+	padding-right: 1.2em;
+}
+#main-nav a:active + ul,
+#main-nav li:hover ul {
+	visibility: visible;
+	opacity: 1;
+	transition: opacity 0.2s 0s, visibility 0s 0s;
 }
 #main-footer {
 	font-size: 1em;
@@ -118,8 +147,8 @@ ul.slides,
 }
 #home-slideshow .slides > li,
 #home-slideshow .slick-slide {
-	height: 100vw;
-	max-height: 90vh;
+	height: 66vw;
+	max-height: 562px;
 }
 #home-slideshow img {
 	height: 100%;

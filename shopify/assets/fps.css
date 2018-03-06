@@ -92,14 +92,6 @@ nav a {
 	text-decoration: none;
 }
 
-nav ul ul {
-	display: block;
-	display: none; /* Update with js */
-}
-nav ul ul a {
-	padding: 1em;
-}
-
 nav ul,
 .horizontal-list {
 	display: flex;
@@ -167,6 +159,9 @@ ul.slick-dots button::before {
 	font-size: 0.9em;
 	margin: 0.1em 0 0;
 	font-weight: bold;
+}
+.image-grid .image-link {
+	background-color: white;
 }
 .image-grid img {
 	border: 1px solid aqua;
@@ -352,6 +347,16 @@ form.oneline-form {
 #main-nav ul {
 	display: block;
 	text-align: center;
+}
+#main-nav .site-nav--has-submenu > a {
+	padding-bottom: 0;
+}
+#main-nav ul ul {
+	font-size: 0.8em;
+	padding-bottom: 0.7em;
+}
+#main-nav ul ul a {
+	padding-bottom: 0.4em;
 }
 .template-index #main-header > div:last-child,
 .template-collection #main-header > div:last-child {
@@ -557,6 +562,7 @@ form.oneline-form {
 	display: block;
 	width: 100%;
 	height: calc(100vh - 170px);
+	max-height: 562px;
 	object-fit: cover;
 }
 #home-slideshow aside {
@@ -847,6 +853,8 @@ form.oneline-form {
 body {
 	background-color: white;
 }
+#main-nav .site-nav__submenu li:hover a,
+.site-nav__submenu .site-nav--active a,
 #fine-print {
 	color: white;
 }
@@ -926,24 +934,28 @@ h1, h2,
 }
 
 #home-slideshow aside h3,
-#main-nav a:hover,
+#main-nav li:hover > a,
 .site-nav--active a,
 .yellow {
 	color: #fecc0b;
 }
-#main-nav ul ul,
 ul.slick-dots .slick-active button,
 .btn,
 .yellow--bg {
 	background-color: #fecc0b;
+}
+@media (min-width: 768px) {
+	#main-nav ul ul {
+		background-color: #fecc0b;
+	}
 }
 .btn[disabled] {
 	background-color: #fecc0b50;
 }
 body #home-slideshow aside,
 body #home-main > .shopify-section,
-#home-main > .shopify-section,
-#collection-main > main,
+body #collection-main > main,
+body #related-products > div,
 .image-grid a:hover img,
 ul.slick-dots .slick-active button,
 .heading-with-bar,
