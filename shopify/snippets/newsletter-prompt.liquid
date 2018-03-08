@@ -6,11 +6,13 @@
 		</p>
 	</header>
 	<main>
-		<form name="newsletter" class="oneline-form">
+		<form name="newsletter" class="oneline-form" action="https://Frontporchstudionantucket.us8.list-manage.com/subscribe/post" method="POST" target="_blank">
+			<input name="u" value="1cd447ac37e97cc7606dfeb8f" type="hidden">
+			<input name="id" value="42639dfa1d" type="hidden">
 			<label><span class="visuallyhidden">{{ 'general.newsletter.placeholder' | t }}</span>
-				<input type="email" name="email" placeholder="{{ 'general.newsletter.placeholder' | t }}">
+				<input autocapitalize="off" autocorrect="off" type="email" name="MERGE0" placeholder="{{ 'general.newsletter.placeholder' | t }}">
 			</label>
-			<button type="submit" class="btn">{{ 'general.newsletter.submit' | t }}</button>
+			<button type="submit" name="submit" class="btn">{{ 'general.newsletter.submit' | t }}</button>
 		</form>
 	</main>
 </section>
