@@ -46,7 +46,7 @@ assets/burger.scss:
 assets/fonts.css.liquid:
   development: 2018-02-19T12:35:21-05:00   959c58f32865197f5c52d668ed94e21c
 assets/fps.css:
-  development: 2018-03-07T21:50:46-05:00   c4ebd3bc001ecd0c1e6f118ca2b1a6fb
+  development: 2018-03-07T22:54:23-05:00   a8848084f72e9432ea8510a9b2c34e1b
 assets/icon-logo.svg:
   development: 2018-02-18T21:05:44-05:00   7d4b603cad4b8d2a5cb30392ae555b64
 assets/medium-screens.css:
@@ -162,7 +162,7 @@ snippets/newsletter-prompt.liquid:
 snippets/product-price.liquid:
   development: 2018-02-21T17:25:54-05:00   8cd3f161dcf9014222cd4879d4256657
 snippets/scripts.liquid:
-  development: 2018-03-03T17:19:30-05:00   77656b9787945342192058a91a4e4335
+  development: 2018-03-07T21:58:51-05:00   439ae3227eebf595390e41fbde47eaba
 snippets/secondary-menu.liquid:
   development: 2018-02-23T18:32:25-05:00   33af0ecccd6ae464f01a16dbd729d083
 templates/404.liquid:
@@ -178,12 +178,12 @@ templates/index.liquid:
 templates/list-collections.liquid:
   development: 2018-03-07T21:29:54-05:00   a7c2374c2231a0c103fa972774fdf5dc
 templates/page.contact.liquid:
-  development: 2018-02-21T17:25:57-05:00   ecc5d103ec44da0bd2e5bf52a28ada3c
+  development: 2018-03-07T22:53:22-05:00   e20f209dd5ef465234ce150203f3cd4b
 templates/page.liquid:
-  development: 2018-02-21T17:25:57-05:00   ad1fd9a0159845a98a8949e657f33ca3
+  development: 2018-03-07T22:53:23-05:00   a41cb9f92eb9e99616dc0e8c8c2f94e9
 templates/page.styles.liquid:
   development: 2018-02-21T17:25:56-05:00   15fdea8e658f262d6a9a69c1fb813c93
 templates/page.twocolumn.liquid:
-  development: 2018-02-22T08:26:51-05:00   318bc845caafa5137c714b204560696d
+  development: 2018-03-07T22:53:22-05:00   28735e1e54b604c168c72c48298dc259
 templates/search.liquid:
   development: 2018-02-22T17:37:49-05:00   c5d8e77cac9a05717220cd6265c81a35

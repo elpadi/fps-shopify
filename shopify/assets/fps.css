@@ -524,10 +524,56 @@ form.oneline-form {
  */
 .template-main h1 {
 	font-size: 1.8em;
-	margin: 0 0 5.5%;
+	margin: 0 0 1.3em;
 }
 #page-main.single-column > main {
-	max-width: 670px;
+	max-width: 690px;
+}
+#page-main {
+	font-size: 0.9em;
+	line-height: 1.8;
+}
+#page-main,
+#page-main h2,
+#page-main h3,
+#page-main h4 {
+	font-family: Helvetica, Arial, sans-serif;
+}
+#page-main h2,
+#page-main h3,
+#page-main h4 {
+	font-weight: bolder;
+	letter-spacing: 0;
+}
+#page-main h4 {
+	margin: 1.2em 0;
+	font-size: 1.1em;
+}
+.page--faqs > main > h4:first-child,
+#page-main > main > p:first-child {
+	margin-top: 0;
+}
+.page--about-us h1,
+.page--about-us p {
+	float: right;
+	width: 50%;
+	clear: right;
+	vertical-align: top;
+}
+.page--about-us p:nth-of-type(1) {
+	float: left;
+	width: 46%;
+	clear: left;
+	vertical-align: top;
+}
+.page--about-us img {
+	width: 100%;
+}
+.two-column h1 {
+	margin-bottom: 0.3em;
+}
+.two-column p {
+	margin: 0.5em 0;
 }
 /*
  * =======================================================
@@ -1017,8 +1063,8 @@ input,
 .sans {
 	font-family: 'FuturaBT-Book',sans-serif;
 }
-#cart-main label,
 #cart-main strong,
+#cart-main label,
 #cart-totals .price,
 #footer-cols h2,
 #home-slideshow aside h3,

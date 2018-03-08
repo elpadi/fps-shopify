@@ -37,5 +37,8 @@
 		Array.from(document.querySelectorAll('#product-variants')).forEach(function(node) {
 			node.classList.add('visuallyhidden');
 		});
+		var product = document.getElementById('product-main');
+		if (product && product.classList.contains('no-related-products'))
+			document.getElementById('shopify-section-footer').style.backgroundColor = 'transparent';
 	})();
 </script>
