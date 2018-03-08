@@ -593,6 +593,7 @@ form.oneline-form {
 	object-fit: cover;
 }
 #home-footer {
+	display: none;
 	text-align: center;
 	margin: 1em 0 0;
 }
@@ -915,7 +916,7 @@ h1, h2,
 	color: #0cadb650;
 }
 #logo text {
-	fill: #0cadb6;
+	fill: #b4d8d4;
 }
 #main-footer hr,
 .strong-aqua--bg {
