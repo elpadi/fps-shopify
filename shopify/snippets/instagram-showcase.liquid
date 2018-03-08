@@ -5,7 +5,7 @@
 	<main>
 		<ul class="image-grid">
 			{% for n in (1..4) %}{% assign img_key = 'instagram_img_' | append: n %}
-			<li><img src="{{ settings[img_key] }}" alt=""></li>
+			<li>{{ settings[img_key] | img_url: '300x' | img_tag  }}</li>
 			{% endfor %}
 		</ul>
 	</main>
