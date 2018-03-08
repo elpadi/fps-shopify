@@ -553,27 +553,29 @@ input.btn {
 #page-main > main > p:first-child {
 	margin-top: 0;
 }
-.page--about-us h1,
-.page--about-us p {
-	float: right;
-	width: 50%;
-	clear: right;
-	vertical-align: top;
-}
-.page--about-us p:nth-of-type(1) {
-	float: left;
-	width: 46%;
-	clear: left;
-	vertical-align: top;
+@media (min-width: 540px) {
+	.two-column h1 {
+		margin-bottom: 0.3em;
+	}
+	.two-column p {
+		margin: 0.5em 0;
+	}
+	.page--about-us h1,
+	.page--about-us p {
+		float: right;
+		width: 50%;
+		clear: right;
+		vertical-align: top;
+	}
+	.page--about-us p:nth-of-type(1) {
+		float: left;
+		width: 46%;
+		clear: left;
+		vertical-align: top;
+	}
 }
 .page--about-us img {
 	width: 100%;
-}
-.two-column h1 {
-	margin-bottom: 0.3em;
-}
-.two-column p {
-	margin: 0.5em 0;
 }
 
 #password-main {
