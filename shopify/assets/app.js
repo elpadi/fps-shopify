@@ -66,6 +66,9 @@ Object.defineProperty(App.prototype, 'setupBurger', { value: function setupBurge
 
 Object.defineProperty(App.prototype, 'init', { value: function init() {
 	this.setupBurger();
+	document.querySelectorAll('.site-nav--has-submenu > a').forEach(function(submenuLink) {
+		submenuLink.addEventListener('click', function(e) { e.preventDefault(); });
+	});
 }});
 
 App.Product = function() {

@@ -935,7 +935,7 @@ h1, h2,
 
 #home-slideshow aside h3,
 #main-nav li:hover > a,
-.site-nav--active a,
+.site-nav--active > a,
 .yellow {
 	color: #fecc0b;
 }

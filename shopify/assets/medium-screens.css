@@ -36,6 +36,10 @@ ul.slides,
 .heading-with-bar {
 	border-top: 1px solid yellow;
 }
+/* Collection has no image / description */
+#collection-main > main:first-child {
+	margin-top: 8%;
+}
 #main-header {
 	padding-top: 0;
 }

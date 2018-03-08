@@ -40,21 +40,21 @@ assets/33649D_2_0.woff:
 assets/33649D_2_0.woff2:
   development: 2018-02-18T22:02:21-05:00   96394a99553f2753b309885146ef915d
 assets/app.js:
-  development: 2018-03-04T02:03:36-05:00   009378ac19d0c5adaf964e773accc4e3
+  development: 2018-03-07T21:40:14-05:00   ca625661d5adbe88c30dc2791266915a
 assets/burger.scss:
   development: 2018-03-03T17:22:32-05:00   2bf436d379e6712088db7f77a88ea9f2
 assets/fonts.css.liquid:
   development: 2018-02-19T12:35:21-05:00   959c58f32865197f5c52d668ed94e21c
 assets/fps.css:
-  development: 2018-03-05T23:26:07-05:00   44bfc05a0ea7a85d0bb580ad5205e1dc
+  development: 2018-03-07T21:35:24-05:00   cd86cfe3964b04a42305215d7e743e90
 assets/icon-logo.svg:
   development: 2018-02-18T21:05:44-05:00   7d4b603cad4b8d2a5cb30392ae555b64
 assets/medium-screens.css:
-  development: 2018-03-05T23:26:07-05:00   fc59a994e9ec3001e0a6c2ea303cf6eb
+  development: 2018-03-07T21:35:23-05:00   893eb39740b9517ef8b0fb64da79eb4d
 assets/repeater-wave.png:
   development: 2018-03-04T00:17:02-05:00   d3bc4fb6848229f908effe20fd8dd6dc
 config/settings_schema.json:
-  development: 2018-02-19T19:33:43-05:00   9d336146be9fdce0de7b57a9720a465b
+  development: 2018-03-07T21:18:22-05:00   9d4eb69cb2c288cc9f86bb6639bcc127
 layout/gift_card.liquid:
   development: 2018-02-18T20:50:17-05:00   fd879938040ac68e4290269f18930b0c
 layout/password.liquid:
@@ -154,11 +154,11 @@ snippets/icon-visa.liquid:
 snippets/icon-youtube.liquid:
   development: 2018-02-18T20:27:13-05:00   02ca9b246e335cbc1fb214b8b1ee74c7
 snippets/instagram-showcase.liquid:
-  development: 2018-02-19T20:01:49-05:00   fe3b96f7ca32036c75aa543cd04e3bba
+  development: 2018-03-07T21:22:09-05:00   098502517c1304ded96028baafec97ac
 snippets/logo-headline.liquid:
   development: 2018-02-23T15:58:41-05:00   137d0d54de68101b3114abe4ccf7868a
 snippets/newsletter-prompt.liquid:
-  development: 2018-02-22T18:43:10-05:00   158dfd1b0144f32ffd1c607fd1a7e8c7
+  development: 2018-03-07T21:06:05-05:00   0cc132ca31570f89c6b31b37924c73d9
 snippets/product-price.liquid:
   development: 2018-02-21T17:25:54-05:00   8cd3f161dcf9014222cd4879d4256657
 snippets/scripts.liquid:
@@ -175,6 +175,8 @@ templates/collection.liquid:
   development: 2018-03-07T20:55:32-05:00   d361abfe1c25008a12e91ca597c21c60
 templates/index.liquid:
   development: 2018-02-21T17:25:52-05:00   a5d0ff4ae5a1829b7dbfab41e2c97a72
+templates/list-collections.liquid:
+  development: 2018-03-07T21:29:54-05:00   a7c2374c2231a0c103fa972774fdf5dc
 templates/page.contact.liquid:
   development: 2018-02-21T17:25:57-05:00   ecc5d103ec44da0bd2e5bf52a28ada3c
 templates/page.liquid:
