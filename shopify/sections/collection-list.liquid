@@ -3,16 +3,21 @@
 	<ul class="slides">
 		{% for block in section.blocks limit: section.blocks.size %}
     {%- assign collection = collections[block.settings.collection] -%}
+    {%- assign page = collections[block.settings.page] -%}
+    {%- assign image = collections[block.settings.image] -%}
 		<li {{ block.shopify_attributes }}>
-      {% if collection.image != blank %}
-        {{ collection | img_url: '4000x' | img_tag: collection.title }}
-      {% elsif collection.products.first != blank %}
-        {{ collection.products.first | img_url: '480x480' | img_tag: collection.title }}
-			{% endif %}
+			{% unless image != blank %}
+				{% if collection and collection.image != blank %}
+				{%- assign image = collection.image -%}
+				{% else %}
+				{%- assign image = collection.products.first -%}
+				{% endif %}
+			{% endunless %}
+			{% if image != blank %}{{ image | img_url: '4000x' | img_tag: block.settings.callout_title }}{% endif %}
 			<aside>
 				<h3>{{ block.settings.callout_title }}</h3>
 				<p>{{ block.settings.callout_headline }}</p>
-				<a href="{{ collection.url }}" class="btn">Shop now</a>
+				<a href="{% if collection != blank %}{{ collection.url }}{% elsif page != blank %}{{ page.url }}{% endif %}" class="btn">Shop now</a>
 			</aside>
 		</li>
 		{% endfor %}
@@ -23,8 +28,8 @@
 </section>
 {% schema %}
   {
-    "name": "Collection list",
-    "max_blocks": 12,
+    "name": "Home Callouts",
+    "max_blocks": 5,
     "settings": [
       {
         "type": "text",
@@ -37,11 +42,20 @@
       {
         "type": "collection",
         "name": "Collection",
+				"limit": 5,
         "settings": [
           {
             "label": "Collection",
             "id": "collection",
             "type": "collection"
+					},{
+            "label": "Page",
+            "id": "page",
+            "type": "page"
+					},{
+            "label": "Image",
+            "id": "image",
+            "type": "image_picker"
 					},{
             "label": "Callout Title",
             "id": "callout_title",
