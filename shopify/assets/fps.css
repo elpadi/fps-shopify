@@ -198,7 +198,7 @@ input.btn {
 .pagination .next, .pagination .prev {
 	word-spacing: 0;
 }
-form.oneline-form {
+.oneline-form {
 	display: flex;
 	justify-content: center;
 }
@@ -574,6 +574,21 @@ form.oneline-form {
 }
 .two-column p {
 	margin: 0.5em 0;
+}
+
+#password-main {
+	text-align: center;
+}
+#password-main h2 {
+	margin-top: 2em;
+}
+#password-main input {
+	max-width: 200px;
+	padding: 0 1em;
+	border: 1px solid lightgray;
+}
+#password-main button {
+	max-width: 150px;
 }
 /*
  * =======================================================
