@@ -172,7 +172,7 @@ templates/article.liquid:
 templates/cart.liquid:
   development: 2018-03-04T01:16:17-05:00   173a0823989c77769261494124a6b59b
 templates/collection.liquid:
-  development: 2018-02-21T17:25:55-05:00   22ae23b17fd446e8e1150433312b76f4
+  development: 2018-03-07T20:55:32-05:00   d361abfe1c25008a12e91ca597c21c60
 templates/index.liquid:
   development: 2018-02-21T17:25:52-05:00   a5d0ff4ae5a1829b7dbfab41e2c97a72
 templates/page.contact.liquid:

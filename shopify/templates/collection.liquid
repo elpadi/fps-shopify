@@ -5,7 +5,7 @@
 	</header>
 	<main>
 		<h1>{{ collection.title }}</h1>
-		{% paginate collection.products by 12 %}
+		{% paginate collection.products by 48 %}
 		<ul class="image-grid">
 			{% for product in collection.products %}<li>{% include 'collection-product' %}</li>{% endfor %}
 		</ul>
