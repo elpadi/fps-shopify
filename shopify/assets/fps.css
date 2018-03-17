@@ -497,7 +497,7 @@ input.btn {
 .instagram-showcase li {
 	overflow: hidden;
 }
-.instagram-showcase img {
+.instagram-showcase .image-grid img {
 	padding: 0;
 	height: 100%;
 	object-fit: cover;
