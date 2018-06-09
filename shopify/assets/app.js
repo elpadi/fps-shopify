@@ -69,6 +69,10 @@ Object.defineProperty(App.prototype, 'init', { value: function init() {
 	document.querySelectorAll('.site-nav--has-submenu > a').forEach(function(submenuLink) {
 		submenuLink.addEventListener('click', function(e) { e.preventDefault(); });
 	});
+	document.querySelectorAll('#main-nav .site-nav__submenu').forEach(function(submenu) {
+		let maxWidth = Math.max.apply(this, Array.from(submenu.children).map(n => n.offsetWidth));
+		submenu.style.width = maxWidth + 'px';
+	});
 }});
 
 App.Product = function() {

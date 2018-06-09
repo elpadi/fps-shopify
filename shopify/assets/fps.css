@@ -497,7 +497,7 @@ input.btn {
 .instagram-showcase li {
 	overflow: hidden;
 }
-.instagram-showcase img {
+.instagram-showcase .image-grid img {
 	padding: 0;
 	height: 100%;
 	object-fit: cover;
@@ -537,7 +537,7 @@ input.btn {
 #page-main h2,
 #page-main h3,
 #page-main h4 {
-	font-family: Helvetica, Arial, sans-serif;
+	font-family: 'FuturaBT-Book',sans-serif;
 }
 #page-main h2,
 #page-main h3,

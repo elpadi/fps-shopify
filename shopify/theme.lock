@@ -40,19 +40,25 @@ assets/33649D_2_0.woff:
 assets/33649D_2_0.woff2:
   development: 2018-02-18T22:02:21-05:00   96394a99553f2753b309885146ef915d
 assets/app.js:
-  development: 2018-03-07T21:40:14-05:00   ca625661d5adbe88c30dc2791266915a
+  development: 2018-06-08T11:42:05-04:00   29de8c7d31238657652eae7f3a16d836
 assets/burger.scss:
   development: 2018-03-03T17:22:32-05:00   2bf436d379e6712088db7f77a88ea9f2
 assets/fonts.css.liquid:
   development: 2018-02-19T12:35:21-05:00   959c58f32865197f5c52d668ed94e21c
 assets/fps.css:
-  development: 2018-03-07T23:44:10-05:00   e244824c6681e65dcfbcd10ab26ec9c2
+  development: 2018-03-15T17:24:19-04:00   6ac6894477b2a1e3e0fd3cf25fbf9f21
 assets/icon-logo.svg:
   development: 2018-02-18T21:05:44-05:00   7d4b603cad4b8d2a5cb30392ae555b64
+assets/initial.css:
+  development: 2018-02-18T20:46:53-05:00   f3b3849ea77b7961d14a3fc2f3bc2067
 assets/medium-screens.css:
-  development: 2018-03-07T21:35:23-05:00   893eb39740b9517ef8b0fb64da79eb4d
+  development: 2018-06-08T11:33:24-04:00   404d0cde84f4652c5acd38aa24459c31
+assets/normalize.css:
+  development: 2018-02-18T20:31:27-05:00   8c6eee6b2107ef25dc486020ced13898
 assets/repeater-wave.png:
   development: 2018-03-04T00:17:02-05:00   d3bc4fb6848229f908effe20fd8dd6dc
+config/settings_data.json:
+  development: 2018-05-02T21:53:47-04:00   1e58c929664652eaec9c57b5da93dbae
 config/settings_schema.json:
   development: 2018-03-07T21:18:22-05:00   9d4eb69cb2c288cc9f86bb6639bcc127
 layout/gift_card.liquid:
@@ -61,8 +67,22 @@ layout/password.liquid:
   development: 2018-03-07T23:04:55-05:00   92388ec3e76f95a6168874fd90e31c6c
 layout/theme.liquid:
   development: 2018-03-04T00:39:39-05:00   c812325d7c0d88e1a9ea8b062be77cb2
+locales/da.json:
+  development: 2018-02-18T20:06:11-05:00   95a58eb18067e4498baaf8f5e1ba3b42
+locales/de.json:
+  development: 2018-02-18T20:06:11-05:00   310ea9d2ac8d9fdb8f48ba2a0323e9e5
 locales/en.default.json:
-  development: 2018-02-24T18:43:18-05:00   ebe96c09348d65e9a254010d08df10a0
+  development: 2018-06-08T11:14:55-04:00   9f28008886f6153a7ac39444e7574e28
+locales/es.json:
+  development: 2018-02-18T20:06:11-05:00   5bef99727aa4c751ec7e7ec7bcf6c04c
+locales/fr.json:
+  development: 2018-02-18T20:06:11-05:00   dd11a8356b5ae41c443e3220b667ac32
+locales/nl.json:
+  development: 2018-02-18T20:06:11-05:00   097257892606991bed01c4fe846c8898
+locales/pt-BR.json:
+  development: 2018-02-18T20:06:11-05:00   6b58156c31cabf07a0394cb51f37c6ec
+locales/pt-PT.json:
+  development: 2018-02-18T20:06:11-05:00   1f39689b8220b99560c72f413f651461
 sections/collection-list.liquid:
   development: 2018-03-07T20:48:54-05:00   ea26e2d7955ef32fae4220a752085aef
 sections/featured-collection.liquid:
@@ -80,7 +100,9 @@ snippets/burger.liquid:
 snippets/collection-product.liquid:
   development: 2018-02-24T18:38:20-05:00   25b884ac87c4582a9ee8b014ddfe7586
 snippets/contact.liquid:
-  development: 2018-02-23T18:32:26-05:00   7f5dafbb8f96b47890bc06d58eda6f4c
+  development: 2018-06-08T11:10:54-04:00   9ae300a6a5f3ada58c6dfd25073713fd
+snippets/css-variables.liquid:
+  development: 2018-02-18T20:06:11-05:00   e73e1f85264da0787217562af153dbbe
 snippets/icon-amazon_payments.liquid:
   development: 2018-02-18T20:27:23-05:00   fa528edb2afc07062b90b5dfcae4e0c4
 snippets/icon-american_express.liquid:
@@ -159,20 +181,32 @@ snippets/logo-headline.liquid:
   development: 2018-02-23T15:58:41-05:00   137d0d54de68101b3114abe4ccf7868a
 snippets/newsletter-prompt.liquid:
   development: 2018-03-07T21:06:05-05:00   0cc132ca31570f89c6b31b37924c73d9
+snippets/no-blocks.liquid:
+  development: 2018-02-18T20:06:11-05:00   0cb7d758b6df0feb07ae5804b4b627fa
+snippets/pagination.liquid:
+  development: 2018-02-18T20:06:11-05:00   d4a467973d86f8663428ddaaaf035d12
 snippets/product-price.liquid:
   development: 2018-02-21T17:25:54-05:00   8cd3f161dcf9014222cd4879d4256657
 snippets/scripts.liquid:
   development: 2018-03-07T21:58:51-05:00   439ae3227eebf595390e41fbde47eaba
 snippets/secondary-menu.liquid:
   development: 2018-02-23T18:32:25-05:00   33af0ecccd6ae464f01a16dbd729d083
+snippets/social-meta-tags.liquid:
+  development: 2018-02-18T20:06:11-05:00   312dfc487a1aa92503527dbc4a4e56b4
+snippets/social-sharing.liquid:
+  development: 2018-02-18T20:06:11-05:00   987f1d283ac10d7849dc69d76221e37a
 templates/404.liquid:
   development: 2018-02-21T17:25:53-05:00   59b16372e16897c5affe6dad317d5a0d
 templates/article.liquid:
   development: 2018-02-21T17:25:56-05:00   dc2fe00634c31a2318e7dd1eb2327174
+templates/blog.liquid:
+  development: 2018-02-18T20:06:11-05:00   6afa6d4a6ed4b457f72a4c28c536dca9
 templates/cart.liquid:
   development: 2018-03-04T01:16:17-05:00   173a0823989c77769261494124a6b59b
 templates/collection.liquid:
   development: 2018-03-07T20:55:32-05:00   d361abfe1c25008a12e91ca597c21c60
+templates/gift_card.liquid:
+  development: 2018-02-18T20:06:11-05:00   69ebb9767564780f5bc82e2c18bc6eb7
 templates/index.liquid:
   development: 2018-02-21T17:25:52-05:00   a5d0ff4ae5a1829b7dbfab41e2c97a72
 templates/list-collections.liquid:
@@ -187,5 +221,7 @@ templates/page.twocolumn.liquid:
   development: 2018-03-07T22:53:22-05:00   28735e1e54b604c168c72c48298dc259
 templates/password.liquid:
   development: 2018-03-07T23:29:19-05:00   d8f291155beb409dc2cd60876e0bbcfc
+templates/product.liquid:
+  development: 2018-02-18T20:06:12-05:00   4fd44b8093bad2e827e58f5564520abb
 templates/search.liquid:
   development: 2018-02-22T17:37:49-05:00   c5d8e77cac9a05717220cd6265c81a35
