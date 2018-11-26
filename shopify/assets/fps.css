@@ -247,7 +247,7 @@ input.btn {
 	height: 32px;
 	line-height: 32px;
 	text-transform: uppercase;
-	padding: 0 3em;
+	padding: 0;
 	letter-spacing: 1px;
 	text-align: right;
 }
@@ -263,7 +263,7 @@ input.btn {
 }
 #top-bar .hamburglar {
 	position: absolute;
-	right: 15px;
+	right: -15px;
 	display: inline-block;
 	background-color: transparent;
 	margin: 3px 0 0;
@@ -537,7 +537,7 @@ input.btn {
 #page-main h2,
 #page-main h3,
 #page-main h4 {
-	font-family: Helvetica, Arial, sans-serif;
+	font-family: 'FuturaBT-Book',sans-serif;
 }
 #page-main h2,
 #page-main h3,

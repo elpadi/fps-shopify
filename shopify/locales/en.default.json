@@ -52,7 +52,7 @@
       "submit": "Sign me up!"
     },
     "contact": {
-      "title": "Visit The Shop!",
+      "title": "Contact",
       "operating_hours": "10:00am - 5:00pm",
       "days_open": "Everyday"
     }
@@ -265,7 +265,7 @@
       "from_text_html": "From {{ price }}",
       "quantity": "Quantity",
       "add_to_cart": "Add to Bag",
-			"related_products_title": "You May Also Like"
+      "related_products_title": "You May Also Like"
     }
   },
   "gift_cards": {

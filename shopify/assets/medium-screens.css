@@ -49,6 +49,7 @@ ul.slides,
 #top-bar {
 	position: relative;
 	width: auto;
+	padding: 0 3em;
 }
 #top-bar nav {
 	margin-right: 12px;
@@ -86,14 +87,16 @@ ul.slides,
 #main-nav ul {
 	display: flex;
 }
+#main-nav .site-nav--has-submenu {
+	position: relative;
+}
 #main-nav ul ul {
+	position: absolute;
+	left: 0;
 	visibility: hidden;
 	opacity: 0;
-	display: inline-block;
 	margin-top: -3px;
-	float: left;
 	text-align: left;
-	width: auto;
 	font-size: 1em;
 	padding-bottom: 0;
 	transition: opacity 0.2s 0s, visibility 0s 0.2s;
@@ -101,6 +104,7 @@ ul.slides,
 #main-nav ul ul a {
 	padding-left: 1.2em;
 	padding-right: 1.2em;
+	white-space: nowrap;
 }
 #main-nav a:active + ul,
 #main-nav li:hover ul {
